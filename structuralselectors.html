@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+style:first-of-type {visibility:hidden;}
+style:last-of-type {padding: 20px; font-size: 25px; white-space:pre; border:1px solid #000; border-radius: 10px;
+background: -webkit-linear-gradient(#3A67AB, #E8F6FF);
+background: -moz-linear-gradient(#3A67AB, #E8F6FF);
+background: -ms-linear-gradient(#3A67AB, #E8F6FF);
+background: -o-linear-gradient(#3A67AB, #E8F6FF);
+background: linear-gradient(#3A67AB, #E8F6FF);
+margin: -20px 10px 10px;
+
+
+}
+style:last-of-type::after {
+	font-family:Verdana, Geneva, sans-serif; font-size: 80%; font-style: italic; position: absolute; top: 20px;
+	content: "edit the styles to impact the list below";	
+}
+style:last-of-type::before {content: 'CSS Styles';font-family:Verdana, Geneva, sans-serif; font-size: 80%; font-style: italic;}
+ol, ul {width: 12em; border: 1px solid;}
+ul {width: auto; margin: 10px;}
+li {font-family:Verdana, Geneva, sans-serif;  color: black; border-bottom: 1px solid}
+li li {color: green;}
+</style>
+
+<style contenteditable>
+li:nth-of-type(even) {background-color: #ccc;}
+li:nth-of-type(3) {color: red;}
+</style>
+<title>CSS Selector Test</title>
+</head>
+
+<body><ol>
+<li>First List Item </li>
+<li>Second List Item </li>
+<li>Third List Item</li>
+<li>Fourth List Item</li>
+<li>Fifth List Item
+	<ul>
+    	<li>Child 1</li>
+    	<li>Child 2</li>
+    	<li>Child 3</li>
+    </ul>
+</li>
+<li>Sixth  List Item</li>
+<li>Seventh List Item</li>
+<li>Eighth List Item</li>
+<li>Ninth List Item</li>
+<li>Tenth List Item</li>
+<li>Eleventh List Item</li>
+<li>Twelvth List Item</li>
+<li>Thirteenth List Item</li>
+</ol>
+</body>
+</html>

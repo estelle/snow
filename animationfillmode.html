@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Animation Fill Mode</title>
+<style>
+.box {padding:20px; position:relative;}
+.box span {position: absolute; left: 0; top:0; width: 20px; height:20px; background-color:purple; 
+-webkit-animation: showme 5s linear 5s 1;
+-moz-animation: showme 5s linear 5s 1;
+-ms-animation: showme 5s linear 5s 1;
+-o-animation: showme 5s linear 5s 1;
+animation: showme 5s linear 5s 1;
+}
+@-webkit-keyframes showme {
+	0% {left: 200px; background-color:blue;}
+	50% {background-color:green;}
+	100% {left: 600px; background-color: yellow;}
+}
+@-moz-keyframes showme {
+	0% {left: 200px; background-color:blue;}
+	50% {background-color:green;}
+	100% {left: 600px; background-color: yellow;}
+}
+@-ms-keyframes showme {
+	0% {left: 200px; background-color:blue;}
+	50% {background-color:green;}
+	100% {left: 600px; background-color: yellow;}
+}
+@-o-keyframes showme {
+	0% {left: 200px; background-color:blue;}
+	50% {background-color:green;}
+	100% {left: 600px; background-color: yellow;}
+}
+
+@keyframes showme {
+	0% {left: 200px; background-color:blue;}
+	50% {background-color:green;}
+	100% {left: 600px; background-color: yellow;}
+}
+span.afmforwards {
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-ms-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;	
+}
+span.afmbackwards {
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode:backwards;
+	-ms-animation-fill-mode:backwards;
+	-o-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;	
+}
+span.afmboth {
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;	
+}
+</style>
+</head>
+<body>
+<div class="slide" id="animfillmodeall4" onClick="this.classList.toggle('animationon');"> 
+<header><h1>Animation Fill Mode (again)</h1></header> 
+<section class="content"> 
+	<div class="box">none <span class="afmnone"></span></div>
+	<div class="box">forwards<span class="afmforwards"></span></div>
+	<div class="box">backwards<span class="afmbackwards"></span></div>
+    <div class="box">both<span class="afmboth"></span></div>
+</section>
+</div>
+</body>
+</html>
