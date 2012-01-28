@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<style>.menorah div {
+	height: 400px;
+	width: 400px;
+	
+	background-image: 
+		-webkit-linear-gradient(left,
+			#aaa,
+			#333 50%,
+			#aaa),
+		-webkit-radial-gradient(50% 1%, ellipse farthest-corner, 
+			transparent 15%,
+			#aaa 15%,
+			#333 17.5%,
+			#aaa 20%,
+			transparent 20%,
+			transparent 32%,
+			#aaa 32%,
+			#333 34.5%,
+			#aaa 37%,
+			transparent 37%,
+			transparent 50%,
+			#aaa 50%,
+			#333 52.5%,
+			#aaa 55%,
+			transparent 55%,
+			transparent 65%,
+			#aaa 65%,
+			#333 67.5%,
+			#aaa 70%,
+			transparent 70%),
+		-webkit-linear-gradient(top,
+			#aaa,
+			#333 50%,
+			#aaa)	
+			;
+	background-size: 8px 200px, 200px 200px,  24px 8px;
+	background-repeat:no-repeat;
+	background-position: center 30px, center 50px, center 230px; 
+	position: relative;
+}
+.menorah ul {padding-left: 89px;}
+.menorah li {
+	display: inline-block; 
+	background-color: blue; 
+	width: 8px; 
+	height: 20px; 
+	margin-top: 28px; 
+	margin-left: 12px;
+	background: -webkit-linear-gradient(left, #03F, #09F, #03F);
+	position:relative;
+}
+.menorah li:nth-of-type(5) {
+	-webkit-transform: translateY(-20px);	
+}
+.menorah li:before {
+	content:'';
+	height: 7px;
+	width:7px;
+	position: absolute;
+	top: -8px;
+	border-radius: 50%;
+	background: -webkit-radial-gradient(yellow, red);
+	-webkit-animation: showflicker 	2s infinite;	
+}/*
+li:nth-of-type(1):before {-webkit-animation-delay: 5s;}
+li:nth-of-type(2):before {-webkit-animation-delay: 10s;}
+li:nth-of-type(3):before {-webkit-animation-delay: 15s;}
+li:nth-of-type(4):before {-webkit-animation-delay: 20s;}
+li:nth-of-type(5):before {-webkit-animation-delay: 0;}
+li:nth-of-type(6):before {-webkit-animation-delay: 25s;}
+li:nth-of-type(7):before {-webkit-animation-delay: 30s;}
+li:nth-of-type(8):before {-webkit-animation-delay: 35s;}
+li:nth-of-type(9):before {-webkit-animation-delay: 40s;}
+*/
+@-webkit-keyframes showflicker{
+	0%, 100% { top: 20px;}
+	50% { top: 5px;}	
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="menorah">
+<ul>
+	<li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</div>
+</body>
+</html>
