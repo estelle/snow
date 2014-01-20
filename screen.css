@@ -19,44 +19,30 @@ body {
 }
 
 #presentation, #lineargradient1 {
-  background-image: 
+  background-image:
   	-webkit-gradient(linear,  0% 0%, 0% 100%, from(#3A67AB), to(#E8F6FF));
-  background-image: 
+  background-image:
   	-webkit-linear-gradient(270deg, #3A67AB, #E8F6FF 100%);
-  background-image: 
-  	-moz-linear-gradient(#3A67AB, #E8F6FF 100%);
-  background-image: 
-  	-ms-linear-gradient(#3A67AB, #E8F6FF 100%);
-  background-image: 
-  	-o-linear-gradient(#3A67AB, #E8F6FF 100%);
-  background-image: 
+  background-image:
   	linear-gradient(#3A67AB, #E8F6FF 100%);
 }
 
 
 .columns2, .columns3 {
-	-webkit-column-count: 2; 
+	-webkit-column-count: 2;
 	-webkit-column-rule: 1px solid #bbb;
 	-webkit-column-gap: 2em;
-	-moz-column-count: 2; 
+	-moz-column-count: 2;
 	-moz-column-rule: 1px solid #bbb;
 	-moz-column-gap: 2em;
-	-ms-column-count: 2; 
-	-ms-column-rule: 1px solid #bbb;
-	-ms-column-gap: 2em;
-	-o-column-count: 2; 
-	-o-column-rule: 1px solid #bbb;
-	-o-column-gap: 2em;
-	column-count: 2; 
+	column-count: 2;
 	column-rule: 1px solid #bbb;
 	column-gap: 2em;
 }
 .columns3 {
 	-webkit-column-count: 3;
 	-moz-column-count: 3;
-	-ms-column-count: 3;
-	-o-column-count: 3;
-	column-count: 3; 
+	column-count: 3;
 }
 
 
@@ -98,14 +84,14 @@ li.future {color: #360;}
 	border: 2px solid #E2007A;
 	border-radius: 10px;
 	float: right;
-	margin-right: 20px;	
+	margin-right: 20px;
 }
 .gradientline {
- 	width: 3px; 
-	height:100%; 
-	margin: auto; 
+ 	width: 3px;
+	height:100%;
+	margin: auto;
 	background-color:#000;
-	position:relative;	
+	position:relative;
 }
 .gradientline:before,
 .gradientline:after {
@@ -117,7 +103,7 @@ li.future {color: #360;}
 	left: -7px;
 }
 .gradientline:before {
-	background-color: #000000;	
+	background-color: #000000;
 }
 .gradientline:after {
 	top: auto;
@@ -125,65 +111,45 @@ li.future {color: #360;}
 	border: 1px solid #000000;
 	border-width: 3px 3px 0 0;
 	-webkit-transform: rotate(135deg);
-	-moz-transform: rotate(135deg);
 	-ms-transform: rotate(135deg);
-	-o-transform: rotate(135deg);
 	transform: rotate(135deg);
 }
-	
+
 .snowflakedemo {
 	width: 300px;
 	height: 300px;
 	border: 2px solid #E2007A;
 	border-radius: 10px;
 	float: right;
-	margin-right: 20px;	} 
-	
+	margin-right: 20px;	}
+
 	/* General Styling of the snowflakes */
 	 i, .snowflakedemo {
 		background-image:
-				-webkit-gradient(linear, 0% 0%, 100% 0, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff), 
+				-webkit-gradient(linear, 0% 0%, 100% 0, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff),
 				color-stop(0.6, rgba(255,255,255,0))),
-				-webkit-gradient(linear, 0% 0%, 0 100%, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff), 
+				-webkit-gradient(linear, 0% 0%, 0 100%, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff),
 				color-stop(0.6, rgba(255,255,255,0))),
-				-webkit-gradient(linear, 0% 100%, 100% 0, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff), 
+				-webkit-gradient(linear, 0% 100%, 100% 0, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff),
 				color-stop(0.6, rgba(255,255,255,0))),
-				-webkit-gradient(linear, 0% 50%, 50% 100%, color-stop(0.35, rgba(255,255,255,0)), color-stop(0.38, #fff), color-stop(0.63, #fff), 
+				-webkit-gradient(linear, 0% 50%, 50% 100%, color-stop(0.35, rgba(255,255,255,0)), color-stop(0.38, #fff), color-stop(0.63, #fff),
 				color-stop(0.65, rgba(255,255,255,0)));
-				
+
 		background-image:
 				-webkit-linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
 				-webkit-linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
 				-webkit-linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
 				-webkit-linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
-		
-		background-image:
-				-moz-linear-gradient(180deg,rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%),
-				-moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%),
-				-moz-linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%),
-				-moz-linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
-				
-		background-image:
-				-ms-linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
-				-ms-linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
-				-ms-linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
-				-ms-linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
-				
-		background-image:
-				-o-linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
-				-o-linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
-				-o-linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
-				-o-linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
-				
+
 		background-image:
 				linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
 				linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
 				linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
 				linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
-				
+
 	 }
-	 
-	
+
+
 	 /* default animation and transform */
 	 i {
 		display: inline-block;
@@ -200,13 +166,13 @@ li.future {color: #360;}
 		-webkit-animation-fill-mode: none;
 		-webkit-animation-play-state:running;
 		/* or */
-		-moz-animation: falling 3s linear 2s 20;
+		animation: falling 3s linear 2s 20;
 	}
-/* OPACITY SLIDE (and alphatransparency) */	
+/* OPACITY SLIDE (and alphatransparency) */
 
 	.opacity { float: left; overflow:hidden;}
 	.opacity div {
-		clear: both;	
+		clear: both;
 	}
 	.opacity pre {
 		float: left;
@@ -214,10 +180,10 @@ li.future {color: #360;}
 	}
 	.opacity div i {
 		-webkit-animation: none;
-		-moz-animation: none;
+		animation: none;
 		position: static;
 		float:left;
-		margin-right:20px;	
+		margin-right:20px;
 		background-color: transparent;
 	}
 	.opacity pre + i {margin-right:0;}
@@ -236,113 +202,82 @@ li.future {color: #360;}
 		background-repeat:repeat;
 		background-image: /* Safari 5 and earlier */
 				-webkit-gradient(linear, 100% 100%, 0 0,
-					color-stop(.25, rgba(255, 255, 255, 1)), 
+					color-stop(.25, rgba(255, 255, 255, 1)),
 					color-stop(.25, rgba(255, 255, 255, 0)),
-					color-stop(.5, rgba(255, 255, 255, 0)), 
+					color-stop(.5, rgba(255, 255, 255, 0)),
 					color-stop(.5, rgba(255, 255, 255, 1)),
-					color-stop(.75, rgba(255, 255, 255, 1)), 
-					color-stop(.75, rgba(255, 255, 255, 0)), 
+					color-stop(.75, rgba(255, 255, 255, 1)),
+					color-stop(.75, rgba(255, 255, 255, 0)),
 					color-stop(1, rgba(255, 255, 255, 0)));
 		background-image:	/* Chrome and Webkit Nightly build */
 			-webkit-linear-gradient(135deg,
-					rgba(255, 255, 255, 1) 25%, 
+					rgba(255, 255, 255, 1) 25%,
 					rgba(255, 255, 255, 0) 25%,
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%,
+					rgba(255, 255, 255, 1) 50%,
 					rgba(255, 255, 255, 1) 75%,
 					rgba(255, 255, 255, 0) 75%,
 					rgba(255, 255, 255, 0) 100%
 	  				);
-		background-image:	/* Firefox */
-			-moz-linear-gradient(135deg,
-					rgba(255, 255, 255, 1) 25%, 
+
+			background-image:
+			linear-gradient(-135deg,
+					rgba(255, 255, 255, 1) 25%,
 					rgba(255, 255, 255, 0) 25%,
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 1) 75%,
-					rgba(255, 255, 255, 0) 75%,
-					rgba(255, 255, 255, 0) 100%
-	  				);
-			background-image:	/* IE10 */
-			-ms-linear-gradient(135deg,
-					rgba(255, 255, 255, 1) 25%, 
-					rgba(255, 255, 255, 0) 25%,
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 1) 75%,
-					rgba(255, 255, 255, 0) 75%,
-					rgba(255, 255, 255, 0) 100%
-	  				);
-			background-image:	/* opera 11+ */
-			-o-linear-gradient(135deg,
-					rgba(255, 255, 255, 1) 25%, 
-					rgba(255, 255, 255, 0) 25%,
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 1) 50%, 
-					rgba(255, 255, 255, 1) 75%,
-					rgba(255, 255, 255, 0) 75%,
-					rgba(255, 255, 255, 0) 100%
-	  				);
-			background-image:	
-			linear-gradient(135deg,
-					rgba(255, 255, 255, 1) 25%, 
-					rgba(255, 255, 255, 0) 25%,
-					rgba(255, 255, 255, 0) 50%, 
-					rgba(255, 255, 255, 1) 50%, 
+					rgba(255, 255, 255, 0) 50%,
+					rgba(255, 255, 255, 1) 50%,
 					rgba(255, 255, 255, 1) 75%,
 					rgba(255, 255, 255, 0) 75%,
 					rgba(255, 255, 255, 0) 100%
 	  				);
 		}
 	 }
-	 
+
 	 .angled {padding-right: 20px;}
 /* radius */
 
 .opacity div {height: 120px;}
-.radius div i{border: 2px solid transparent;} 
-.radius div i:hover{border: 2px solid #E2007A;} 
+.radius div i{border: 2px solid transparent;}
+.radius div i:hover{border: 2px solid #E2007A;}
 .radius div b, .boxshadow b, .transform b, .transform b:after  {border: 2px solid #E2007A; display:inline-block; height:80px; width: 80px; background-color: rgba(255,255,255,0.8);}
 .transform b {float: right;}
 .transform b:after {
 	content: "";
 	-webkit-transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);
-	-moz-transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);
 	-ms-transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);
-	-o-transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);
 	transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);float: right;}
 .transform pre {display:inline-block;}
 /* font-face */
-.fontfamily th {text-align: left;} 
-.fontfamily td {text-align: center; border-color:rgba(0,0,0,0.1); padding: 3px 5px;} 
-.fontfamily    {font-family: arial; border: none; border-collapse:collapse;} 
+.fontfamily th {text-align: left;}
+.fontfamily td {text-align: center; border-color:rgba(0,0,0,0.1); padding: 3px 5px;}
+.fontfamily    {font-family: arial; border: none; border-collapse:collapse;}
 
 /* text-shadow */
 
 .textshadow {text-align: center;
 	font-size: 50px;
 	color: #E2007A;
-	text-shadow: 0 1px 0 #ccc, 	
-	0 2px #c9c9c9, 
-	0 3px #bbb, 
-	0 4px #b9b9b9, 
-	0 5px #aaa, 
-	0 6px 1px rgba(0,0,0,.1), 
-	0 0 5px rgba(0,0,0,.1), 
-	0 1px 3px rgba(0,0,0,.3), 
-	0 3px 5px rgba(0,0,0,.2), 
-	0 5px 10px rgba(0,0,0,.25), 
-	0 10px 10px rgba(0,0,0,.2), 
+	text-shadow: 0 1px 0 #ccc,
+	0 2px #c9c9c9,
+	0 3px #bbb,
+	0 4px #b9b9b9,
+	0 5px #aaa,
+	0 6px 1px rgba(0,0,0,.1),
+	0 0 5px rgba(0,0,0,.1),
+	0 1px 3px rgba(0,0,0,.3),
+	0 3px 5px rgba(0,0,0,.2),
+	0 5px 10px rgba(0,0,0,.25),
+	0 10px 10px rgba(0,0,0,.2),
 	0 20px 20px rgba(0,0,0,.15);
 }
 .boxshadow b {
 	border-color: #000;
- 	box-shadow: 
-	    inset 3px -3px 0 3px green, 
+ 	box-shadow:
+	    inset 3px -3px 0 3px green,
 	    inset -3px 3px 0 3px yellow,
-		3px 3px 0 3px #3A67AB, 
+		3px 3px 0 3px #3A67AB,
        -3px -3px 0 3px #E2007A;
-	   margin: 20px;	
+	   margin: 20px;
 }
 
 /* transition */
@@ -351,9 +286,7 @@ li.future {color: #360;}
 	font-size: 100%;
     background-color: rgba(255,255,255,0.4);
     -webkit-transition: all 0.5s ease-in 50ms;
-    -moz-transition: all 0.5s ease-in 50ms;
     -ms-transition: all 0.5s ease-in 50ms;
-    -o-transition: all 0.5s ease-in 50ms;
     transition: all 0.5s ease-in 50ms;
     -webkit-transition: color font-size 0.5s ease-in 50ms;
 }
@@ -365,95 +298,95 @@ li.future {color: #360;}
 
 /* animation used for ALL snowflakes */
 	@-webkit-keyframes falling {
-		0% { 
-			-webkit-transform: 
-					translate3d(0,0,0) 
-					rotate(0deg) 
+		0% {
+			-webkit-transform:
+					translate3d(0,0,0)
+					rotate(0deg)
 					scale(0.9,0.9);
 		}
-		100% { 
-			-webkit-transform: 
-					translate3d(30px,1000px,0) 
-					rotate(360deg) 
+		100% {
+			-webkit-transform:
+					translate3d(30px,1000px,0)
+					rotate(360deg)
 					scale(1.1,1.1);
-		}	
+		}
 	}
-	
-	@-moz-keyframes falling {
-		0% { 
-			-moz-transform: 
-					translate3d(0,0,0) 
-					rotate(0deg) 
+
+	@keyframes falling {
+		0% {
+			transform:
+					translate3d(0,0,0)
+					rotate(0deg)
 					scale(0.9,0.9);
 		}
-		100% { 
-			-moz-transform: 
-					translate(30px,1000px) 
-					rotate(360deg) 
+		100% {
+			transform:
+					translate(30px,1000px)
+					rotate(360deg)
 					scale(1.1,1.1);
-		}	
+		}
 	}
-	
+
 	/* different sizes, and default origins based on size */
 	#flakes i:nth-of-type(4n) {
 		height:30px;
 		width:30px;
 		-webkit-transform-origin: right -30px;
-		-moz-transform-origin: right -30px;
+		transform-origin: right -30px;
 	}
 	#flakes i:nth-of-type(4n+1) {
 		height:24px;
 		width:24px;
 		-webkit-transform-origin: left -30px;
-		-moz-transform-origin: left -30px;
+		transform-origin: left -30px;
 	}
 	#flakes i:nth-of-type(4n+2){
 		height:10px;
 		width:10px;
 		-webkit-transform-origin: -30px 0;
-		-moz-transform-origin: -30px 0;
+		transform-origin: -30px 0;
 	}
-	
+
 	/* different speeds, with iteration counts to equal 3minutes approx. */
 	#flakes i:nth-of-type(4n) {
-		-webkit-animation-duration: 5.3s; 
+		-webkit-animation-duration: 5.3s;
 		-webkit-animation-iteration-count: 12;
 		-webkit-transform-origin: -10px -20px;
-		-moz-animation-duration: 5.3s; 
-		-moz-animation-iteration-count: 12;
-		-moz-transform-origin: -10px -20px;
+		animation-duration: 5.3s;
+		animation-iteration-count: 12;
+		transform-origin: -10px -20px;
 	}
 	#flakes i:nth-of-type(4n+1){
-		-webkit-animation-duration: 3.1s; 
+		-webkit-animation-duration: 3.1s;
 		-webkit-animation-iteration-count: 20;
 		-webkit-transform-origin: 10px -20px;
-		-moz-animation-duration: 3.1s; 
-		-moz-animation-iteration-count: 20;
-		-moz-transform-origin: 10px -20px;
+		animation-duration: 3.1s;
+		animation-iteration-count: 20;
+		transform-origin: 10px -20px;
 		}
 	#flakes i:nth-of-type(4n+2) {
 		-webkit-animation-duration: 1.7s;
 		-webkit-animation-iteration-count: 35;
 		-webkit-transform-origin: right -20px;
-		-moz-animation-duration: 1.7s;
-		-moz-animation-iteration-count: 35;
-		-moz-transform-origin: right -20px;
+		animation-duration: 1.7s;
+		animation-iteration-count: 35;
+		transform-origin: right -20px;
 	}
-	
+
 	/* different delays so they don't all start at the same time */
 	#flakes i:nth-of-type(3n) {
 		-webkit-animation-delay: 2.3s;
-		-moz-animation-delay: 2.3s;
+		animation-delay: 2.3s;
 		}
 	#flakes i:nth-of-type(3n+1) {
 		-webkit-animation-delay: 1.5s;
-		-moz-animation-delay: 1.5s;
+		animation-delay: 1.5s;
 		}
 	#flakes i:nth-of-type(3n+2) {
 		-webkit-animation-delay: 3.4s;
-		-moz-animation-delay: 3.4s;
+		animation-delay: 3.4s;
 		}
-	
+
 	/* playing with timing functions to make it a teeny bit more random like */
 	#flakes i:nth-of-type(5n)   {-webkit-animation-timing-function:ease-in-out;}
 	#flakes i:nth-of-type(5n+1) {-webkit-animation-timing-function:ease-out;}
@@ -461,14 +394,14 @@ li.future {color: #360;}
 	#flakes i:nth-of-type(5n+3) {-webkit-animation-timing-function:ease-in;}
 	#flakes i:nth-of-type(5n+4) {-webkit-animation-timing-function:linear;}
 	#flakes i:nth-of-type(11n) {-webkit-animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9);}
-	
-	#flakes i:nth-of-type(5n)   {-moz-animation-timing-function:ease-in-out;}
-	#flakes i:nth-of-type(5n+1) {-moz-animation-timing-function:ease-out;}
-	#flakes i:nth-of-type(5n+2) {-moz-animation-timing-function:ease;}
-	#flakes i:nth-of-type(5n+3) {-moz-animation-timing-function:ease-in;}
-	#flakes i:nth-of-type(5n+4) {-moz-animation-timing-function:linear;}
-	#flakes i:nth-of-type(11n) {-moz-animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9);}
-	
+
+	#flakes i:nth-of-type(5n)   {animation-timing-function:ease-in-out;}
+	#flakes i:nth-of-type(5n+1) {animation-timing-function:ease-out;}
+	#flakes i:nth-of-type(5n+2) {animation-timing-function:ease;}
+	#flakes i:nth-of-type(5n+3) {animation-timing-function:ease-in;}
+	#flakes i:nth-of-type(5n+4) {animation-timing-function:linear;}
+	#flakes i:nth-of-type(11n) {animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9);}
+
 	/* playing with opacity to make it a teeny bit more random like */
 	#flakes i:nth-of-type(7n){opacity: 0.5}
 	#flakes i:nth-of-type(7n+2) {opacity: 0.3}
@@ -476,11 +409,11 @@ li.future {color: #360;}
 	#flakes i:nth-of-type(7n+6){opacity: 0.6;
 		-webkit-animation-timing-function:ease-in;
 		-webkit-transform-origin: left 10px;
-		-moz-animation-timing-function:ease-in;
-		-moz-transform-origin: left 10px;}
+		animation-timing-function:ease-in;
+		transform-origin: left 10px;}
 	#flakes i:nth-of-type(7n+1){opacity: 0.8}
-	
-	
+
+
 #presentation {
   position: absolute;
   height: 100%;
@@ -527,17 +460,11 @@ li.future {color: #360;}
 	top: 0px;
 	display: block;
 	overflow: hidden;
-	background-image: 
+	background-image:
   	-webkit-gradient(linear,  0% 0%, 0% 100%, from(#3A67AB), to(#E8F6FF));
-	background-image: 
+	background-image:
   	-webkit-linear-gradient(#3A67AB, #E8F6FF 100%);
-	background-image: 
-  	-moz-linear-gradient(#3A67AB, #E8F6FF 100.0%);
-	background-image: 
-  	-ms-linear-gradient(#3A67AB, #E8F6FF 100.0%);
-	background-image: 
-  	-o-linear-gradient(#3A67AB, #E8F6FF 100.0%);
-	background-image: 
+	background-image:
   	linear-gradient(#3A67AB, #E8F6FF 100.0%);
 }
 
@@ -551,16 +478,12 @@ li.future {color: #360;}
   position: absolute;
   display: block;
   -webkit-transition: -webkit-transform 1s ease-in-out;
-  -moz-transition: -moz-transform 1s ease-in-out;
   -ms-transition: -o-transform 1s ease-in-out;
-  -o-transition: -o-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
 
   /* so it's visible in the iframe. */
   -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
   transform: scale(0.8);
 }
 
@@ -576,23 +499,19 @@ li.future {color: #360;}
   border-radius: 60px;
   margin-top: -350px;
   -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   -webkit-transform: scale(1);
-  -moz-transform: scale(1);
   -ms-transform: scale(1);
-  -o-transform: scale(1);
   transform: scale(1);
   padding-left: 20px;
   padding-top: 10px;
 }
 .transparent {
-	background: none;	
+	background: none;
 }
 .intro p, header {
-  text-align: center;	
+  text-align: center;
 }
 .intro header {
   font-size: 200%;
@@ -602,7 +521,7 @@ li.future {color: #360;}
   margin-top: 200px;
 }
 .slide.teach {
-  background-color: #fff;	
+  background-color: #fff;
 }
 .content {
   font-size: 140%;
@@ -683,9 +602,7 @@ li.future {color: #360;}
 
 body.three-d div.slides {
   -webkit-transform: translateX(50px) scale(0.8) rotateY(10deg);
-  -moz-transform: translateX(50px) scale(0.8) rotateY(10deg);
   -ms-transform: translateX(50px) scale(0.8) rotateY(10deg);
-  -o-transform: translateX(50px) scale(0.8) rotateY(10deg);
   transform: translateX(50px) scale(0.8) rotateY(10deg);
 }
 
@@ -729,25 +646,16 @@ a, em {
   font-style:normal;
 }
 a:hover {opacity: 0.9;text-shadow: #fff 1px 1px, hsla(0, 0%, 0%, 0.2) 0 4px 5px;}
-.imp li, 
-b.imp{ 
+.imp li,
+b.imp{
  	-webkit-transition: all 0.2s ease-in;
- 	-moz-transition: all 0.2s ease-in;
- 	-ms-transition: all 0.2s ease-in;
- 	-o-transition: all 0.2s ease-in;
  	transition: all 0.2s ease-in;
 }
 .imp li:hover, b.imp:hover{
 	-webkit-transform:scale(1.2);
-	-moz-transform:scale(1.2);
-	-ms-transform:scale(1.2);
-	-o-transform:scale(1.2);
 	transform:scale(1.2);
 	color: #E2007A;
 	-webkit-transform-origin: left;
-	-moz-transform-origin: left;
-	-ms-transform-origin: left;
-	-o-transform-origin: left;
 	transform-origin: left;
 }
 
@@ -756,7 +664,6 @@ pre, .codelike {
   text-align: left;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.3);
-  -moz-border-radius: 8px;
   border-radius: 8px;
   border:1px solid rgba(226, 0, 122, 0.3);
 }
@@ -772,9 +679,6 @@ pre b {
 }
 pre b:hover {
 	-webkit-transform:scale(1.2);
-	-moz-transform:scale(1.2);
-	-ms-transform:scale(1.2);
-	-o-transform:scale(1.2);
 	transform:scale(1.2);
 	color: #E2007A;
 }
@@ -790,14 +694,12 @@ div.example {
   display: block;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.4);
-  -moz-border-radius: 8px;
   border-radius: 8px;
   margin-bottom: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 video {
-  -moz-border-radius: 8px;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -815,17 +717,11 @@ video {
 
 div:not(.current).reduced {
   -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
   transform: scale(0.8);
 }
 
 .no-transitions {
   -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
   transition: none;
 }
 
@@ -838,15 +734,15 @@ div:not(.current).reduced {
 
 /* ############################
 
-    BROWSER SUPPORT & ICONS   
+    BROWSER SUPPORT & ICONS
 
    ############################ */
 
-	
-	
+
+
 .icons li, .icons .browser {
 			width: 68px; height: 14px; display: inline-block;
-			background-image:url(browser_logos-64.png);	
+			background-image:url(browser_logos-64.png);
 			border-radius: 32px;
 			font-size: 10px;
 			padding-top: 60px;
@@ -880,9 +776,16 @@ div:not(.current).reduced {
 			top: -10px;
 			left:-15px;
 			content: "";
-			-webkit-box-sizing: padding-box;
-			background: 
-				-webkit-linear-gradient(135deg, 
+			-moz-box-sizing: padding-box;
+			box-sizing: padding-box;
+			background:
+				-webkit-linear-gradient(135deg,
+					transparent 45%,
+					red 45%,
+					red 55%,
+					transparent 55%);
+				background:
+				linear-gradient(-135deg,
 					transparent 45%,
 					red 45%,
 					red 55%,
@@ -891,9 +794,9 @@ div:not(.current).reduced {
 			height: 68px;
 			border-radius: 50%;
 			border: 10px solid red;
-			display:block;	
+			display:block;
 		}
-		
+
 		.icons .half:after {
 			position:absolute;
 			top: 0;
@@ -903,7 +806,7 @@ div:not(.current).reduced {
 			width: 33px;
 			border-radius: 0 0 50% 0;
 			height: 65px;
-			display:block;	
+			display:block;
 		}
 		.icons .half.new:after {
 			background-repeat: no-repeat;
@@ -911,15 +814,9 @@ div:not(.current).reduced {
 			background-image:url(../forms/icons/new.gif),
 			-webkit-linear-gradient(0deg, transparent 30%, #DCe7f3 30%) ;
 			background-image:url(../forms/icons/new.gif),
-			-moz-linear-gradient(0deg, transparent 30%, #DCe7f3 30%) ;
-			background-image:url(../forms/icons/new.gif),
-			-ms-linear-gradient(0deg, transparent 30%, #DCe7f3 30%) ;
-			background-image:url(../forms/icons/new.gif),
-			-o-linear-gradient(0deg, transparent 30%, #DCe7f3 30%) ;
-			background-image:url(../forms/icons/new.gif),
 			linear-gradient(0deg, transparent 30%, #DCe7f3 30%) ;
 			width: 40px;
-			
+
 		}
 		.icons .txt {background-image: none; width: auto; font-size: 18px;}
 
@@ -932,7 +829,7 @@ div:not(.current).reduced {
 	margin: 0;
 	padding:0;
 	line-height:1;
-	text-align: center;	
+	text-align: center;
 	-webkit-margin-after: 0;
 }
 #components section div div{
@@ -942,7 +839,7 @@ div:not(.current).reduced {
 	width: 260px
 }
 #components section div.even {
-	background-color: #d3e8fd;	
+	background-color: #d3e8fd;
 }
 #components section div ul {
 	margin: 0 10px;
@@ -953,7 +850,7 @@ div:not(.current).reduced {
 	line-height: 18px;
 	margin:0;
 }
-	
+
 /* Gradients */
  #gradients-linear-example {
               border: 0;
@@ -961,23 +858,16 @@ div:not(.current).reduced {
 
 background-image: -webkit-linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C4299 100%);
 
-background-image: -o-linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C4299 100%);
-
-background-image: -ms-linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C4299 100%);
-
-background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C4299 100%)
+background-image: linear-gradient(-90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C4299 100%)
             }
             #rdialgradientsample {
 			  clear: both;
               border: 0;
               height: 100px;
               background: -webkit-radial-gradient(4% 12%,circle farthest-side, #4697AB, #F7F9FA, #C344C7 40%);
-              background: -moz-radial-gradient(4% 12%,circle farthest-side, #4697AB, #F7F9FA, #C344C7 40%);
-              background: -ms-radial-gradient(4% 12%,circle farthest-side, #4697AB, #F7F9FA, #C344C7 40%);
-              background: -o-radial-gradient(4% 12%,circle farthest-side, #4697AB, #F7F9FA, #C344C7 40%);
               background: radial-gradient(4% 12%,circle farthest-side, #4697AB, #F7F9FA, #C344C7 40%);
             }
-			.grad {width: 250px; height:180px;  margin: 0 20px 20px 0px;float: left; border-radius: 150px; background-repeat:repeat;}		
+			.grad {width: 250px; height:180px;  margin: 0 20px 20px 0px;float: left; border-radius: 150px; background-repeat:repeat;}
 		.inverse1 {background-image:
 		-webkit-gradient(radial, 8 8,0, 8 8, 7,
 			color-stop(0.7, rgba(0,0,0,0)),
@@ -985,11 +875,11 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 		-webkit-gradient(radial, 8 8,0, 8 8, 7,
 			color-stop(0.5, rgba(0,0,220,0)),
 			color-stop(0.7, rgba(0,0,220, 0.4))),
-		-webkit-gradient(radial, 64 64, 1000, 100 44, 40, 
+		-webkit-gradient(radial, 64 64, 1000, 100 44, 40,
 			from(#FF0080), color-stop(.6,#ECB7FC), to(#f09));
-		
-		
-		background-image: 
+
+
+		background-image:
 	  -webkit-radial-gradient(circle,
 			rgba(0,0,0,0) 60%,
 			#000000 61%),
@@ -1000,40 +890,7 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			#FF0080 0%,
 			#ECB7FC 60%,
 			#f09 100%);
-		background-image: 
-	  -moz-radial-gradient(circle,
-			rgba(0,0,0,0) 60%,
-			#000000 61%),
-		-moz-radial-gradient(circle,
-			rgba(0,0,220,0) 55%,
-			rgba(0,0,220,0.4) 56%),
-	  	-moz-radial-gradient(circle,
-			#FF0080 0%,
-			#ECB7FC 60%,
-			#f09 100%);
-		background-image: 
-	  -ms-radial-gradient(circle,
-			rgba(0,0,0,0) 60%,
-			#000000 61%),
-		-ms-radial-gradient(circle,
-			rgba(0,0,220,0) 55%,
-			rgba(0,0,220,0.4) 56%),
-	  	-ms-radial-gradient(circle,
-			#FF0080 0%,
-			#ECB7FC 60%,
-			#f09 100%);
-		background-image: 
-	  -o-radial-gradient(circle,
-			rgba(0,0,0,0) 60%,
-			#000000 61%),
-		-o-radial-gradient(circle,
-			rgba(0,0,220,0) 55%,
-			rgba(0,0,220,0.4) 56%),
-	  	-o-radial-gradient(circle,
-			#FF0080 0%,
-			#ECB7FC 60%,
-			#f09 100%);
-		background-image: 
+		background-image:
 	  	radial-gradient(circle,
 			rgba(0,0,0,0) 60%,
 			#000000 61%),
@@ -1044,9 +901,9 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			#FF0080 0%,
 			#ECB7FC 60%,
 			#f09 100%);
-		
+
 		-webkit-background-size: 15px 15px, 15px 15px,100%, 100%; /* safari 4 */
-		-moz-background-size: 15px 15px,15px 15px, 100%, 100%; /* FF 3.6 */
+		background-size: 15px 15px,15px 15px, 100%, 100%; /* FF 3.6 */
 		background-size: 15px 15px, 15px 15px,160%, 160%;
 		background-position: 0 0, 0 3px, 00;
 }
@@ -1058,70 +915,39 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			color-stop(0.85, rgba(0, 0, 0, 1)),
 			color-stop(1.00, rgba(0, 0, 0, 1))
 		),
-		
+
 		-webkit-gradient(radial, 15 15, 0, 15 15, 14.6,
 			color-stop(0.8, rgba(0, 0, 0, 0)),
 			color-stop(0.85, rgba(0, 0, 0, 1)),
 			color-stop(1.00, rgba(0, 0, 0, 1))
 		);
-    background-image: 
-		-webkit-radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%), 
-		-webkit-radial-gradient(circle closest-side, 
-			transparent 70%, 
+    background-image:
+		-webkit-radial-gradient(circle closest-side,
+			transparent 70%,
+			#000000 100%),
+		-webkit-radial-gradient(circle closest-side,
+			transparent 70%,
 			#000000 100%);
-	   background-image: 
-		-moz-radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%), 
-		-moz-radial-gradient(circle closest-side, 
-			transparent 70%, 
+	   background-image:
+		radial-gradient(circle closest-side,
+			transparent 70%,
+			#000000 100%),
+		radial-gradient(circle closest-side,
+			transparent 70%,
 			#000000 100%);
-	   background-image: 
-		-ms-radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%), 
-		-ms-radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%);
-	   background-image: 
-		-o-radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%), 
-		-o-radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%);
-	   background-image: 
-		radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%), 
-		radial-gradient(circle closest-side, 
-			transparent 70%, 
-			#000000 100%);
-	
+
     background-color: #AAAAAA;
     -webkit-background-size: 30px 30px, 30px 30px;
-    -moz-background-size: 30px 30px, 30px 30px;
     background-size: 30px 30px, 30px 30px;
     background-position: 0 0pt, 15px 15px;
 }
 .retro67, .circlestripes {
-	
-    background-image: 
-		-webkit-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%), 
+
+    background-image:
+		-webkit-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%),
 		-webkit-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%);
-	background-image: 
-		-moz-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%), 
-		-moz-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%);
-	background-image: 
-		-ms-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%), 
-		-ms-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%);
-	background-image: 
-		-o-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%), 
-		-o-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%);
-	background-image: 
-		radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%), 
+background-image:
+		radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%),
 		radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%);
 }
 .circlestripes {
@@ -1131,7 +957,7 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			color-stop(0.96, rgba(0, 0, 0, 0.3)),
 			color-stop(1.00, rgba(0, 0, 0, 0.3))
 		),
-		
+
 		-webkit-gradient(radial, 15 5, 0, 15 5, 5.5,
 			color-stop(0.96, rgba(0, 0, 0, 0)),
 			color-stop(0.96, rgba(0, 0, 0, 0.3)),
@@ -1149,7 +975,7 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			color-stop(0.96, rgba(0, 0, 0, 0.3)),
 			color-stop(1.00, rgba(0, 0, 0, 0.3))
 		),
-		
+
 		-webkit-gradient(radial, 15 15, 0, 15 15, 14.6,
 			color-stop(0.96, rgba(0, 0, 0, 0)),
 			color-stop(0.96, rgba(0, 0, 0, 0.3)),
@@ -1160,11 +986,11 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
     -moz-background-size: 30px 15px, 30px 30px;
     background-size: 30px 15px, 30px 30px;
     background-color: #993300;
-}	
-.bradybunch {	
-	background-image: 
-		-webkit-radial-gradient(circle closest-side, 
-			transparent 0%, 
+}
+.bradybunch {
+	background-image:
+		-webkit-radial-gradient(circle closest-side,
+			transparent 0%,
 			transparent 75%,
 			rgba(255, 255, 255, 0.3) 76%,
 			rgba(255, 255, 255, 0.3) 85%,
@@ -1172,7 +998,7 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			rgba(255, 255, 255, 0.9) 94%,
 			#FFFFFF 95%,
 			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
+			rgba(255, 255, 255, 0.5) 104%,
 			rgba(255, 255, 255, 0.5) 112%,
 			rgba(0, 0, 0, 0.2) 113%,
 			rgba(0, 0, 0, 0.2) 121%,
@@ -1180,8 +1006,8 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			#FFFFFF 130%,
 			rgba(255, 255, 255, 0.4) 131%,
 			rgba(255, 255, 255, 0.4) 140%),
-		-webkit-radial-gradient(circle closest-side, 
-			transparent 0%, 
+		-webkit-radial-gradient(circle closest-side,
+			transparent 0%,
 			transparent 75%,
 			rgba(255, 255, 255, 0.3) 76%,
 			rgba(255, 255, 255, 0.3) 85%,
@@ -1189,17 +1015,19 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			rgba(255, 255, 255, 0.9) 94%,
 			#FFFFFF 95%,
 			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
+			rgba(255, 255, 255, 0.5) 104%,
 			rgba(255, 255, 255, 0.5) 112%,
 			rgba(0, 0, 0, 0.2) 113%,
 			rgba(0, 0, 0, 0.2) 121%,
 			#FFFFFF 122%,
 			#FFFFFF 130%,
 			rgba(255, 255, 255, 0.4) 131%,
-			rgba(255, 255, 255, 0.4) 140%);	
-	background-image: 
-		-moz-radial-gradient(circle closest-side, 
-			transparent 0%, 
+			rgba(255, 255, 255, 0.4) 140%);
+
+
+	background-image:
+		radial-gradient(circle closest-side,
+			transparent 0%,
 			transparent 75%,
 			rgba(255, 255, 255, 0.3) 76%,
 			rgba(255, 255, 255, 0.3) 85%,
@@ -1207,42 +1035,7 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			rgba(255, 255, 255, 0.9) 94%,
 			#FFFFFF 95%,
 			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
-			rgba(255, 255, 255, 0.5) 112%,
-			rgba(0, 0, 0, 0.2) 113%,
-			rgba(0, 0, 0, 0.2) 121%,
-			#FFFFFF 122%,
-			#FFFFFF 130%,
-			rgba(255, 255, 255, 0.4) 131%,
-			rgba(255, 255, 255, 0.4) 140%),
-		-moz-radial-gradient(circle closest-side, 
-			transparent 0%, 
-			transparent 75%,
-			rgba(255, 255, 255, 0.3) 76%,
-			rgba(255, 255, 255, 0.3) 85%,
-			rgba(255, 255, 255, 0.9) 86%,
-			rgba(255, 255, 255, 0.9) 94%,
-			#FFFFFF 95%,
-			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
-			rgba(255, 255, 255, 0.5) 112%,
-			rgba(0, 0, 0, 0.2) 113%,
-			rgba(0, 0, 0, 0.2) 121%,
-			#FFFFFF 122%,
-			#FFFFFF 130%,
-			rgba(255, 255, 255, 0.4) 131%,
-			rgba(255, 255, 255, 0.4) 140%);	
-	background-image: 
-		-ms-radial-gradient(circle closest-side, 
-			transparent 0%, 
-			transparent 75%,
-			rgba(255, 255, 255, 0.3) 76%,
-			rgba(255, 255, 255, 0.3) 85%,
-			rgba(255, 255, 255, 0.9) 86%,
-			rgba(255, 255, 255, 0.9) 94%,
-			#FFFFFF 95%,
-			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
+			rgba(255, 255, 255, 0.5) 104%,
 			rgba(255, 255, 255, 0.5) 112%,
 			rgba(0, 0, 0, 0.2) 113%,
 			rgba(0, 0, 0, 0.2) 121%,
@@ -1250,8 +1043,8 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			#FFFFFF 130%,
 			rgba(255, 255, 255, 0.4) 131%,
 			rgba(255, 255, 255, 0.4) 140%),
-		-ms-radial-gradient(circle closest-side, 
-			transparent 0%, 
+		radial-gradient(circle closest-side,
+			transparent 0%,
 			transparent 75%,
 			rgba(255, 255, 255, 0.3) 76%,
 			rgba(255, 255, 255, 0.3) 85%,
@@ -1259,77 +1052,7 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 			rgba(255, 255, 255, 0.9) 94%,
 			#FFFFFF 95%,
 			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
-			rgba(255, 255, 255, 0.5) 112%,
-			rgba(0, 0, 0, 0.2) 113%,
-			rgba(0, 0, 0, 0.2) 121%,
-			#FFFFFF 122%,
-			#FFFFFF 130%,
-			rgba(255, 255, 255, 0.4) 131%,
-			rgba(255, 255, 255, 0.4) 140%);	
-	background-image: 
-		-o-radial-gradient(circle closest-side, 
-			transparent 0%, 
-			transparent 75%,
-			rgba(255, 255, 255, 0.3) 76%,
-			rgba(255, 255, 255, 0.3) 85%,
-			rgba(255, 255, 255, 0.9) 86%,
-			rgba(255, 255, 255, 0.9) 94%,
-			#FFFFFF 95%,
-			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
-			rgba(255, 255, 255, 0.5) 112%,
-			rgba(0, 0, 0, 0.2) 113%,
-			rgba(0, 0, 0, 0.2) 121%,
-			#FFFFFF 122%,
-			#FFFFFF 130%,
-			rgba(255, 255, 255, 0.4) 131%,
-			rgba(255, 255, 255, 0.4) 140%),
-		-o-radial-gradient(circle closest-side, 
-			transparent 0%, 
-			transparent 75%,
-			rgba(255, 255, 255, 0.3) 76%,
-			rgba(255, 255, 255, 0.3) 85%,
-			rgba(255, 255, 255, 0.9) 86%,
-			rgba(255, 255, 255, 0.9) 94%,
-			#FFFFFF 95%,
-			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
-			rgba(255, 255, 255, 0.5) 112%,
-			rgba(0, 0, 0, 0.2) 113%,
-			rgba(0, 0, 0, 0.2) 121%,
-			#FFFFFF 122%,
-			#FFFFFF 130%,
-			rgba(255, 255, 255, 0.4) 131%,
-			rgba(255, 255, 255, 0.4) 140%);	
-	background-image: 
-		radial-gradient(circle closest-side, 
-			transparent 0%, 
-			transparent 75%,
-			rgba(255, 255, 255, 0.3) 76%,
-			rgba(255, 255, 255, 0.3) 85%,
-			rgba(255, 255, 255, 0.9) 86%,
-			rgba(255, 255, 255, 0.9) 94%,
-			#FFFFFF 95%,
-			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
-			rgba(255, 255, 255, 0.5) 112%,
-			rgba(0, 0, 0, 0.2) 113%,
-			rgba(0, 0, 0, 0.2) 121%,
-			#FFFFFF 122%,
-			#FFFFFF 130%,
-			rgba(255, 255, 255, 0.4) 131%,
-			rgba(255, 255, 255, 0.4) 140%),
-		radial-gradient(circle closest-side, 
-			transparent 0%, 
-			transparent 75%,
-			rgba(255, 255, 255, 0.3) 76%,
-			rgba(255, 255, 255, 0.3) 85%,
-			rgba(255, 255, 255, 0.9) 86%,
-			rgba(255, 255, 255, 0.9) 94%,
-			#FFFFFF 95%,
-			#FFFFFF 103%,
-			rgba(255, 255, 255, 0.5) 104%, 
+			rgba(255, 255, 255, 0.5) 104%,
 			rgba(255, 255, 255, 0.5) 112%,
 			rgba(0, 0, 0, 0.2) 113%,
 			rgba(0, 0, 0, 0.2) 121%,
@@ -1342,7 +1065,7 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 	background-color: #384F89;
 	background-position: 0 0, 40px 40px;
 }
-		
+
     /* HSLA */
 	   #hsl-example {
               font-size: 75px;
@@ -1358,43 +1081,39 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
               display: inline-block;
               width: 50px;
             }
-			
+
 	#hslas, #hslal, #hslaa, #hslah {width: 361px; height: 20px; display: inline-block;}
 	#hslah {width: auto;}
-	#hslah i {display:inline-block; width:1px; height:20px; position:static; 
-	-webkit-animation:none;-moz-animation:none; 
-	border-radius: 0; 
-	-webkit-box-sizing: border-box;
+	#hslah i {display:inline-block; width:1px; height:20px; position:static;
+	-webkit-animation:none;
+	animation:none;
+	border-radius: 0;
 	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
 	box-sizing: border-box;}
 	#hslah i.big {width: 100px; border:1px solid #000;}
-	/* BOX SIZING */	
-		
+	/* BOX SIZING */
+
     .boxsizing {float:left; border:1px solid #E2007A; margin:20px 0 20px 20px;}
 	.boxsizing:first-of-type{margin: 0 10px 0 0;}
 	.boxsizing div {
-		width: 200px; 
-		height:100px; 
-		padding: 20px; 
-		border: 5px dashed #E2007A; 
+		width: 200px;
+		height:100px;
+		padding: 20px;
+		border: 5px dashed #E2007A;
 		margin:20px;
 		text-align:center;
 		background-color: rgba(255,255,255,0.5);
-		-webkit-box-sizing: content-box;
 		-moz-box-sizing: content-box;
 		box-sizing: content-box;
 		white-space:nowrap;
 		}
-	.boxsizing div.bb{
-		-webkit-box-sizing: border-box;
+	.boxsizing div.bb {
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	
+
 	/* COLUMNS*/
-	
+
 	#columnsslide {
             -webkit-column-count: 2;
             -webkit-column-rule: 1px solid #bbb;
@@ -1417,39 +1136,39 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
   display: -moz-box; -moz-box-orient: horizontal;
 }
 #box-orient-example div:nth-child(1) {
-  background: white; padding: 10px; -webkit-box-flex: 1; 
+  background: white; padding: 10px; -webkit-box-flex: 1;
   -moz-box-flex: 1; text-align: center;
 }
 #box-orient-example div:nth-child(2) {
-  background: #ddd; padding: 10px; -webkit-box-flex: 1; 
+  background: #ddd; padding: 10px; -webkit-box-flex: 1;
   -moz-box-flex: 1; text-align: center;
 }
 #box-orient-example div:nth-child(3) {
-  background: white; padding: 10px; -webkit-box-flex: 3; 
+  background: white; padding: 10px; -webkit-box-flex: 3;
   -moz-box-flex: 3; text-align: center;
 }
 
  #box-orient-example-2 {
-	height: 200px; 
-	display: -moz-box; 
+	height: 200px;
+	display: -moz-box;
 	-moz-box-pack: center;
-	-moz-box-align: center; 
+	-moz-box-align: center;
 	-moz-box-orient: horizontal;
-	
-	display: -webkit-box; 
+
+	display: -webkit-box;
 	-webkit-box-pack: center;
-	-webkit-box-align: center; 
+	-webkit-box-align: center;
 	-webkit-box-orient: horizontal;
-	
-	display: -ms-box; 
+
+	display: -ms-box;
 	-ms-box-pack: center;
-	-ms-box-align: center; 
+	-ms-box-align: center;
 	-ms-box-orient: horizontal;
 }
 #box-orient-example-2 div, #box-orient-example-2 textarea {
-	background: #ddd; 
-	padding: 10px; 
-	width: 200px; 
+	background: #ddd;
+	padding: 10px;
+	width: 200px;
 	font-size: 14px;
 }
 
@@ -1461,15 +1180,15 @@ background-image: linear-gradient(90deg, #E468E8, #E169FF 33%,#4FBFF7 66%,#2C429
 	width: 200px;
 	height:400px;
 	text-align:center;
-	margin-left: 20px;	
+	margin-left: 20px;
 }
 
 .backgroundclip {
-	width: 150px; 
-	height: 150px; 
-	border: 20px dotted rgba(128, 128, 128, 0.8); 
-	padding: 20px; margin: 20px; 
-	background-color: #e2007a; 
+	width: 150px;
+	height: 150px;
+	border: 20px dotted rgba(128, 128, 128, 0.8);
+	padding: 20px; margin: 20px;
+	background-color: #e2007a;
 	float:left;
 	text-align:center;
 }
@@ -1504,7 +1223,7 @@ h1 b {color:#e2007a;}
 		.divmain , .divarticle{float: left; width: 100%;}
 		#semels .divarticle {width: 69%;float: right;}
 		.divfooter {clear:both;}
-		
+
 form input:focus:invalid { background-color: lightPink;}
 form input:valid { background-color:lightGreen }
 form input:required {border: 2px solid red;}
@@ -1528,7 +1247,7 @@ form input:optional {border: 2px solid green;}
             .media-buttons {
               margin: 10px 0;
             }
-			
+
 input.button{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px !important;
@@ -1540,7 +1259,7 @@ input.button{
 		#ff82ec 25%,
 		#e2007a);
 	background: -webkit-gradient(
-		linear, left top, left bottom, 
+		linear, left top, left bottom,
 		from(#ffbdf5),
 		color-stop(0.25, #ff82ec),
 		to(#e2007a));
@@ -1549,38 +1268,22 @@ input.button{
 		#ffbdf5 0%,
 		#ff82ec 25%,
 		#e2007a);
-	background: -ms-linear-gradient(
-		top,
-		#ffbdf5 0%,
-		#ff82ec 25%,
-		#e2007a);
-		background: -o-linear-gradient(
-		top,
+		background: linear-gradient(
+		to bottom,
 		#ffbdf5 0%,
 		#ff82ec 25%,
 		#e2007a);
 	border-radius: 20px;
-	-moz-border-radius: 20px;
 	border: 3px solid #ffffff;
-	-moz-box-shadow:
-		0px 3px 11px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,000,217,1);
-	-webkit-box-shadow:
-		0px 3px 11px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,000,217,1);
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,0.3);
-	
+
 }
 input.button:hover {
-background: -moz-linear-gradient(
-		bottom,
-		#ffbdf5 0%,
-		#ff82ec 25%,
-		#e2007a);
+
 	background: -webkit-gradient(
-		linear, left bottom, left top, 
+		linear, left bottom, left top,
 		from(#ffbdf5),
 		color-stop(0.25, #ff82ec),
 		to(#e2007a));
@@ -1589,22 +1292,17 @@ background: -moz-linear-gradient(
 		#ffbdf5 0%,
 		#ff82ec 25%,
 		#e2007a);
-	background: -ms-linear-gradient(
-		bottom,
+	background:linear-gradient(
+		to top,
 		#ffbdf5 0%,
 		#ff82ec 25%,
 		#e2007a);
-		background: -o-linear-gradient(
-		bottom,
-		#ffbdf5 0%,
-		#ff82ec 25%,
-		#e2007a);	
 }
 
 figure.styled {
 	border: 3px solid #e2007a;
 	border-radius: 8px;
-	float: left;	
+	float: left;
 }
 figure.styled a{
 	border: none;
@@ -1617,7 +1315,7 @@ figure.styled figcaption{
 	background-color: rgba(255,255,255,0.5);
 	color: #e2007a;
 	border-top: 3px solid;
-	
+
 }
 
 /* wweb storage */
@@ -1694,10 +1392,10 @@ figure.styled figcaption{
 	float: left;
 	margin-right: 20px;
 	padding: 0;
-	
+
 }
 #drag-zone p {padding: 5px;}
-#drag-zone, #drop-zone, #drop-data { 
+#drag-zone, #drop-zone, #drop-data {
     font-family:Arial, Helvetica, sans-serif;
 	font-size: 14px;}
 #drop-zone{
@@ -1735,49 +1433,20 @@ figure.styled figcaption{
     height: 400px;
     background:
        -webkit-linear-gradient(115deg, transparent 48%, brown, #960, brown, transparent 52%),
-       -webkit-linear-gradient(60deg, transparent 48%, brown, #960, brown, transparent 52%), 
+       -webkit-linear-gradient(60deg, transparent 48%, brown, #960, brown, transparent 52%),
         -webkit-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
         -webkit-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
         -webkit-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
         -webkit-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
         -webkit-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%)
         ;
-    background:
-       -moz-linear-gradient(115deg, transparent 48%, brown, #960, brown, transparent 52%),
-       -moz-linear-gradient(60deg, transparent 48%, brown, #960, brown, transparent 52%), 
-        -moz-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        -moz-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        -moz-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        -moz-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        -moz-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%)
-        ;
-    background:
-       -ms-linear-gradient(115deg, transparent 48%, brown, #960, brown, transparent 52%),
-       -ms-linear-gradient(60deg, transparent 48%, brown, #960, brown, transparent 52%), 
-        -ms-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        -ms-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        -ms-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        -ms-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        -ms-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%)
-        ;
-    background:
-       -o-linear-gradient(115deg, transparent 48%, brown, #960, brown, transparent 52%),
-       -o-linear-gradient(60deg, transparent 48%, brown, #960, brown, transparent 52%), 
-        -o-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        -o-radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        -o-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        -o-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        -o-radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%)
-        ;
-    background:
-       linear-gradient(115deg, transparent 48%, brown, #960, brown, transparent 52%),
-       linear-gradient(60deg, transparent 48%, brown, #960, brown, transparent 52%), 
-       radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        radial-gradient(50% 50%, circle closest-corner, #333 30%, #999 50%, transparent 50%),
-        radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%),
-        radial-gradient(50% 50%, circle closest-corner, #fff 30%, #eee 50%, transparent 50%)
-        ;
+ background-image: 	linear-gradient(115deg, transparent 48%, brown, #960, brown, transparent 52%),
+    								linear-gradient(60deg, transparent 48%, brown, #960, brown, transparent 52%),
+        						radial-gradient(circle 10px at 50% 50%, #333 30%, #999 50%, transparent 50%),
+        						radial-gradient(circle 10px at 50% 50%, #333 30%, #999 50%, transparent 50%),
+        						radial-gradient(circle at 50% 50%, #fff 30%, #eee 50%, transparent 50%),
+        						radial-gradient(circle at 50% 50%, #fff 30%, #eee 50%, transparent 50%),
+        						radial-gradient(circle at 50% 50%, #fff 30%, #eee 50%, transparent 50%) ;
     background-repeat: no-repeat;
     background-size: 100px 100px, 100px 100px, 15px 15px, 15px 15px, 200px 200px, 300px 300px, 400px 400px;
     background-position: 95% 120px, 5% 120px,46% 80px, 54% 80px, 50% 0, 50% 90px, 50% 220px;
@@ -1793,11 +1462,8 @@ figure.styled figcaption{
 	top: 100px;
 }
 .box {padding:20px 50px; position:relative;}
-.animationon .box span {position: absolute; left: 0; top:20px; width: 50px; height:50px; background-color:purple; 
+.animationon .box span {position: absolute; left: 0; top:20px; width: 50px; height:50px; background-color:purple;
 -webkit-animation: showme 5s linear 5s 1;
--moz-animation: showme 5s linear 5s 1;
--ms-animation: showme 5s linear 5s 1;
--o-animation: showme 5s linear 5s 1;
 animation: showme 5s linear 5s 1;
 }
 @-webkit-keyframes showme {
@@ -1805,21 +1471,7 @@ animation: showme 5s linear 5s 1;
 	50% {background-color:green;}
 	100% {left: 600px; background-color: yellow;}
 }
-@-moz-keyframes showme {
-	0% {left: 200px; background-color:blue;}
-	50% {background-color:green;}
-	100% {left: 600px; background-color: yellow;}
-}
-@-ms-keyframes showme {
-	0% {left: 200px; background-color:blue;}
-	50% {background-color:green;}
-	100% {left: 600px; background-color: yellow;}
-}
-@-o-keyframes showme {
-	0% {left: 200px; background-color:blue;}
-	50% {background-color:green;}
-	100% {left: 600px; background-color: yellow;}
-}
+
 
 @keyframes showme {
 	0% {left: 200px; background-color:blue;}
@@ -1828,22 +1480,13 @@ animation: showme 5s linear 5s 1;
 }
 .animationon span.afmforwards {
 	-webkit-animation-fill-mode:forwards;
-	-moz-animation-fill-mode:forwards;
-	-ms-animation-fill-mode:forwards;
-	-o-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;	
+	animation-fill-mode:forwards;
 }
 .animationon span.afmbackwards {
 	-webkit-animation-fill-mode: backwards;
-	-moz-animation-fill-mode:backwards;
-	-ms-animation-fill-mode:backwards;
-	-o-animation-fill-mode:backwards;
-	animation-fill-mode:backwards;	
+	animation-fill-mode:backwards;
 }
 .animationon span.afmboth {
 	-webkit-animation-fill-mode:both;
-	-moz-animation-fill-mode:both;
-	-ms-animation-fill-mode:both;
-	-o-animation-fill-mode:both;
-	animation-fill-mode:both;	
+	animation-fill-mode:both;
 }

@@ -1,64 +1,72 @@
 <!doctype html>
 <meta charset="utf-8">
-<html> 
-  <head> 
+<html>
+  <head>
     <!--[if gte IE 9]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <![endif]--> 
+    <![endif]-->
     <!--[if lt IE 9]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
-    <![endif]--> 
+    <![endif]-->
     <meta charset="utf-8" />
     <title>CSS3: Making Snow</title>
     <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
-    
-<link rel="stylesheet" media="print" href="print.css"/>  
-<link rel="stylesheet" media="all" href="screen.css?x=y"/>  
+
+<link rel="stylesheet" media="print" href="print.css"/>
+<link rel="stylesheet" media="all" href="screen.css?x=y"/>
 <link rel="stylesheet" media="all" href="effects.css"/>
-<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
+<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/>
 <style>
 </style>
-</head> 
-<body>  
+</head>
+<body>
   <div id="info">
     <p>Estelle Weyl &middot <a href="http://standardista.com">Standardista.com</a> &middot; <a href="http://www.twitter.com/estellevw">@estellevw</a> &middot;Press <span class="key">&rarr;</span> key to advance.  &middot;Press <span class="key">2</span> for notes.
     </p>
   </div>
-  
+
   <div id="presentation">
      <div id="flakes">
   	 <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
   </div>
    <div id="presentation-counter"></div>
-   
+
+
+<div class="slide transparent intro">
+     <div class="snowman"></div>
+     <header><a href="http://estelle.github.com/snow/">http://estelle.github.com/snow/</a>
+     </header>
+    </div>
+
+
   <div class="slide transparent intro">
-     <div class="snowman"></div> 
+     <div class="snowman"></div>
      <header>
       <h1><b>CSS3</b> <br>
 Making it snow<br>
 without JavaScript<br>
 (or clouds)</h1>
      </header>
-    </div> 
-    
-     
-<div class="slide normal"> 
-<header><h1>Me</h1></header> 
-<section class="content"> 
+    </div>
+
+
+<div class="slide normal">
+<header><h1>Me</h1></header>
+<section class="content">
 <h1 class="textmask">Estelle Weyl</h1>
 <h2><a href="http://www.standardista.com">www.standardista.com</a></h2>
 <h2><a href="http://www.twitter.com/estellevw">@estellevw</a></h2>
 <h2><a href="http://www.twitter.com/standardista">@standardista</a></h2>
 <div style="float:right"><img src="http://akamaicovers.oreilly.com/images/9780980846904/cat.gif" alt="HTML5 and CSS3 for the Real World"><img src="http://akamaicovers.oreilly.com/images/0636920018063/cat.gif" alt="HTML5: The Definitive Guide" style="margin: 0 20px;"/><img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" style="margin: 0 20px;"/><img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
 </section>
-</div>     
+</div>
 
-    
-   
+
+
 <div class="slide transparent">
-     <div class="snowman"></div> 
-     <header><h1>CSS3 Features Displaying now?</h1></header> 
-     <section class="content"> 
+     <div class="snowman"></div>
+     <header><h1>CSS3 Features Displaying now?</h1></header>
+     <section class="content">
      <ul class="imp">
      	<li>CSS3 Selectors</li>
      	<li>linear gradients</li>
@@ -72,38 +80,38 @@ without JavaScript<br>
      <p class="notes">Opacity is from CSS2</p>
      </section>
 </div>
-  
-  
-  
+
+
+
 
 <div class="slide">
 	<header><h1>Structural Selectors</h1></header>
     <section class="content">
-<pre contenteditable class="columns2">:nth-child() 
+<pre contenteditable class="columns2">:nth-child()
 
-:nth-last-child() 
+:nth-last-child()
 
-:nth-of-type() 
+:nth-of-type()
 
-:nth-last-of-type() 
+:nth-last-of-type()
 
-:first-child 
+:first-child
 
-:last-child 
+:last-child
 
-:first-of-type 
+:first-of-type
 
-:last-of-type 
+:last-of-type
 
-:only-child 
+:only-child
 
-:only-of-type 
+:only-of-type
 
 :root
 
 :empty
 
-:not(:empty) 
+:not(:empty)
 </pre>
 <ul class="icons" style="float: left; margin-right: 40px;">
          <li class="chrome">Chrome</li>
@@ -111,18 +119,18 @@ without JavaScript<br>
          <li class="firefox">Firefox</li>
          <li class="opera">Opera</li>
          <li class="ie new">IE 9</li>
-        
+
      </ul>
 <ul style="list-style:none">
 	<li><a href="http://dev.w3.org/csswg/selectors3/">W3C working specificiation</a></li>
 	<li><a href="http://www.standardista.com/css3/css3-selector-browser-support">Browser support chart</a></li>
 </ul>
 </section>
-</div> 
-  
-  
-  
-  
+</div>
+
+
+
+
 <div class="slide">
     <section class="content">
 	<header style="float:right; padding-bottom: 40px;"><h1>Structural <br>
@@ -171,13 +179,13 @@ tr:nth-of-type(<b>3n-1</b>) {
 <p><a href="structuralselectors.html" target="_blank">Play Time</a></p>
 </div>
     </section>
-</div> 
+</div>
 
 
   <div class="slide">
 	<header><h1>Snowflake pseudo-Randomness</h1></header>
     <section class="content">
-<pre contenteditable>&lt;div id="flakes">&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>...</pre>   
+<pre contenteditable>&lt;div id="flakes">&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>...</pre>
 <pre contenteditable>i:nth-of-type(5n)    { height:30px; width:30px;}
 i:nth-of-type(5n+1)  { height:24px; width:24px;}
 i:nth-of-type(5n+2)  { height:10px; width:10px;}...
@@ -197,7 +205,7 @@ i:nth-of-type(11n+5) { animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9
 
 </pre>
     </section>
-</div> 
+</div>
 
 
 
@@ -210,19 +218,19 @@ i:nth-of-type(11n+5) { animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9
 	<header style="margin-bottom: -10px;"><h1>Attribute Selectors</h1></header>
     <section class="content">
 <pre contenteditable style="float:left; width: 45%; margin: 0 20px 0 0;">
-input[placeholder] { 
+input[placeholder] {
 <b class="notes">/* matches any input with a placeholder */</b>}
 input[type=email] {
 <b class="notes">/* exact match */</b>}
-abbr[title~=unicorn] { 
+abbr[title~=unicorn] {
 <b class="notes">/* matches unicorn but not unicorns */</b>}
-abbr[title|=en] { 
+abbr[title|=en] {
 <b class="notes">/* matches en-us and en-uk */</b>}
-a[href^=mailto] { 
+a[href^=mailto] {
 <b class="notes">/* starts with */</b>}
-a[href$=pdf]{ 
+a[href$=pdf]{
 <b class="notes">/* ends in */</b>}
-abbr[title*=unicorn] { 
+abbr[title*=unicorn] {
 <b class="notes">/* matches unicorn and unicorns */</b>}
 </pre>
 <pre contenteditable style="float:left; width: 40%; margin-top:0;">E:[att] <b class="notes">/* have the attribute at all */</b>
@@ -241,29 +249,29 @@ E:[att*=val]  <b class="notes">/* val is anywhere as a substring */</b>
 .</pre>
 <pre contenteditable style="clear:both">
 @media print{
-  abbr[title]:after { 
+  abbr[title]:after {
     content: "(" attr(title) ")";
   }
-  a[href^=http]:after { 
+  a[href^=http]:after {
     content: "(" attr(href) ")";
   }
 }</pre>
     </section>
-</div> 
-  
+</div>
+
 
   <div class="slide">
 	<header><h1>More CSS3 Selectors</h1></header>
     <section class="content">
 <ul class="columns2">
-<li>E::before</li>	
-<li>E::after</li>	
+<li>E::before</li>
+<li>E::after</li>
 <li></li>
 <li>
-E:enabled</li>	
+E:enabled</li>
 <li>
-E:disabled</li>	
-<li>	
+E:disabled</li>
+<li>
 E:checked</li>
 <li>input:valid</li>
 <li>input:invalid</li>
@@ -272,29 +280,29 @@ E:checked</li>
 <li>::selection</li>
 <li>
 E:target</li>
-<li>E:not(s)</li>	
-<li> </li>		
+<li>E:not(s)</li>
+<li> </li>
 <li>
-	</li>	
+	</li>
 <li>
-E > F	Child</li>	
+E > F	Child</li>
 <li>
-E + F	Adjacent sibling</li>	
+E + F	Adjacent sibling</li>
 <li>
 E ~ F   sibling</li>
-<li>	
+<li>
 </ul>
     </section>
-</div> 
- 
- 
- 
- 
+</div>
+
+
+
+
   <div class="slide">
 	<header><h1>Generated Content</h1></header>
     <section class="content">
     <ul>
-        <li>Completely styleable</li>   
+        <li>Completely styleable</li>
         <li>see slide 21, and "new" on browser icons</li>
         <li>Use absolute position, top: 0; bottom: 0; left: 0; right: 0; for same size</li>
         <li><a href="http://www.westciv.com/style_master/academy/css_tutorial/advanced/generated_content.html">Generated Content Tutorial</a></li>
@@ -306,80 +314,80 @@ E ~ F   sibling</li>
          <li class="firefox">Firefox</li>
          <li class="opera">Opera</li>
          <li class="ie">IE 8</li>
-        
+
      </ul>
     </section>
-</div> 
- 
- 
- 
- 
- 
- 
- 
-  
-  
-<div class="slide" id="simplingrad"> 
-     <header><h1>The simplest Linear Gradient</h1></header> 
+</div>
+
+
+
+
+
+
+
+
+
+<div class="slide" id="simplingrad">
+     <header><h1>The simplest Linear Gradient</h1></header>
      <section class="content"> <div id="lineargradient1"><div class="gradientline"></div></div>
      <pre contenteditable style="width: 45%">
-background-image: 
-    <u></u>linear-gradient( 
-    #3A67AB, 
+background-image:
+    <u></u>linear-gradient(
+    #3A67AB,
     #E8F6FF);</pre>
      <pre contenteditable style="width: 45%">
-background-image: 
-    <u></u>linear-gradient(top, 
-    #3A67AB 0%, 
+background-image:
+    <u></u>linear-gradient(top,
+    #3A67AB 0%,
     #E8F6FF 100%);</pre>
     <pre contenteditable style="width: 45%">
-background-image: 
-    <u></u>linear-gradient(270deg, 
-    #3A67AB 0%, 
+background-image:
+    <u></u>linear-gradient(270deg,
+    #3A67AB 0%,
     #E8F6FF 100%);</pre>
     <p style="clear:both">prefix with <span onClick="vendorPrefix('w', 'simplingrad')">-webkit-</span>, <span onClick="vendorPrefix('m', 'simplingrad')">-moz-</span>, <span onClick="vendorPrefix('ms', 'simplingrad')">-ms-</span> <span onClick="vendorPrefix('r', 'simplingrad')"> &amp; </span> <span onClick="vendorPrefix('o', 'simplingrad')">-o-</span></p>
      </section>
      </div>
-    
- <div class="slide" id="complexgrad"> 
-     <header><h1>More Complex Linear Gradient</h1></header> 
+
+ <div class="slide" id="complexgrad">
+     <header><h1>More Complex Linear Gradient</h1></header>
      <section class="content"> <div class="snowflakedemo"><div class="gradientline" style="-webkit-transform: rotate(45deg);"></div></div>
      <pre contenteditable style="width: 48%; margin-top:0px; float:left">
 background-image:
-  <u></u>linear-gradient(180deg, 
-     rgba(255,255,255,0) 40%, 
-     #ffffff 40%, 
-     #ffffff 60%, 
+  <u></u>linear-gradient(180deg,
+     rgba(255,255,255,0) 40%,
+     #ffffff 40%,
+     #ffffff 60%,
      rgba(255,255,255,0) 60%),
-  <u></u>linear-gradient(90deg,  
-     rgba(255,255,255,0) 40%, 
-     #ffffff 40%, 
-     #ffffff 60%, 
+  <u></u>linear-gradient(90deg,
+     rgba(255,255,255,0) 40%,
+     #ffffff 40%,
+     #ffffff 60%,
      rgba(255,255,255,0) 60%),
-  <u></u>linear-gradient(45deg,  
-     rgba(255,255,255,0) 43%, 
-     #ffffff 43%, 
-     #ffffff 57%, 
+  <u></u>linear-gradient(45deg,
+     rgba(255,255,255,0) 43%,
+     #ffffff 43%,
+     #ffffff 57%,
      rgba(255,255,255,0) 57%),
-  <u></u>linear-gradient(135deg,  
-     rgba(255,255,255,0) 43%, 
-     #ffffff 43%, 
-     #ffffff 57%, 
+  <u></u>linear-gradient(135deg,
+     rgba(255,255,255,0) 43%,
+     #ffffff 43%,
+     #ffffff 57%,
      rgba(255,255,255,0) 57%);</pre>
      <p style="width: 300px; float:right; font-family:Arial, Helvetica, sans-serif; font-size:18px"><span onClick="vendorPrefix('w', 'complexgrad')">-webkit-</span> | <span onClick="vendorPrefix('m', 'complexgrad')">-moz-</span> | <span onClick="vendorPrefix('ms', 'complexgrad')">-ms-</span>  <span onClick="vendorPrefix('r', 'complexgrad')"> || </span> <span onClick="vendorPrefix('o', 'complexgrad')">-o-</span></p>
     <p  style="width: 300px; float:right; font-size:24px" class="notes">transparent = rgba(0,0,0,0) not rgba(255,255,255,0)</p>
-    
-     
+
+
      </section>
      </div>
-    
-    
-     
+
+
+
   <div class="slide">
           <header> <h1>Gradients</h1></header>
 
           <section>
-          
+
             <pre contenteditable style="float: left">background: -webkit-linear-gradient(<br>  <span id="linearangle">90</span>deg, <br>  #E468E8 0%,<br>  #E169FF <span id="firststop">33</span>%,<br>  #4FBFF7 <span id="secondstop">66</span>%,<br>  #2C4299 100%);</pre>
             <pre contenteditable style="float: left; margin-left: 20px;">
             &nbsp;
@@ -403,23 +411,23 @@ background-image:
                 var firststop = document.getElementById('firststopvalue').value;
 				var secondstop = document.getElementById('secondstopvalue').value;
 
-                document.getElementById('gradients-linear-example').style.background = 
+                document.getElementById('gradients-linear-example').style.background =
                     dashedPrefix + 'linear-gradient(' + angle + 'deg, #E468E8 0%, #E169FF '+ firststop +'%, #4FBFF7 ' + secondstop + '%, #2C4299 100%)';
-				
+
 
                 document.getElementById('linearangle').textContent = angle;
                 document.getElementById('firststop').textContent = firststop;
                 document.getElementById('secondstop').textContent = secondstop;
               }
-			  
-			  
+
+
               function changeGradients() {
                 var rgtop = document.getElementById('rgtopi').value;
                 var rgleft = document.getElementById('rglefti').value;
                 var rgcs = document.getElementById('rgcl').value;
-				
+
                 var rgshape = document.getElementById('rgcircle').checked ?'circle': 'ellipse';
-                document.getElementById('rdialgradientsample').style.background = 
+                document.getElementById('rdialgradientsample').style.background =
                     dashedPrefix + 'radial-gradient('+rgleft+'% ' + rgtop + '%,'+rgshape+' farthest-side, #4697AB, #F7F9FA, #C344C7 '+rgcs+'%)';
 
                 document.getElementById('rgtop').textContent = rgtop;
@@ -430,39 +438,39 @@ background-image:
             </script>
           </section>
         <span class="counter"></span></div>
-        
-        
-    
-          
-        
-        
-        
-        
-        
-        
-        
-     
-      <div class="slide "> 
-     <header><h1>Gradients</h1></header> 
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="slide ">
+     <header><h1>Gradients</h1></header>
      <section class="content">
      <div class="greenbean grad"></div>
-     <div class="metal grad"></div>  
-     <div class="classic grad"></div> 
-     <div class="inverse1 grad"></div>  
-     <div class="bradybunch grad"></div>  
-     <div class="tiltdavid grad"></div>  
-     <div class="retro67 grad"></div>   
+     <div class="metal grad"></div>
+     <div class="classic grad"></div>
+     <div class="inverse1 grad"></div>
+     <div class="bradybunch grad"></div>
+     <div class="tiltdavid grad"></div>
+     <div class="retro67 grad"></div>
      <div class="blurry grad"></div>
-     <div class="circlestripes grad"></div>       
+     <div class="circlestripes grad"></div>
         </section>
         <span class="counter"></span></div>
-        
-        
-        
-     
-      <div class="slide "> 
-     <header><h1>Tips on Gradient</h1></header> 
-     <section class="content"> 
+
+
+
+
+      <div class="slide ">
+     <header><h1>Tips on Gradient</h1></header>
+     <section class="content">
      <ul>
      	<li>vendor-prefix &lsquo;linear-gradient&rsquo; and &lsquo;radial-gradient&rsquo; </li>
      	<li>keyword &lsquo;transparent&rsquo; = rgba(0,0,0,0) so fades to grey</li>
@@ -470,26 +478,26 @@ background-image:
         <li>create effects by adding multiple gradients, playing with position and size</li>
         <li>learn from others: <a href="http://leaverou.me/css3patterns/">Lea Verou's Gradients</a>, <a href="http://www.standardista.com/cssgradients">Estelle Weyl's Gradients</a>, and <a href="http://www.standardista.com/CSS3gradients/flags.html">Estelle's Flags</a></li>
         <li>Use tools: <a href="http://westciv.com/tools/gradientsnustyle/">John Allsopp's tool</a>, <a href="http://gradients.glrzad.com/">Damian Galarza's tool</a>, <a href="http://www.colorzilla.com/gradient-editor/">Colorzilla</a></li>
-     </ul> 
+     </ul>
      <ul class="icons" style="margin:0">
          <li class="chrome">Chrome 3* <br/>Chrome 10</li>
          <li class="safari">Safari 4* <br/>Safari 5.1</li>
          <li class="firefox">Firefox 3.6<br/>&nbsp;</li>
          <li class="opera new">Opera 11.1<br/>&nbsp;</li>
          <li class="ie new">Internet Explorer 10</li>
-        
+
      </ul><p style="margin-top: 0">Prefixed -webkit-, -moz-, -ms-, -o-</p>
      <footer><p>* legacy syntax</p></footer>
      </section>
      </div>
-        
-    
 
-    
-    
-<div class="slide "> 
-     <header><h1>Opacity</h1></header> 
-     <section class="content"> 
+
+
+
+
+<div class="slide ">
+     <header><h1>Opacity</h1></header>
+     <section class="content">
      <ul class="icons" style="clear: both; float:right; width: 120px;">
          <li class="chrome">Chrome 1</li>
          <li class="safari">Safari 1.2</li>
@@ -498,71 +506,71 @@ background-image:
          <li class="ie new">IE 4* / IE 9</li>
      </ul>
      <div class="opacity" style="width: 400px;">
-     
+
          <div style="opacity:1;">
          <i></i><pre contenteditable>opacity: 1;</pre>
-         
+
          </div>
-         
+
           <div style="opacity:0.75;">
          <i></i><pre contenteditable>opacity: 0.75;</pre>
-         
+
          </div>
-         
+
           <div style="opacity:0.5;">
          <i></i><pre contenteditable>opacity: 0.5;</pre>
-         
+
          </div>
-         
+
           <div style="opacity:0.25;">
          <i></i><pre contenteditable>opacity: 0.25;</pre>
-         
+
          </div>
-         
+
           <div style="opacity:0;">
          <i></i><pre contenteditable>opacity: 0;</pre>
-         
+
          </div>
      </div>
-     
-     
-     
+
+
+
      </section>
 </div>
-  
-     
-<div class="slide"> 
-<header><h1>AlphaTransparency</h1></header> 
-<section class="content"> 
+
+
+<div class="slide">
+<header><h1>AlphaTransparency</h1></header>
+<section class="content">
 	 <div class="alphatransparency">
      		<div style="background-color: rgba(58, 103, 171, 1);"></div>
      		<div style="background-color: rgba(58, 103, 171, 0.75);"></div>
      		<div style="background-color: rgba(58, 103, 171, 0.5);"></div>
      		<div style="background-color: rgba(58, 103, 171, 0.25);"></div>
      		<div style="background-color: rgba(58, 103, 171, 0);"></div>
-    </div>     
-         
+    </div>
+
      <div class="rgba opacity">
          <div style="color: rgba(0, 0, 0, 1); height:100px;">
          <pre contenteditable>color: rgba(0, 0, 0, 1);<br>background-color: rgba(58, 103, 171, 1);</pre>
          <i></i>
          </div>
-         
+
           <div style="color: rgba(0, 0, 0, 0.75); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0.75);<br>background-color: rgba(58, 103, 171, 0.75);</pre>
          <i></i>
          </div>
-         
+
           <div style="color: rgba(0, 0, 0, 0.5); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0.5;<br>background-color: rgba(58, 103, 171, 0.5);</pre>
          <i></i>
          </div>
-         
+
          <div style="color: rgba(0, 0, 0, 0.25); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0.25);<br>background-color: rgba(58, 103, 171, 0.25);</pre>
          <i></i>
          </div>
-         
+
           <div style="color: rgba(0, 0, 0, 0); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0)<br>background-color: rgba(58, 103, 171, 0);</pre>
          <i></i>
@@ -578,12 +586,12 @@ background-image:
 </section>
 </div>
 
-  
-  
-  
-  
+
+
+
+
    <div class="slide" id="css-color">
-         
+
           <header> <h1>HSLA</h1></header>
           <section>
         <pre contenteditable>color:<b>hsla</b>(
@@ -609,15 +617,15 @@ background-image:
 			    }
 			//	hslapicker+= '<i style="background: hsla(' + h + ', ' + s + '%, ' + l + '%, ' + a +')" class="big"></i>'
 				document.getElementById('hslah').innerHTML = hslapicker;
-				
-				document.getElementById('hslas').style.background = 
+
+				document.getElementById('hslas').style.background =
                     '-webkit-linear-gradient(0deg, hsl('+h+', 0%, '+ l +'%) 0%, hsl('+h+', 100%, '+ l +'%) 100%)';
-				document.getElementById('hslal').style.background = 
+				document.getElementById('hslal').style.background =
                     '-webkit-linear-gradient(0deg, hsla('+h+', '+ s +'%, 0%, 1) 0%, hsla('+h+', '+ s +'%, 50%, 1) 50%,  hsla('+h+', '+ s +'%, 100%, 1) 100%)';
-				document.getElementById('hslaa').style.background = 
+				document.getElementById('hslaa').style.background =
                     '-webkit-linear-gradient(0deg, hsla('+h+', '+ s +'%, '+l+'%, 0) 0%, hsla('+h+', '+ s +'%, '+l+'%, 1) 100%)';
 			  }
-			  
+
               function changeHSL() {
                 var h = document.getElementById('hsl-h').value * 1.0;
                 var s = document.getElementById('hsl-s').value * 1.0;
@@ -640,21 +648,21 @@ background-image:
           </section>
         <span class="counter"></span></div>
 
-  
-  
-  
-  
-  
-  
-  
-  
-     
+
+
+
+
+
+
+
+
+
 <!-- AlphaTransparency Tips  -->
-<div class="slide"> 
-<header><h1>AlphaTransparency Tips</h1></header> 
+<div class="slide">
+<header><h1>AlphaTransparency Tips</h1></header>
 <section class="content">
 <ul>
-<li>Used in RGBA &amp; HSLA colors 
+<li>Used in RGBA &amp; HSLA colors
 <pre contenteditable>
 rgba(58, 103, 171, 0.5);
 hsla(216, 49%, 45%, 0.5);
@@ -666,18 +674,18 @@ hsla(216, 49%, 45%, 0.5);
          text-shadow: 0 21px 1px rgba(0,0,0,0.3);}</pre></li>
 <li class="angled" style="padding-right: 10px;"><span style="text-shadow: 0 21px 1px  #666">Solid Shadows</span>
 
-<pre contenteditable style="box-shadow:  -10px 10px  #999; margin-left: 20px;"">
+<pre contenteditable style="box-shadow:  -10px 10px  #999; margin-left: 20px;">
 .solid { box-shadow: -10px 10px #999;
          text-shadow: 0 21px 1px #999;}</pre></li>
 </ul>
 </section>
 </div>
-     
 
-<!-- border-radius --> 
-<div class="slide"> 
-<header><h1>border-radius</h1></header> 
-<section class="content"> 
+
+<!-- border-radius -->
+<div class="slide">
+<header><h1>border-radius</h1></header>
+<section class="content">
 <p>Border on slides, code &amp; showflakes</p>
 <div class="opacity radius">
 	<div>
@@ -700,25 +708,25 @@ hsla(216, 49%, 45%, 0.5);
      <p class="note">% works correctly since Safari 5.1 and FF 4.0</p>
 </section>
 </div>
-     
-     
-<!-- border-radius -->  
-<div class="slide"> 
-<header><h1>border-radius</h1></header> 
+
+
+<!-- border-radius -->
+<div class="slide">
+<header><h1>border-radius</h1></header>
 <section class="content">
 <div class="opacity radius">
 	<div><pre contenteditable>.circle {border-radius: 50%;}</pre> <b style="border-radius: 50%;"></b></div>
-	<div><pre contenteditable>.oval { border-radius: 50%;}</pre> <b style="border-radius: 50%; width: 200px;"></b></div> 
-	<div><pre contenteditable>.different { border-radius: 10px 30px;}</pre> <b style="border-radius: 10px 30px; "></b></div> 
-	<div><pre contenteditable>.elliptical { border-radius: 10px / 30px;}</pre> <b style="border-radius: 10px / 30px;"></b></div>   
+	<div><pre contenteditable>.oval { border-radius: 50%;}</pre> <b style="border-radius: 50%; width: 200px;"></b></div>
+	<div><pre contenteditable>.different { border-radius: 10px 30px;}</pre> <b style="border-radius: 10px 30px; "></b></div>
+	<div><pre contenteditable>.elliptical { border-radius: 10px / 30px;}</pre> <b style="border-radius: 10px / 30px;"></b></div>
  </div>
-  
+
 </section>
 </div>
 
-<!-- Transforms -->  
-<div class="slide" id="gencontentlink"> 
-<header><h1>tranforms</h1></header> 
+<!-- Transforms -->
+<div class="slide" id="gencontentlink">
+<header><h1>tranforms</h1></header>
 <section class="content transform">
 <b></b>
 <ul>
@@ -726,19 +734,19 @@ hsla(216, 49%, 45%, 0.5);
 <li>rotate <pre contenteditable>transform: rotate(15deg);</pre></li>
 <li>scale <pre contenteditable>transform: scale(1.5, 2);</pre></li>
 <li>skew <pre contenteditable>transform: skewX(-8deg);</pre></li>
-<li>multiple transforms <pre contenteditable>transform: translate(-80px, 200px) 
+<li>multiple transforms <pre contenteditable>transform: translate(-80px, 200px)
   rotate(-15deg) scale(2, 1.5) skewX(8deg);</pre></li>
 </ul>
 </section>
 </div>
 
 
-<!-- Transforms -->       
-<div class="slide"> 
+<!-- Transforms -->
+<div class="slide">
     <header>
     	<h1>Transforms used</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
         <ul class="imp">
             <li>transform: <em>translate</em>(200px, 0) 	<i class="translate show"></i></li>
             <li>transform: <em>rotate</em>(360deg) 		<i class="rotate show"></i></li>
@@ -755,28 +763,28 @@ hsla(216, 49%, 45%, 0.5);
      </ul>
     </section>
 </div>
-     
-        
- 
-<!-- Transforms -->  
-<div class="slide"> 
-<header><h1>transforms</h1></header> 
+
+
+
+<!-- Transforms -->
+<div class="slide">
+<header><h1>transforms</h1></header>
 <section class="content">
 <li>Vendor prefix all of 'em</li>
 <li>Take advantage of transform-origin</li>
 <li>Multiple values are SPACE separated (no commas)</li>
 <li><a href="http://westciv.com/tools/3Dtransforms/index.html">3D transforms</a> are hardware accelerated</li>
-<li>Play with <a href="http://westciv.com/tools/transforms/index.html">Westciv's Transform Tool</a></li> 
+<li>Play with <a href="http://westciv.com/tools/transforms/index.html">Westciv's Transform Tool</a></li>
 <li><a href="http://meyerweb.com/eric/tools/matrix/">Matrix</a> is another syntax</li>
 <li>More about <a href="http://www.standardista.com/css3/css3-transform-property-and-the-various-transform-functions">transforms</a></li>
 </section>
 </section>
 </div>
-     
-<!-- transitions -->    
-<div class="slide"> 
-<header><h1>transitions</h1></header> 
-<section class="content"> 
+
+<!-- transitions -->
+<div class="slide">
+<header><h1>transitions</h1></header>
+<section class="content">
 <p>Enables the transition of properties from one state to the next over a defined length of time</p>
 <ul>
 <li><em>transition-property:</em> properties (or 'all') that transition</li>
@@ -794,13 +802,13 @@ hsla(216, 49%, 45%, 0.5);
          <li class="txt">  &nbsp; all with vendor prefix</li>
      </ul>
 </section>
-</div>  
- 
+</div>
 
-<!-- transitions -->  
-<div class="slide"> 
-<header><h1>transitions</h1></header> 
-<section class="content"> 
+
+<!-- transitions -->
+<div class="slide">
+<header><h1>transitions</h1></header>
+<section class="content">
 <pre contenteditable class="fakelink">code {
    color: #000000;
    font-size: 100%;
@@ -822,28 +830,28 @@ code:hover {
 
 
 
-<!-- ###################################################################   
+<!-- ###################################################################
 
 	    Animations
 
      ################################################################### -->
 
-<div class="slide"> 
-<header><h1>animations</h1></header> 
-<section class="content"> 
+<div class="slide">
+<header><h1>animations</h1></header>
+<section class="content">
 
 </section>
 </div>
-     
-  
-  
-     
-    
-<div class="slide normal"> 
+
+
+
+
+
+<div class="slide normal">
  <header>
     <h1>Animation Essentials</h1>
- </header> 
- <section class="content"> 
+ </header>
+ <section class="content">
      <ul class="imp">
         <li>@keyframes</li>
         <li>animation-name</li>
@@ -858,14 +866,14 @@ code:hover {
       </ul>
  </section>
 </div>
-     
-     
-    
 
-    
+
+
+
+
 <div class="slide"> <i id="keyframe1"></i>
-     <header><h1>Keyframes</h1></header> 
-     <section class="content"> 
+     <header><h1>Keyframes</h1></header>
+     <section class="content">
      <pre contenteditable><b>@keyframes</b> <b>falling</b> {
 
     <b>from</b> {
@@ -877,15 +885,15 @@ code:hover {
     }
 }</pre>
 </section>
-</div>   
-     
-     
-    
+</div>
 
-    
+
+
+
+
 <div class="slide"> <i id="keyframe3"></i>
-    <header><h1>Keyframes</h1></header> 
-    <section class="content"> 
+    <header><h1>Keyframes</h1></header>
+    <section class="content">
     <pre contenteditable>@keyframes falling {
 
     <b>0%</b> {
@@ -902,29 +910,29 @@ code:hover {
 	<p>Don't forget the <b class="imp">100%</b></p>
     <p>Don't quote the animation name</p>
      </section>
-</div>  
-     
-     
-    
+</div>
 
-    
-    
-<div class="slide"> 
+
+
+
+
+
+<div class="slide">
 	<i id="keyframe2"></i>
     <header>
     	<h1>Granular animation control</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>@keyframes falling {
 
     <b>0%</b> {
       top: -40px;
     }
-    
+
     <b>10%</b> {
       top: 400px;
     }
-    
+
     <b>90%</b> {
       top: 560px;
     }
@@ -936,26 +944,26 @@ code:hover {
 }
 </pre>
 </section>
-</div> 
-    
-     
-    
+</div>
 
-    
-    
+
+
+
+
+
 <div class="slide">
 	<i id="keyframe7"></i>
      <header>
      	<h1>Animating multiple properties</h1>
-     </header> 
-     <section class="content"> 
+     </header>
+     <section class="content">
      <pre contenteditable>@keyframes <b>fallingAndDimming</b> {
 
    0% {
       <b>top:</b> -40px;
       <b>opacity:</b> 1;
     }
-    
+
     50% {
       <b>opacity:</b> 0.5;
     }
@@ -968,45 +976,45 @@ code:hover {
 }
 	</pre>
      </section>
-</div> 
-     
-     
-    
+</div>
 
-    
-    
+
+
+
+
+
 <div class="slide"> <i id="showhide1"></i>
-     <header><h1>Duplicate Keyframes</h1></header> 
-     <section class="content"> 
+     <header><h1>Duplicate Keyframes</h1></header>
+     <section class="content">
      <pre contenteditable>@keyframes <b>LeftRightWithPause</b> {
 
     <b>0%, 30%, 100%</b> {
       transform: translateX(-80px);
     }
-    
+
     <b>50%, 80%</b> {
       transform: translateX(40px);
     }
 }</pre>
 </section>
-</div> 
-     
-     
-    
+</div>
 
-    
-   
-    
 
-       
+
+
+
+
+
+
+
 <div class="slide"> <i id="keyframe4"></i>
     <header>
     	<h1>Keyframe vendor prefixing</h1>
-    </header> 
-    <section class="content" style="margin-top: -15px;"> 
+    </header>
+    <section class="content" style="margin-top: -15px;">
     <pre contenteditable>@<b>-webkit-</b>keyframes falling {
     0%{
-      <b>-webkit-</b>transform: translateY(0);	
+      <b>-webkit-</b>transform: translateY(0);
     }
     100% {
       <b>-webkit-</b>transform: translateY(1000px);
@@ -1029,26 +1037,26 @@ code:hover {
     }
 }</pre>
 </section>
-</div>  
-     
-     
-    
+</div>
 
-    
-     
-<div class="slide" id="acsst"> 
+
+
+
+
+
+<div class="slide" id="acsst">
     <i id="keyframe5"></i>
     <header>
     	<h1>Animating CSS Transforms</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>@<u></u>keyframes falling {
 
   0%{
-    <u></u>transform: 
+    <u></u>transform:
          <b>translateY(0)
 rotate(0deg)
-scale(0.9, 0.9);</b>	
+scale(0.9, 0.9);</b>
   }
 
   100% {
@@ -1063,57 +1071,57 @@ scale(1.1, 1.1);</b>
 <p style="text-align:center"><span onClick="vendorPrefix('w', 'acsst')">-webkit-</span><span onClick="vendorPrefix('r', 'acsst')"> | </span> <span onClick="vendorPrefix('m', 'acsst')">-moz-</span> <span onClick="vendorPrefix('r', 'acsst')"> | </span> <span onClick="vendorPrefix('ms', 'acsst')">-ms-</span></p>
 
 </section>
-</div> 
-      
-     
-      
-<div class="slide"> 
+</div>
+
+
+
+<div class="slide">
     <i id="keyframe5"></i>
     <header>
     	<h1>Vendor Prefixing</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>@-<b>webkit</b>-keyframes falling <b>{</b>
-  0%{ -<b>webkit</b>-transform: 
-      translateY(0) rotate(0deg) scale(0.9, 0.9);} 
-  100%{ -<b>webkit</b>-transform: 
+  0%{ -<b>webkit</b>-transform:
+      translateY(0) rotate(0deg) scale(0.9, 0.9);}
+  100%{ -<b>webkit</b>-transform:
       translateY(1000px) rotate(360deg) scale(1.1, 1.1);}
 <b>}</b>
 
 @-<b>moz</b>-keyframes falling <b>{</b>
-  0%{ -<b>moz</b>-transform: 
-      translateY(0) rotate(0deg) scale(0.9, 0.9);}  
-  100%{ -<b>moz</b>-transform: 
+  0%{ -<b>moz</b>-transform:
+      translateY(0) rotate(0deg) scale(0.9, 0.9);}
+  100%{ -<b>moz</b>-transform:
       translateY(1000px) rotate(360deg) scale(1.1, 1.1);}
 <b>}</b>
 
 @-<b>ms</b>-keyframes falling <b>{</b>
-  0%{ -<b>ms</b>-transform: 
-      translateY(0) rotate(0deg) scale(0.9, 0.9);}  
-  100%{ -<b>ms</b>-transform: 
+  0%{ -<b>ms</b>-transform:
+      translateY(0) rotate(0deg) scale(0.9, 0.9);}
+  100%{ -<b>ms</b>-transform:
       translateY(1000px) rotate(360deg) scale(1.1, 1.1);}
 <b>}</b
 ></pre>
 </section>
-</div>    
+</div>
 
-    
-   
-<div class="slide" id="trans3da"> 
+
+
+<div class="slide" id="trans3da">
 	<i id="keyframe6"></i>
 	<header>
     	<h1>with &lsquo;transform-origin&rsquo;</h1>
-    </header> 
-	<section class="content"> 
+    </header>
+	<section class="content">
 	<pre contenteditable>@<u></u>keyframes falling {
-    
+
   0%{
-    <u></u>transform: 
-      translateY(0) rotate(0deg) scale(0.9, 0.9);	
+    <u></u>transform:
+      translateY(0) rotate(0deg) scale(0.9, 0.9);
   }
-    
+
   100%{
-    <u></u>transform: 
+    <u></u>transform:
       translateY(1000px) rotate(360deg) scale(1.1, 1.1);
   }
 }
@@ -1125,28 +1133,28 @@ scale(1.1, 1.1);</b>
     }</b></pre>
 <p style="text-align:center"><span onClick="vendorPrefix('w', 'trans3da')">-webkit-</span><span onClick="vendorPrefix('r', 'trans3da')"> | </span> <span onClick="vendorPrefix('m', 'trans3da')">-moz-</span> <span onClick="vendorPrefix('r', 'trans3da')"> | </span> <span onClick="vendorPrefix('ms', 'trans3da')">-ms-</span> </p>
 </section>
-</div>      
-    
-     
-    
+</div>
 
-    
- <div class="slide" id="trans3db"> 
+
+
+
+
+ <div class="slide" id="trans3db">
     <header>
     	<h1>Hardware Acceleration</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>@<u></u>keyframes falling {
 
     0%{
-      <u></u>transform: <b>translate3d(0, 0, 0)</b> 
-            rotate(0deg) 
-            scale(0.9, 0.9);	
+      <u></u>transform: <b>translate3d(0, 0, 0)</b>
+            rotate(0deg)
+            scale(0.9, 0.9);
     }
 
     100% {
-       <u></u>transform: <b>translate3d(0, 1000px, 0)</b> 
-             rotate(360deg) 
+       <u></u>transform: <b>translate3d(0, 1000px, 0)</b>
+             rotate(360deg)
              scale(1.1, 1.1);
     }
 
@@ -1155,30 +1163,30 @@ scale(1.1, 1.1);</b>
 <p style="text-align:center"><span onClick="vendorPrefix('w', 'trans3db')">-webkit-</span><span onClick="vendorPrefix('r', 'trans3db')"> | </span> <span onClick="vendorPrefix('m', 'trans3db')">-moz-</span>
 <span onClick="vendorPrefix('r', 'trans3db')"> | </span> <span onClick="vendorPrefix('ms', 'trans3db')">-ms-</span> </p>
 </section>
-</div>  
-    
-     
-    
+</div>
 
-    
- <div class="slide intro"> 
+
+
+
+
+ <div class="slide intro">
 <header>
 	<h1>But nothing is animated yet!</h1>
     <p>We've only declared the keyframes</p>
-</header> 
+</header>
 
-</div>   
-    
-     
-    
+</div>
 
-    
- <div class="slide" id="basecss"> 
+
+
+
+
+ <div class="slide" id="basecss">
 <i style="-webkit-animation:none;"></i>
      <header>
      	<h1>base CSS</h1>
-     </header> 
-     <section class="content"> 
+     </header>
+     <section class="content">
 	<pre contenteditable><b>.snowflake </b>{
   display: inline-block;
   height: 20px;
@@ -1190,109 +1198,98 @@ scale(1.1, 1.1);</b>
   <u></u>linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
   border-radius: 50%;
   <b>-webkit-transform-origin: left -20px;</b>
-  <b>-moz-transform-origin: left -20px;</b>
-  <b>-ms-transform-origin: left -20px;</b>
+  <b> transform-origin: left -20px;</b>
 }</pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'basecss')">-webkit-</span><span onClick="vendorPrefix('r', 'basecss')"> | </span> <span onClick="vendorPrefix('m', 'basecss')">-moz-</span>
-<span onClick="vendorPrefix('r', 'basecss')"> | </span> <span onClick="vendorPrefix('ms', 'basecss')">-ms-</span> </p>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'basecss')">-webkit-</span> </p>
 </section>
-</div>   
-     
-     
-    
+</div>
 
-    
- 
-<div class="slide"> 
-  	<i style="-webkit-animation:none;-webkit-animation-name: falling;-moz-animation:none;-moz-animation-name: falling;"></i>
+
+
+
+
+
+<div class="slide">
+  	<i style="-webkit-animation:none;-webkit-animation-name: falling; animation:none;animation-name: falling;"></i>
     <header>
     	<h1>&lsquo;animation-name&rsquo;</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
 	<pre contenteditable><b>.snowflake </b>{
    ...
    -webkit-transform-origin: left -20px;
    <b>-webkit-animation-name: falling; </b>
-   
-   -moz-transform-origin: left -20px;
-   <b>-moz-animation-name: falling; </b>
-   
-   -ms-transform-origin: left -20px;
-   <b>-ms-animation-name: falling; </b>
+
+   transform-origin: left -20px;
+   <b>animation-name: falling; </b>
 }</pre>
 </section>
-</div> 
-    
-     
-    
+</div>
 
-    
+
+
+
+
  <div class="slide" id="animdur">
-  	<i id="animationduration"></i> 
+  	<i id="animationduration"></i>
 	<header>
      	<h1>&lsquo;animation-duration&rsquo;</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
 	<pre contenteditable>.snowflake { <input type="range" value="3" min="1" max="15" step="1" id="speedrange" onChange="changeDuration();"/>
   ...
   -webkit-transform-origin: left -20px;
-  -webkit-animation-name: falling; 
+  -webkit-animation-name: falling;
   <b>-webkit-animation-duration: <span class="changer">3</span>s;</b>
-  
-  -moz-transform-origin: left -20px;
-  -moz-animation-name: falling; 
-  <b>-moz-animation-duration: <span class="changer">3</span>s;</b>
-  
-  -ms-transform-origin: left -20px;
-  -ms-animation-name: falling; 
-  <b>-ms-animation-duration: <span class="changer">3</span>s;</b>
+
+  transform-origin: left -20px;
+  animation-name: falling;
+  <b>animation-duration: <span class="changer">3</span>s;</b>
 }
 </pre>
 </section>
 <script defer>
  function changeDuration(){
 	 var speed = document.getElementById('speedrange').value;
-	 document.getElementById('animationduration').style.webkitAnimationDuration = speed + 's';document.getElementById('animationduration').style.mozAnimationDuration = speed + 's';document.getElementById('animationduration').style.msAnimationDuration = speed + 's';
-	 document.getElementById('animationduration').style.animationDuration = speed + 's';
+	 document.getElementById('animationduration').style.webkitAnimationDuration = speed + 's';
+   document.getElementById('animationduration').style.animationDuration = speed + 's';
 	 var seconds = document.querySelectorAll("#animdur span.changer");
 	 for(var i = 0, j = seconds.length; i < j; i++){
 		 seconds[i].innerHTML = speed;
 	 }
  }
 </script>
-</div>        
-    
-     
-    
+</div>
 
-    
- <div class="slide" id="animtf"> 
-  	<i id="animationtimingfunc"></i> 
+
+
+
+
+ <div class="slide" id="animtf">
+  	<i id="animationtimingfunc"></i>
     <header>
     	<h1>&lsquo;animation-timing-function&rsquo;</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>.snowflake { <select  onChange="changeTimingFunction(event)"><option value="ease">ease</option><option value="ease-in">ease-in</option><option value="ease-out">ease-out</option><option value="ease-in-out" selected>ease-in-out</option><option value="step-start">step-start</option><option value="step-end">step-end</option><option value="steps(5, start)">steps(5, start)</option></select>
    &hellip;
   <u></u>transform-origin: left -20px;
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <b>-webkit-animation-timing-function: <span class="changer">ease-in-out</span>;</b>
-  <b>-moz-animation-timing-function: <span class="changer">ease-in-out</span>;</b>
-  <b>-ms-animation-timing-function: <span class="changer">ease-in-out</span>;</b>
+  <b> animation-timing-function: <span class="changer">ease-in-out</span>;</b>
 }</pre>
 
 <pre contenteditable><strong>ease</strong>
 linear
-ease-in 
-ease-out 
-ease-in-out  
+ease-in
+ease-out
+ease-in-out
 step-start <span class="notes">/* same as steps(1, start) */</span>
 step-end <span class="notes">/* same as steps(1, end) */</span>
 steps( X, start|<strong>end</strong>) <span class="notes">/* X = # of steps + when change of value occurs */</span>
 cubic-bezier(x1, y1, x2, y2)</pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'animtf')">-webkit-</span><span onClick="vendorPrefix('r', 'animtf')"> | </span> <span onClick="vendorPrefix('m', 'animtf')">-moz-</span>
-<span onClick="vendorPrefix('r', 'animtf')"> | </span> <span onClick="vendorPrefix('ms', 'animtf')">-ms-</span> </p>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'animtf')">-webkit-</span></p>
 </section>
 
 <script defer>
@@ -1304,71 +1301,64 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 		 seconds[i].innerHTML = speed;
 	 }
 	 document.getElementById('animationtimingfunc').style.webkitAnimationTimingFunction = speed;
-	 document.getElementById('animationtimingfunc').style.mozAnimationTimingFunction = speed;
-	 document.getElementById('animationtimingfunc').style.msAnimationTimingFunction = speed;
 	 document.getElementById('animationtimingfunc').style.animationTimingFunction = speed;
  }
 </script>
-    </div>   
-    
-     
-    
+    </div>
 
-    
- <div class="slide" id="animic"> 
+
+
+
+
+ <div class="slide" id="animic">
   	<i></i>
     <header>
     	<h1>&lsquo;animation-iteration-count&rsquo;</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>
 .snowflake {
    &hellip;
   <u></u>transform-origin: left -20px;
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <u></u>animation-timing-function: ease-in-out;
   <b>-webkit-animation-iteration-count: infinite;</b>
-  <b>-moz-animation-iteration-count: infinite;</b>
+  <b> animation-iteration-count: infinite;</b>
 }</pre>
 <p>&lsquo;infinte&rsquo; or number. Default is &lsquo;1&rsquo;.</p>
 <pre contenteditable><b>-webkit-animation-iteration-count: 3;</b>
-<b>-moz-animation-iteration-count: 3;</b></pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'animic')">-webkit-</span><span onClick="vendorPrefix('r', 'animic')"> | </span> <span onClick="vendorPrefix('m', 'animic')">-moz-</span>
-<span onClick="vendorPrefix('r', 'animic')"> | </span> <span onClick="vendorPrefix('ms', 'animic')">-ms-</span> </p>
+<b>animation-iteration-count: 3;</b></pre>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'animic')">-webkit-</span></p>
 
 </section>
-</div>   
-    
-     
-    
+</div>
 
-    
+
+
+
+
  <div class="slide" id="animdelay"> <i id="animationdelayi"></i>
     <header>
     	<h1>&lsquo;animation-delay&rsquo;</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>.snowflake { <input type="range" value="2" min="-3" max="7" step="0.1" id="delayrange" onChange="changeDelay();"/>
   &hellip;
   <u></u>transform-origin: left -20px;
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <u></u>animation-timing-function: ease-in-out;
   <u></u>animation-iteration-count:infinite;
   <b>-webkit-animation-delay: <span class="changer">2</span>s;</b>
-  <b>-moz-animation-delay: <span class="changer">2</span>s;</b>
-  <b>-ms-animation-delay: <span class="changer">2</span>s;</b>
+  <b>animation-delay: <span class="changer">2</span>s;</b>
 }</pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'animdelay')">-webkit-</span><span onClick="vendorPrefix('r', 'animdelay')"> | </span> <span onClick="vendorPrefix('m', 'animdelay')">-moz-</span>
-<span onClick="vendorPrefix('r', 'animdelay')"> | </span> <span onClick="vendorPrefix('ms', 'animdelay')">-ms-</span> </p>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'animdelay')">-webkit-</span> </p>
 
 </section><script defer>
  function changeDelay(){
 	 var speed = (document.getElementById('delayrange').value * 1).toFixed(1);
 	 document.getElementById('animationdelayi').style.webkitAnimationDelay = speed + 's';
-	 document.getElementById('animationdelayi').style.mozAnimationDelay = speed + 's';
-	 document.getElementById('animationdelayi').style.msAnimationDelay = speed + 's';
 	 document.getElementById('animationdelayi').style.animationDelay = speed + 's';
 	 var seconds = document.querySelectorAll("#animdelay span.changer");
 	 for(var i = 0, j = seconds.length; i < j; i++){
@@ -1376,54 +1366,51 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 	 }
  }
 </script>
-</div>    
-        
-     
-    
+</div>
 
-    
-     
+
+
+
+
+
 <div class="slide" id="animdir"> <i></i>
-  
+
     <header>
     	<h1>&lsquo;animation-direction&rsquo;</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>.snowflake {
   &hellip;
   <u></u>transform-origin: left -20px;
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <u></u>animation-timing-function: ease-in-out;
   <u></u>animation-iteration-count:infinite;
   <u></u>animation-delay: 2s;
   <b>-webkit-animation-direction: normal;</b>
-  <b>-moz-animation-direction: normal;</b>
-  <b>-ms-animation-direction: normal;</b>
+  <b> animation-direction: normal;</b>
 }</pre>
 <p>Two possible values: normal | alternate;</p>
 <pre contenteditable><b>-webkit-animation-direction: alternate;</b>
-<b>-moz-animation-direction: alternate;</b>
-<b>-ms-animation-direction: alternate;</b></pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'animdir')">-webkit-</span><span onClick="vendorPrefix('r', 'animdir')"> | </span> <span onClick="vendorPrefix('m', 'animdir')">-moz-</span> 
-<span onClick="vendorPrefix('r', 'animdir')"> | </span> <span onClick="vendorPrefix('ms', 'animdir')">-ms-</span></p>
+<b> animation-direction: alternate;</b></pre>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'animdir')">-webkit-</span><span onClick="vendorPrefix('r', 'animdir')"> </p>
 
 </section>
-</div>   
-     
-     
-    
+</div>
 
-    
-    
-<div class="slide" id="animsh"> 
+
+
+
+
+
+<div class="slide" id="animsh">
     <header>
     	<h1>&lsquo;animation&rsquo; (shorthand)</h1>
-    </header> 
-    <section class="content"> 
+    </header>
+    <section class="content">
     <pre contenteditable>.snowflake {
   &hellip;
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <u></u>animation-timing-function: ease-in-out;
   <u></u>animation-iteration-count:infinite;
@@ -1435,121 +1422,109 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 .snowflake {
   ...
   <b>-webkit-animation: falling 3s ease-in-out 2s infinite</b>;
-  <b>-moz-animation: falling 3s ease-in-out 2s infinite</b>;
-  <b>-ms-animation: falling 3s ease-in-out 2s infinite</b>;
+  <b>animation: falling 3s ease-in-out 2s infinite</b>;
 }</pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'animsh')">-webkit-</span><span onClick="vendorPrefix('r', 'animsh')"> | </span> <span onClick="vendorPrefix('m', 'animsh')">-moz-</span> 
-
-><span onClick="vendorPrefix('r', 'animsh')"> | </span> <span onClick="vendorPrefix('ms', 'animsh')">-ms-</span> 
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'animsh')">-webkit-</span><span onClick="vendorPrefix('r', 'animsh')">
 </p>
 
 </section>
 </div>
-     
-     
-    
 
-    
-    
-<div class="slide"> 
-<header><h1>What happens at animation end?</h1></header> 
-<section class="content"> 
+
+
+
+
+
+<div class="slide">
+<header><h1>What happens at animation end?</h1></header>
+<section class="content">
 
 </section>
 </div>
-     
-     
-    
 
-    
-    
+
+
+
+
+
 <div class="slide" id="animfm"> <i></i>
-<header><h1>&lsquo;animation-fill-mode&rsquo;</h1></header> 
-<section class="content"> 
+<header><h1>&lsquo;animation-fill-mode&rsquo;</h1></header>
+<section class="content">
 <pre contenteditable>values: none | forwards | backwards | both</pre>
 <pre contenteditable>.snowflake {
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <u></u>animation-timing-function: ease-in-out;
   <u></u>animation-iteration-count: 3;
   <u></u>animation-delay: 5s;
  <b> -webkit-animation-fill-mode: forwards;</b>
- <b> -moz-animation-fill-mode: forwards;</b>
- <b> -ms-animation-fill-mode: forwards;</b>
+ <b>  animation-fill-mode: forwards;</b>
 }</pre>
-<p style="margin:-10px 0">. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm')">-webkit-</span><span onClick="vendorPrefix('r', 'animfm')"> | </span> <span onClick="vendorPrefix('m', 'animfm')">-moz-</span><span onClick="vendorPrefix('r', 'animfm')"> | </span> <span onClick="vendorPrefix('ms', 'animfm')">-ms-</span> </p>
+<p style="margin:-10px 0">. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm')">-webkit-</span> </p>
 </p>
 <pre contenteditable>
 .snowflake {
  -webkit-animation: falling 3s ease-in-out 2s 3  <b>forwards</b>;
- -moz-animation: falling 3s ease-in-out 2s 3  <b>forwards</b>;
- -ms-animation: falling 3s ease-in-out 2s 3  <b>forwards</b>;
+ animation: falling 3s ease-in-out 2s 3  <b>forwards</b>;
 }</pre>
 
 </section>
 </div>
 
-    
+
 <div class="slide" id="animfm2"> <i></i>
-<header><h1>&lsquo;animation-fill-mode: backwards&rsquo;</h1></header> 
-<section class="content"> 
+<header><h1>&lsquo;animation-fill-mode: backwards&rsquo;</h1></header>
+<section class="content">
 <pre contenteditable>.snowflake {
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <u></u>animation-timing-function: ease-in-out;
   <u></u>animation-iteration-count: 3;
   <u></u>animation-delay: 5s;
  <b> -webkit-animation-fill-mode: backwards;</b>
- <b> -moz-animation-fill-mode: backwards;</b>
- <b> -ms-animation-fill-mode: backwards;</b>
+ <b> animation-fill-mode: backwards;</b>
 }</pre>
-<p>. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm2')">-webkit-</span><span onClick="vendorPrefix('r', 'animfm2')"> | </span> <span onClick="vendorPrefix('m', 'animfm2')">-moz-</span> 
-<span onClick="vendorPrefix('r', 'animfm2')"> | </span> <span onClick="vendorPrefix('ms', 'animfm2')">-ms-</span> 
+<p>. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm2')">-webkit-</span>
 </p>
 </p>
 <pre contenteditable>
 .snowflake {
  -webkit-animation: falling 3s ease-in-out 2s 3  <b>backwards</b>;
- -moz-animation: falling 3s ease-in-out 2s 3  <b>backwards</b>;
- -ms-animation: falling 3s ease-in-out 2s 3  <b>backwards</b>;
+ animation: falling 3s ease-in-out 2s 3  <b>backwards</b>;
 }</pre>
 
 </section>
 </div>
-    
- 
- 
+
+
+
  <div class="slide" id="animfm3"> <i></i>
-<header><h1>&lsquo;animation-fill-mode: both&rsquo;</h1></header> 
-<section class="content"> 
+<header><h1>&lsquo;animation-fill-mode: both&rsquo;</h1></header>
+<section class="content">
 <pre contenteditable>.snowflake {
-  <u></u>animation-name: falling; 
+  <u></u>animation-name: falling;
   <u></u>animation-duration: 3s;
   <u></u>animation-timing-function: ease-in-out;
   <u></u>animation-iteration-count: 3;
   <u></u>animation-delay: 5s;
  <b> -webkit-animation-fill-mode: both;</b>
- <b> -moz-animation-fill-mode: both;</b>
- <b> -ms-animation-fill-mode: both;</b>
+ <b> animation-fill-mode: both;</b>
 }</pre>
 <p>. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm3')">-webkit-</span>
-<span onClick="vendorPrefix('r', 'animfm3')"> | </span> <span onClick="vendorPrefix('m', 'animfm3')">-moz-</span> 
-<span onClick="vendorPrefix('r', 'animfm3')"> | </span> <span onClick="vendorPrefix('ms', 'animfm3')">-ms-</span> 
 </p>
 </p>
 <pre contenteditable>
 .snowflake {
  -webkit-animation: falling 3s ease-in-out 2s 3  <b>both</b>;
- -moz-animation: falling 3s ease-in-out 2s 3  <b>both</b>;
- -ms-animation: falling 3s ease-in-out 2s 3  <b>both</b>;
+  animation: falling 3s ease-in-out 2s 3  <b>both</b>;
 }</pre>
 
 </section>
-</div>    
-    
-<div class="slide" id="animfillmodeall4" onClick="this.classList.toggle('animationon');"> 
-<header><h1>Animation Fill Mode (again)</h1></header> 
-<section class="content"> 
+</div>
+
+<div class="slide" id="animfillmodeall4" onClick="this.classList.toggle('animationon');">
+<header><h1>Animation Fill Mode (again)</h1></header>
+<section class="content">
 	<div class="box">animation-fill-mode: none; <span class="afmnone"></span></div>
 	<div class="box">animation-fill-mode: forwards;<span class="afmforwards"></span></div>
 	<div class="box">animation-fill-mode: backwards;<span class="afmbackwards"></span></div>
@@ -1563,51 +1538,49 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 </section>
 </div>
 
-    
- <div class="slide"> 
-<header><h1>Can you stop an animation?</h1></header> 
-<section class="content"> 
+
+ <div class="slide">
+<header><h1>Can you stop an animation?</h1></header>
+<section class="content">
 
 </section>
 </div>
-    
-     
-    
 
-    
- 
+
+
+
+
+
 <div class="slide">
 <i id="paused"></i>
-<header><h1>&lsquo;animation-play-state&rsquo;</h1></header> 
-<section class="content"> 
+<header><h1>&lsquo;animation-play-state&rsquo;</h1></header>
+<section class="content">
 <pre contenteditable>-webkit-animation-play-state: paused | running
--moz-animation-play-state: paused | running
--ms-animation-play-state: paused | running</pre>
+ animation-play-state: paused | running</pre>
 <pre contenteditable>.snowflake<b>:hover</b> {
   <b>-webkit-animation-play-state: paused;</b>
-  <b>-moz-animation-play-state: paused;</b>
-  <b>-ms-animation-play-state: paused;</b>
+  <b> animation-play-state: paused;</b>
   }</pre>
 </section>
 </div>
-    
-     
-    
 
-    
- 
-<div class="slide"> 
-<header><h1>What happens at animation end?</h1></header> 
-<section class="content"> 
+
+
+
+
+
+<div class="slide">
+<header><h1>What happens at animation end?</h1></header>
+<section class="content">
 <ul>
 	<li>animationstart</li>
 	<li>animationend</li>
 	<li>animationiteration</li>
 </ul>
 <pre contenteditable>
-el.addEventListener( <b>'webkitAnimationEnd'</b>, 
+el.addEventListener( <b>'webkitAnimationEnd'</b>,
     function( event ) {
-        console.log('Animation Ended'); 
+        console.log('Animation Ended');
     }, false );
 </pre>
 <ul>
@@ -1616,50 +1589,50 @@ el.addEventListener( <b>'webkitAnimationEnd'</b>,
 	<li>webkitAnimationIteration</li>
 </ul>
 </section>
-</div> 
-    
-     
-    
+</div>
 
-    
- 
-<div class="slide"> 
-<header><h1>Starting next animation at end of previous</h1></header> 
-<section class="content"> 
 
-<pre contenteditable>el.addEventListener( <b>'webkitAnimationEnd'</b>, 
+
+
+
+
+<div class="slide">
+<header><h1>Starting next animation at end of previous</h1></header>
+<section class="content">
+
+<pre contenteditable>el.addEventListener( <b>'webkitAnimationEnd'</b>,
     function( event ) {
-        el.removeClassName('newClass'); 
-        setTimeout("el.addClassName('newClass')", 100ms) 
-    }, 
+        el.removeClassName('newClass');
+        setTimeout("el.addClassName('newClass')", 100ms)
+    },
     false );
 </pre>
 
 </section>
-</div> 
-    
-     
-     
-<div class="slide normal"> 
-<header><h1>Thanks</h1></header> 
-<section class="content"> 
+</div>
+
+
+
+<div class="slide normal">
+<header><h1>Thanks</h1></header>
+<section class="content">
 <h1 class="textmask">Estelle Weyl</h1>
 <h2><a href="http://www.standardista.com">www.standardista.com</a></h2>
 <h2><a href="http://www.twitter.com/estellevw">@estellevw</a></h2>
 <h2><a href="http://www.twitter.com/standardista">@standardista</a></h2>
 <div style="float:right"><img src="http://akamaicovers.oreilly.com/images/9780980846904/cat.gif" alt="HTML5 and CSS3 for the Real World"><img src="http://akamaicovers.oreilly.com/images/0636920018063/cat.gif" alt="HTML5: The Definitive Guide" style="margin: 0 20px;"/><img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" style="margin: 0 20px;"/><img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
 </section>
-</div>     
+</div>
    </div>
-   
+
   </div>
- 
- 
-<!-- ###################################################################   
+
+
+<!-- ###################################################################
 
 	    END
 
-     ################################################################### --> 
+     ################################################################### -->
 <script>
 function vendorPrefix(prefix, id){
 	  var prefixTxt = 'cat';
@@ -1672,7 +1645,7 @@ function vendorPrefix(prefix, id){
 			break;
 			case 'ms':
 				prefixTxt = '-ms-';
-			break;	
+			break;
 			case 'o':
 				prefixTxt = '-o-';
 			break;
@@ -1684,11 +1657,11 @@ function vendorPrefix(prefix, id){
 	  for(var i = 0, j = spans.length; i < j; i++ ){
 	  	spans[i].innerHTML = prefixTxt;
 	  }
-			
+
 	}
-	
+
 	var browserPrefix = getPrefix();
-	var dashedPrefix = 	(browserPrefix == '') ? browserPrefix : '-' + browserPrefix + '-'; 	
+	var dashedPrefix = 	(browserPrefix == '') ? browserPrefix : '-' + browserPrefix + '-';
 	function getPrefix() {
 		var myJS = document.getElementsByTagName('script')[0];
 		if('WebkitOpacity' in myJS.style) return 'webkit';
@@ -1697,11 +1670,11 @@ function vendorPrefix(prefix, id){
 			if(regex.test(property)) {
 				return property.match(regex)[0];
 			}
-		} 
+		}
 		return '';
 	}
-	
-	
+
+
   (function() {
   var doc = document;
   var disableBuilds = true;
@@ -1799,7 +1772,7 @@ function vendorPrefix(prefix, id){
   var canTransition = (function() {
   var ver = parseFloat(ua.split('Version/')[1]) || undefined;
   // test to determine if this browser can handle CSS transitions.
-  var cachedCanTransition = 
+  var cachedCanTransition =
     (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
     return function() { return cachedCanTransition; }
   })();
@@ -1919,15 +1892,15 @@ function vendorPrefix(prefix, id){
     }catch (e) { /* squeltch */ }
     this.current = isNaN(this.current) ? 1 : this.current;
     var _t = this;
-    doc.addEventListener('keydown', 
+    doc.addEventListener('keydown',
         function(e) { _t.handleKeys(e); }, false);
-    doc.addEventListener('mousewheel', 
+    doc.addEventListener('mousewheel',
         function(e) { _t.handleWheel(e); }, false);
-    doc.addEventListener('DOMMouseScroll', 
+    doc.addEventListener('DOMMouseScroll',
         function(e) { _t.handleWheel(e); }, false);
-    doc.addEventListener('touchstart', 
+    doc.addEventListener('touchstart',
         function(e) { _t.handleTouchStart(e); }, false);
-    doc.addEventListener('touchend', 
+    doc.addEventListener('touchend',
         function(e) { _t.handleTouchEnd(e); }, false);
     window.addEventListener('popstate',
         function(e) { _t.go(e.state); }, false);
@@ -2009,18 +1982,18 @@ function vendorPrefix(prefix, id){
 		var currentSlide = document.querySelector('.current section');
 		var key = 'snow' +  window.location.hash;
 		ta.value = window.localStorage.getItem(key) || '';
-		
+
 		ta.addEventListener('keyup', function(){
 			//console.log(key + ' ' + ta.value)
 		    window.localStorage.setItem(key,ta.value);
 		});
 		currentSlide.appendChild(ta);
 	},
-	
+
     handleKeys: function(e) {
-      
+
       if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
-      
+
       switch (e.keyCode) {
         case 37: // left arrow
           this.prev(); break;
@@ -2057,10 +2030,10 @@ function vendorPrefix(prefix, id){
 
   </script>
   <!--[if lt IE 9]>
-  <script 
+  <script
   src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
   <script>CFInstall.check({ mode: "overlay" });</script>
-  <![endif]--> 
- 
-  </body> 
+  <![endif]-->
+
+  </body>
 </html>
