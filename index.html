@@ -479,21 +479,21 @@ background-image:
      <header><h1>Tips on Gradient</h1></header>
      <section class="content">
      <ul>
-     	<li>vendor-prefix &lsquo;linear-gradient&rsquo; and &lsquo;radial-gradient&rsquo; </li>
-     	<li>keyword &lsquo;transparent&rsquo; = rgba(0,0,0,0) so fades to grey</li>
+     	<li>vendor-prefix &lsquo;-webkit-&rsquo; for older mobile devices </li>
+     	<li>instead of &lsquo;transparent&rsquo; use rgba(0,0,0,0) as it may fade to grey</li>
      	<li>create effects with color stops at same location</li>
         <li>create effects by adding multiple gradients, playing with position and size</li>
         <li>learn from others: <a href="http://leaverou.me/css3patterns/">Lea Verou's Gradients</a>, <a href="http://www.standardista.com/cssgradients">Estelle Weyl's Gradients</a>, and <a href="http://www.standardista.com/CSS3gradients/flags.html">Estelle's Flags</a></li>
         <li>Use tools: <a href="http://westciv.com/tools/gradientsnustyle/">John Allsopp's tool</a>, <a href="http://gradients.glrzad.com/">Damian Galarza's tool</a>, <a href="http://www.colorzilla.com/gradient-editor/">Colorzilla</a></li>
      </ul>
      <ul class="icons" style="margin:0">
-         <li class="chrome">Chrome 3* <br/>Chrome 10</li>
-         <li class="safari">Safari 4* <br/>Safari 5.1</li>
-         <li class="firefox">Firefox 3.6<br/>&nbsp;</li>
-         <li class="opera new">Opera 11.1<br/>&nbsp;</li>
+         <li class="chrome">Chrome </li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox</li>
+         <li class="opera new">Opera</li>
          <li class="ie new">Internet Explorer 10</li>
 
-     </ul><p style="margin-top: 0">Prefixed -webkit-, -moz-, -ms-, -o-</p>
+     </ul>
      <footer><p>* legacy syntax</p></footer>
      </section>
      </div>
@@ -766,7 +766,7 @@ hsla(216, 49%, 45%, 0.5);
          <li class="firefox">Firefox 3.5</li>
          <li class="opera">Opera 10.5</li>
          <li class="ie new">IE 9</li>
-         <li class="txt">  &nbsp; all with vendor prefix</li>
+         <li class="txt">  &nbsp; -webkit- &amp; -ms- vendor prefix</li>
      </ul>
     </section>
 </div>
@@ -777,7 +777,7 @@ hsla(216, 49%, 45%, 0.5);
 <div class="slide">
 <header><h1>transforms</h1></header>
 <section class="content">
-<li>Vendor prefix all of 'em</li>
+<li>Vendor prefix webkit</li>
 <li>Take advantage of transform-origin</li>
 <li>Multiple values are SPACE separated (no commas)</li>
 <li><a href="http://westciv.com/tools/3Dtransforms/index.html">3D transforms</a> are hardware accelerated</li>
@@ -806,7 +806,7 @@ hsla(216, 49%, 45%, 0.5);
          <li class="firefox">Firefox 4</li>
          <li class="opera">Opera 10.5</li>
          <li class="ie new">IE 10</li>
-         <li class="txt">  &nbsp; all with vendor prefix</li>
+         <li class="txt">  &nbsp; -webkit- vendor prefix</li>
      </ul>
 </section>
 </div>
@@ -1027,22 +1027,16 @@ code:hover {
       <b>-webkit-</b>transform: translateY(1000px);
     }
 }
-@<b>-moz-</b>keyframes falling {
+@keyframes falling {
     0%{
-      <b>-moz-</b>transform: translateY(0);
+      transform: translateY(0);
     }
     100% {
-      <b>-moz-</b>transform: translateY(1000px);
+      transform: translateY(1000px);
     }
 }
-@<b>-ms-</b>keyframes falling {
-    0%{
-      <b>-ms-</b>transform: translateY(0);
-    }
-    100% {
-      <b>-ms-</b>transform: translateY(1000px);
-    }
-}</pre>
+</pre>
+<small> no -ms- needed as animation not in IE9</small>
 </section>
 </div>
 
@@ -1075,7 +1069,7 @@ scale(1.1, 1.1);</b>
 
 }
 </pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'acsst')">-webkit-</span><span onClick="vendorPrefix('r', 'acsst')"> | </span> <span onClick="vendorPrefix('m', 'acsst')">-moz-</span> <span onClick="vendorPrefix('r', 'acsst')"> | </span> <span onClick="vendorPrefix('ms', 'acsst')">-ms-</span></p>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'acsst')">-webkit-</span></p>
 
 </section>
 </div>
@@ -1095,19 +1089,14 @@ scale(1.1, 1.1);</b>
       translateY(1000px) rotate(360deg) scale(1.1, 1.1);}
 <b>}</b>
 
-@-<b>moz</b>-keyframes falling <b>{</b>
-  0%{ -<b>moz</b>-transform:
+@keyframes falling <b>{</b>
+  0%{ transform:
       translateY(0) rotate(0deg) scale(0.9, 0.9);}
-  100%{ -<b>moz</b>-transform:
+  100%{ transform:
       translateY(1000px) rotate(360deg) scale(1.1, 1.1);}
 <b>}</b>
 
-@-<b>ms</b>-keyframes falling <b>{</b>
-  0%{ -<b>ms</b>-transform:
-      translateY(0) rotate(0deg) scale(0.9, 0.9);}
-  100%{ -<b>ms</b>-transform:
-      translateY(1000px) rotate(360deg) scale(1.1, 1.1);}
-<b>}</b
+</b
 ></pre>
 </section>
 </div>
@@ -1137,7 +1126,7 @@ scale(1.1, 1.1);</b>
     -webkit-transform-origin: left -20px;
     transform-origin: left -20px;
     }</b></pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'trans3da')">-webkit-</span><span onClick="vendorPrefix('r', 'trans3da')"> | </span> <span onClick="vendorPrefix('m', 'trans3da')">-moz-</span> <span onClick="vendorPrefix('r', 'trans3da')"> | </span> <span onClick="vendorPrefix('ms', 'trans3da')">-ms-</span> </p>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'trans3da')">-webkit-</span><span onClick="vendorPrefix('r', 'trans3da')"> (undo) </span> </p>
 </section>
 </div>
 
@@ -1166,8 +1155,7 @@ scale(1.1, 1.1);</b>
 
 }
 </pre>
-<p style="text-align:center"><span onClick="vendorPrefix('w', 'trans3db')">-webkit-</span><span onClick="vendorPrefix('r', 'trans3db')"> | </span> <span onClick="vendorPrefix('m', 'trans3db')">-moz-</span>
-<span onClick="vendorPrefix('r', 'trans3db')"> | </span> <span onClick="vendorPrefix('ms', 'trans3db')">-ms-</span> </p>
+<p style="text-align:center"><span onClick="vendorPrefix('w', 'trans3db')">-webkit-</span><span onClick="vendorPrefix('r', 'trans3db')"> (undo) </span>  </p>
 </section>
 </div>
 
