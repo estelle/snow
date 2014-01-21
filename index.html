@@ -131,51 +131,50 @@ without JavaScript<br>
 
 
 
-<div class="slide">
+<div class="slide dots">
     <section class="content">
-	<header style="float:right; padding-bottom: 40px;"><h1>Structural <br>
+	<header style=""><h1>Structural
 Selectors</h1></header>
 <pre contenteditable style="margin-top: 0; float: left;">
-tr:<b>first-child</b>,
-tr:<b>last-child</b> {
+li:<b>first-child</b>,
+li:<b>last-child</b> {
   font-weight: bold;
 }
-tr:<b>nth-child</b>(<b>even</b>) {
+li:<b>nth-child</b>(<b>even</b>) {
   background-color: #CCC;
 }
-tr:nth-child(<b>3</b>) {
+li:nth-child(<b>3</b>) {
   color: #CCC;
 }
-tr:<b>first-of-type</b>,
-tr:<b>last-of-type</b>{
+li:<b>first-of-type</b>,
+li:<b>last-of-type</b>{
   text-decoration:line-through;
 }
-tr:<b>nth-of-type</b>(<b>odd</b>) {
+li:<b>nth-of-type</b>(<b>odd</b>) {
   background-color: #FFF;
 }
-tr:nth-of-type(<b>4n</b>) {
+li:nth-of-type(<b>4n</b>) {
   color: #E2007A;
 }
-tr:nth-of-type(<b>3n-1</b>) {
-  font-style: italic;
+li:nth-of-type(<b>3n-1</b>) {
+  text-align: right;
 }
 
 </pre>
 <div  style="float: right;">
-<table class="selectors" cellpadding="1" cellspacing="0" border="0">
-<tbody>
-<tr><td>Row 1</td></tr>
-<tr><td>Row 2</td></tr>
-<tr><td>Row 3</td></tr>
-<tr><td>Row 4</td></tr>
-<tr><td>Row 5</td></tr>
-<tr><td>Row 6</td></tr>
-<tr><td>Row 7</td></tr>
-<tr><td>Row 8</td></tr>
-<tr><td>Row 9</td></tr>
-<tr><td>Row 10</td></tr>
-</tbody>
-</table>
+<ol class="selectors" cellpadding="1" cellspacing="0" border="0">
+
+<li>Row 1</li>
+<li>Row 2</li>
+<li>Row 3</li>
+<li>Row 4</li>
+<li>Row 5</li>
+<li>Row 6</li>
+<li>Row 7</li>
+<li>Row 8</li>
+<li>Row 9</li>
+<li>Row 10</li>
+</ul>
 <p><a href="structuralselectors.html" target="_blank">Play Time</a></p>
 </div>
     </section>
@@ -337,15 +336,15 @@ background-image:
     #E8F6FF);</pre>
      <pre contenteditable style="width: 45%">
 background-image:
-    <u></u>linear-gradient(top,
+    <u></u>linear-gradient(to bottom,
     #3A67AB 0%,
     #E8F6FF 100%);</pre>
     <pre contenteditable style="width: 45%">
 background-image:
-    <u></u>linear-gradient(270deg,
+    <u></u>linear-gradient(180deg,
     #3A67AB 0%,
     #E8F6FF 100%);</pre>
-    <p style="clear:both">prefix with <span onClick="vendorPrefix('w', 'simplingrad')">-webkit-</span>, <span onClick="vendorPrefix('m', 'simplingrad')">-moz-</span>, <span onClick="vendorPrefix('ms', 'simplingrad')">-ms-</span> <span onClick="vendorPrefix('r', 'simplingrad')"> &amp; </span> <span onClick="vendorPrefix('o', 'simplingrad')">-o-</span></p>
+    <p style="clear:both">prefix with <span onClick="vendorPrefix('w', 'simplingrad')">-webkit-</span> for old mobile webkits.</p>
      </section>
      </div>
 
@@ -374,8 +373,7 @@ background-image:
      #ffffff 43%,
      #ffffff 57%,
      rgba(255,255,255,0) 57%);</pre>
-     <p style="width: 300px; float:right; font-family:Arial, Helvetica, sans-serif; font-size:18px"><span onClick="vendorPrefix('w', 'complexgrad')">-webkit-</span> | <span onClick="vendorPrefix('m', 'complexgrad')">-moz-</span> | <span onClick="vendorPrefix('ms', 'complexgrad')">-ms-</span>  <span onClick="vendorPrefix('r', 'complexgrad')"> || </span> <span onClick="vendorPrefix('o', 'complexgrad')">-o-</span></p>
-    <p  style="width: 300px; float:right; font-size:24px" class="notes">transparent = rgba(0,0,0,0) not rgba(255,255,255,0)</p>
+
 
 
      </section>
@@ -388,7 +386,7 @@ background-image:
 
           <section>
 
-            <pre contenteditable style="float: left">background: -webkit-linear-gradient(<br>  <span id="linearangle">90</span>deg, <br>  #E468E8 0%,<br>  #E169FF <span id="firststop">33</span>%,<br>  #4FBFF7 <span id="secondstop">66</span>%,<br>  #2C4299 100%);</pre>
+            <pre contenteditable style="float: left">background: linear-gradient(<br>  <span id="linearangle">90</span>deg, <br>  #E468E8 0%,<br>  #E169FF <span id="firststop">33</span>%,<br>  #4FBFF7 <span id="secondstop">66</span>%,<br>  #2C4299 100%);</pre>
             <pre contenteditable style="float: left; margin-left: 20px;">
             &nbsp;
 <input id="lineargradientsangle" type="range" min="1" max="360" value="90" onChange="linearchangeGradients(event)"> Angle
@@ -397,11 +395,14 @@ background-image:
 <input id="secondstopvalue" type="range" min="0" max="100" value="66" onChange="linearchangeGradients(event)"> Second stop</pre>
             <div id="gradients-linear-example" class="example" style="clear: both"></div>
 
-<pre contenteditable style="float: left">background: radial-gradient(<span id="rgleft">4</span>% <span id="rgtop">12</span>%,<br> <span id="rgshape">circle</span><br> farthest-side,<br> #4697AB, <br> #F7F9FA,<br> #C344C7 <span  id="rgstop">40</span>%);</pre>
+<pre contenteditable style="float: left">background: radial-gradient(<span id="rgshape">circle</span> at <span id="rgleft">4</span>% <span id="rgtop">12</span>%,<br> #4697AB, <br> #F7F9FA,<br> #C344C7 <span  id="rgstop">40</span>%);</pre>
 
-<pre contenteditable style="float: left; margin-left: 20px;"><input type="radio" name="rgshape" checked value="circle" id="rgcircle"  onchange="changeGradients(event)"> Circle <input type="radio" name="rgshape" value="ellipse"  onchange="changeGradients(event)"> Ellipse
-<input id="rglefti" type="range" min="-50" max="150" value="12" onChange="changeGradients(event)"> L/R
-<input id="rgtopi" type="range" min="-50" max="150" value="4" onChange="changeGradients(event)"> T/B
+<pre contenteditable style="float: left; margin-left: 20px;">
+  <label><input type="radio" name="rgshape" value="circle" id="rgcircle" onChange="changeGradients(event)"> Circle </label>
+  <label><input type="radio" name="rgshape" value="ellipse" onChange="changeGradients(event)"> Ellipse</label>
+<!--<input id="rgsize" type="range" min="0" max="100" value="12" onChange="changeGradients(event)"> Size-->
+<input id="rglefti" type="range" min="-50" max="150" value="12" onChange="changeGradients(event)"> Left/Right
+<input id="rgtopi" type="range" min="-50" max="150" value="4" onChange="changeGradients(event)"> Top/Bottom
 <input id="rgcl" type="range" min="0" max="100" value="40" onChange="changeGradients(event)"> colorstop </pre>
             <div id="rdialgradientsample" class="example"></div>
 
@@ -412,7 +413,7 @@ background-image:
 				var secondstop = document.getElementById('secondstopvalue').value;
 
                 document.getElementById('gradients-linear-example').style.background =
-                    dashedPrefix + 'linear-gradient(' + angle + 'deg, #E468E8 0%, #E169FF '+ firststop +'%, #4FBFF7 ' + secondstop + '%, #2C4299 100%)';
+                    'linear-gradient(' + angle + 'deg, #E468E8 0%, #E169FF '+ firststop +'%, #4FBFF7 ' + secondstop + '%, #2C4299 100%)';
 
 
                 document.getElementById('linearangle').textContent = angle;
@@ -425,11 +426,17 @@ background-image:
                 var rgtop = document.getElementById('rgtopi').value;
                 var rgleft = document.getElementById('rglefti').value;
                 var rgcs = document.getElementById('rgcl').value;
+              //  var rgsize = document.getElementById('rgsize').value;
 
                 var rgshape = document.getElementById('rgcircle').checked ?'circle': 'ellipse';
-                document.getElementById('rdialgradientsample').style.background =
-                    dashedPrefix + 'radial-gradient('+rgleft+'% ' + rgtop + '%,'+rgshape+' farthest-side, #4697AB, #F7F9FA, #C344C7 '+rgcs+'%)';
+                console.log(rgshape);
+                var newText = "radial-gradient("+rgshape+" at "+rgleft+"% " + rgtop + "%, #2C4299, #4FBFF7, #C344C7 "+rgcs+"%)";
+                document.getElementById('rdialgradientsample').style.background = newText;
+               // document.getElementById('rdialgradientsample').style.backgroundImage =
+                    /* 'radial-gradient('+rgshape+' at '+rgleft+'% ' + rgtop + '%, farthest-side, #4697AB, #F7F9FA, #C344C7 '+rgcs+'%)';*/
 
+
+                 //     'radial-gradient(' + rgshape + ' at ' + 4 + '% ' + 12 + '%,  #2C4299, #F7F9FA, #C344C7' +  100 + '%)';
                 document.getElementById('rgtop').textContent = rgtop;
                 document.getElementById('rgleft').textContent = rgleft;
                 document.getElementById('rgstop').textContent = rgcs;
@@ -1128,8 +1135,7 @@ scale(1.1, 1.1);</b>
 </pre>
 <pre contenteditable><b>.snowflake {
     -webkit-transform-origin: left -20px;
-    -moz-transform-origin: left -20px;
-    -ms-transform-origin: left -20px;
+    transform-origin: left -20px;
     }</b></pre>
 <p style="text-align:center"><span onClick="vendorPrefix('w', 'trans3da')">-webkit-</span><span onClick="vendorPrefix('r', 'trans3da')"> | </span> <span onClick="vendorPrefix('m', 'trans3da')">-moz-</span> <span onClick="vendorPrefix('r', 'trans3da')"> | </span> <span onClick="vendorPrefix('ms', 'trans3da')">-ms-</span> </p>
 </section>
