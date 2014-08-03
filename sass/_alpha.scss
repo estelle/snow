@@ -1,0 +1,36 @@
+/* ALPHATRANSPARENCY SLIDE */
+    .alphatransparency div {height:100px;}
+   .alphatransparency {
+    float: left;
+    width:  100px;
+    height: 500px;
+    margin-right: 20px;
+   }
+   .alphatransparency, .angled {
+    border: 2px solid #E2007A;
+    background-size: 30px 30px;
+    background-repeat:repeat;
+    background-image: /* Chrome and Webkit Nightly build */
+      -webkit-linear-gradient(135deg,
+          rgba(255, 255, 255, 1) 25%,
+          rgba(255, 255, 255, 0) 25%,
+          rgba(255, 255, 255, 0) 50%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 1) 75%,
+          rgba(255, 255, 255, 0) 75%,
+          rgba(255, 255, 255, 0) 100%
+            );
+
+      background-image:
+      linear-gradient(-135deg,
+          rgba(255, 255, 255, 1) 25%,
+          rgba(255, 255, 255, 0) 25%,
+          rgba(255, 255, 255, 0) 50%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 1) 75%,
+          rgba(255, 255, 255, 0) 75%,
+          rgba(255, 255, 255, 0) 100%
+            );
+  }
+.rgba div {height: 77px; box-sizing: border-box;}
+   .angled {padding-right: 20px;}

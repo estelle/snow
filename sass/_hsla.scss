@@ -1,0 +1,33 @@
+ /* HSLA */
+     #hsl-example {
+              font-size: 75px;
+              padding-top: 20px;
+              padding-right: 0px;
+              padding-bottom: 20px;
+              padding-left: 0px;
+              text-align: center;
+              color: hsla(328, 100%, 44%, 1);
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+            }
+            .hsl-value {
+              display: inline-block;
+              width: 50px;
+            }
+
+  #hslas, #hslal, #hslaa, #hslah {width: 361px; height: 20px; display: inline-block;}
+  #hslah {width: auto;}
+  #hslah i {display:inline-block; width:1px; height:20px; position:static;
+  -webkit-animation:none;
+  animation:none;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
+  #hslah i.big {width: 100px; border:1px solid #000;}
+  div.example {
+  display: block;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
