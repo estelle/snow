@@ -1,76 +1,3 @@
-<<<<<<< HEAD
-/*
-Syntax error: File to import not found or unreadable: content.
-              Load paths:
-                /Users/estellevw/Documents/presentations/snow
-                /Users/estellevw/Documents/presentations/snow/sass
-        on line 2 of sass/index.scss
-
-1: @import "presentation";
-2: @import "content";
-3: @import "snowflakes";
-4: @import "animation";
-5: @import "flake";
-6: @import "snowman";
-7: @import "columns";
-
-Backtrace:
-sass/index.scss:2
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/import_node.rb:67:in `import'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:218:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:109:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:7:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/engine.rb:265:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin/compiler.rb:309:in `update_stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin/compiler.rb:182:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin/compiler.rb:179:in `each'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin/compiler.rb:179:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin/compiler.rb:262:in `watch'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `initialize_adapter'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `initialize'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `new'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:44:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin/compiler.rb:270:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin.rb:107:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/plugin.rb:107:in `method_missing'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/exec.rb:482:in `watch_or_update'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/exec.rb:324:in `process_result'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/exec.rb:41:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/../lib/sass/exec.rb:21:in `parse!'
-/Library/Ruby/Gems/1.8/gems/sass-3.3.0.alpha.175/bin/sass:9
-/usr/bin/sass:19:in `load'
-/usr/bin/sass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: content.\A               Load paths:\A                 /Users/estellevw/Documents/presentations/snow\A                 /Users/estellevw/Documents/presentations/snow/sass\A         on line 2 of sass/index.scss\A \A 1: @import \"presentation\";\A 2: @import \"content\";\A 3: @import \"snowflakes\";\A 4: @import \"animation\";\A 5: @import \"flake\";\A 6: @import \"snowman\";\A 7: @import \"columns\";"; }
-=======
 @charset "UTF-8";
 /* Screen CSS */
 body {
@@ -1077,9 +1004,6 @@ div.example {
 
 .transform pre {
   display: inline-block; }
-<<<<<<< HEAD
->>>>>>> master
-=======
 
 #transformorder {
   width: 200px;
@@ -1114,4 +1038,3 @@ div.example {
     transform: rotate(135deg);
     left: -230px;
     top: 130px; }
->>>>>>> master
