@@ -1,0 +1,21 @@
+/* OPACITY SLIDE (and alphatransparency) */
+
+  .opacity { float: left; overflow:hidden;}
+  .opacity div {
+    clear: both;
+    padding: 0 40px 120px 0;
+  }
+  .opacity pre {
+    float: left;
+    padding: 20px;
+    margin: 10px 20px 0 0;
+  }
+  .opacity div i {
+    -webkit-animation: none;
+    animation: none;
+    position: static;
+    float:left;
+    margin-right:20px;
+    background-color: transparent;
+  }
+  .opacity pre + i {margin-right:0;}

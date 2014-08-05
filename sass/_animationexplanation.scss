@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/* CSS for in slide examples */
+
+.slide i {
+	position: absolute;
+	top: 20px;
+	right: 80px;
+	width: 80px;
+	height: 80px;
+	background-color: rgba(0,0,0,0.5);
+ }
+
+  @-webkit-keyframes 'keyframe1' {
+
+    from {
+      top: 40px;
+    }
+
+    to {
+      top: 600px;
+    }
+  }
+
+
+    @-webkit-keyframes 'keyframe2' {
+    from {
+      top: 40px;
+    }
+    10%{
+      top: 280px;
+    }
+    90% {
+      top: 320px;
+    }
+	to {
+      top: 600px;
+    }
+  }
+
+
+  @-webkit-keyframes 'leftright' {
+
+    0%, 30%, 100% {
+
+      -webkit-transform: translateX(-80px);
+    }
+
+    50%, 80% {
+
+      -webkit-transform: translateX(40px);
+	}
+  }
+
+  @-webkit-keyframes 'keyframe4' {
+
+    0%{
+      -webkit-transform: translateY(0);
+    }
+
+    100% {
+       -webkit-transform: translateY(600px);
+    }
+
+}
+
+@-webkit-keyframes 'keyframe5' {
+
+    0%{
+      -webkit-transform: translateY(0)
+            rotate(0deg)
+     scale(0.9, 0.9);
+    }
+
+    100% {
+       -webkit-transform: translateY(600px)
+             rotate(360deg)
+       scale(1.1, 1.1);
+    }
+
+}
+
+@-webkit-keyframes 'fallingAndDimming' {
+
+    0% {
+      top: -40px;
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      top: 600px;
+      opacity: 1
+    }
+
+}
+
+
+ @keyframes keyframe1 {
+
+    from {
+      top: 40px;
+    }
+
+    to {
+      top: 600px;
+    }
+  }
+
+
+    @keyframes keyframe2 {
+    from {
+      top: 40px;
+    }
+    10%{
+      top: 280px;
+    }
+    90% {
+      top: 320px;
+    }
+	to {
+      top: 600px;
+    }
+  }
+
+
+  @keyframes leftright {
+
+    0%, 30%, 100% {
+
+      transform: translateX(-80px);
+    }
+
+    50%, 80% {
+
+      transform: translateX(40px);
+	}
+  }
+
+  @keyframes keyframe4 {
+
+    0%{
+      transform: translateY(0);
+    }
+
+    100% {
+       transform: translateY(600px);
+    }
+
+}
+
+@keyframes keyframe5 {
+
+    0%{
+      transform: translateY(0)
+            rotate(0deg)
+     scale(0.9, 0.9);
+    }
+
+    100% {
+       transform: translateY(600px)
+             rotate(360deg)
+       scale(1.1, 1.1);
+    }
+
+}
+
+@keyframes fallingAndDimming {
+
+    0% {
+      top: -40px;
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      top: 600px;
+      opacity: 1
+    }
+
+}
+
+
+
+
+
+/* NOTE: A different animation is used for inslide demo since the demo
+	is not as tall as the screen. We are translating by 60px for example
+	animations. Otherwise, it's all as is written in the slide deck */
+
+	@-webkit-keyframes fallinginslide {
+		0% {
+			-webkit-transform:
+					translate3d(0,0,0)
+					rotate(0deg)
+					scale(0.9,0.9);
+			background-color: #C0F;
+		}
+		100% {
+			-webkit-transform:
+					translate3d(30px,600px,0)
+					rotate(360deg)
+					scale(1.1,1.1);
+
+			background-color: #36F;
+		}
+	}
+
+	@keyframes fallinginslide {
+		0% {
+			transform:
+					translate3d(0,0,0)
+					rotate(0deg)
+					scale(0.9,0.9);
+			background-color: #C0F;
+		}
+		100% {
+			transform:
+					translate(30px,600px)
+					rotate(360deg)
+					scale(1.1,1.1);
+			background-color: #36F;
+		}
+	}
+
+
+
+i.show,
+#keyframe1,
+#keyframe2,
+#keyframe3,
+#keyframe4,
+#keyframe5,
+#keyframe6,
+#keyframe7  {
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+/*	-webkit-animation-timing-function: steps(3,start) !important;
+	animation-timing-function: steps(3,start) !important; */
+  }
+
+#paused:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  }
+
+#keyframe7 {
+	-webkit-animation: 'fallingAndDimming' 3s linear infinite;
+	animation: fallingAndDimming 3s linear infinite;
+}
+#keyframe5, #keyframe6 {
+	-webkit-animation: 'keyframe5' 3s infinite;
+	animation: keyframe5 3s infinite;
+}
+
+#keyframe6 {
+	-webkit-transform-origin: left -20px;
+	-ms-transform-origin: left -20px;
+	transform-origin: left -20px;
+}
+
+#keyframe4 {
+	-webkit-animation: 'keyframe4' 3s infinite ;
+	animation: keyframe4 3s infinite;
+}
+
+#keyframe1, #keyframe3 {
+	-webkit-animation: 'keyframe1' 3s infinite;
+	animation: keyframe1 3s infinite;
+}
+
+#keyframe2 {
+	-webkit-animation: 'keyframe2' linear 3s infinite;
+	 animation: keyframe2 linear 3s infinite;
+}
+
+#showhide1 {
+	top: 250px;
+	-webkit-animation: 'leftright' 5s infinite;
+	animation: leftright 5s infinite;
+}
+
+
+i.show{
+	position: static;
+	-webkit-transition: all 2s linear;
+	transition: all 2s linear;
+	-webkit-animation: none;
+	animation: none;
+	margin-left: 100px;
+}
+
+li:hover i.show.translate{
+	-webkit-transform: translateX(200px);
+	-ms-transform: translateX(200px);
+	transform: translateX(200px);
+}
+li:hover i.show.scale {
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+li i.origin:before {
+	content: "";
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #E2007A;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	}
+li:hover i.show.rotate {
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+ i.origin {
+	-webkit-transform-origin: -20px -20px;
+	-ms-transform-origin: -20px -20px;
+	transform-origin: -20px -20px;
+ }
+
+.slide i {
+	-webkit-animation-play-state: paused;
+  animation-play-state: paused;
+	}
+.slide:hover  i{
+	-webkit-animation-play-state: running;
+  animation-play-state: running;
+	}
+
+#animationduration {
+    -webkit-animation: none;
+    -webkit-animation-name: fallinginslide;
+    -webkit-animation-duration: 3s;
+    animation: none;
+    animation-name: fallinginslide;
+    animation-duration: 3s;
+}
+#animationtimingfunc {
+	-webkit-animation: none;
+	-webkit-animation-name: fallinginslide;
+    -webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: ease-in-out;
+  animation: none;
+  animation-name: fallinginslide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+	}
+
+#animic i, #animdelay i {
+  -webkit-animation: none;-webkit-animation-name: fallinginslide;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 3;
+  animation: none;
+  animation-name: fallinginslide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+}
+#animationdelayi {
+	-webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#animdir i {
+-webkit-animation: none;
+-webkit-animation-name: fallinginslide;
+-webkit-animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+animation: none;
+animation-name: fallinginslide;
+animation-delay: 2s;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+#animfm i,
+#animfm2 i,
+#animfm3 i {
+  -webkit-animation: none;
+  -webkit-animation-name: fallinginslide;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 3;
+  -webkit-animation-delay: 5s;
+  animation: none;
+  animation-name: fallinginslide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+  animation-delay: 5s;
+}
+#animfm i {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  }
+#animfm2 i{
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+#animfm3 i{
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+u {
+  text-decoration: none;
+  color: #E2007A;
+  font-style: italic;
+}
+
+#paused {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  }
+#paused:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  }

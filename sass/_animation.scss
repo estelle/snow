@@ -1,0 +1,51 @@
+
+   /* default animation and transform */
+   i {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    -webkit-transform-origin: left -20px;
+    -webkit-animation-name: falling;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-direction:normal;
+    -webkit-animation-iteration-count: 20;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state:running;
+    /* or */
+    animation: falling 3s linear 2s 20;
+  }
+
+
+/* animation used for ALL snowflakes */
+    @-webkit-keyframes falling {
+        0% {
+            -webkit-transform:
+                    translate3d(0,0,0)
+                    rotate(0deg)
+                    scale(0.9,0.9);
+        }
+        100% {
+            -webkit-transform:
+                    translate3d(30px,1000px,0)
+                    rotate(360deg)
+                    scale(1.1,1.1);
+        }
+    }
+
+    @keyframes falling {
+        0% {
+            transform:
+                    translate3d(0,0,0)
+                    rotate(0deg)
+                    scale(0.9,0.9);
+        }
+        100% {
+            transform:
+                    translate(30px,1000px)
+                    rotate(360deg)
+                    scale(1.1,1.1);
+        }
+    }

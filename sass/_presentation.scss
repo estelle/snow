@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* Screen CSS */
+
+body {
+  font-size: 20px;
+  font-family: "Paytone One", sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px; top: 0px;
+}
+
+* {background-repeat:no-repeat;}
+
+#presentation, #lineargradient1 {
+  background-image:
+    -webkit-gradient(linear,  0% 0%, 0% 100%, from(#3A67AB), to(#E8F6FF));
+  background-image:
+    -webkit-linear-gradient(270deg, #3A67AB, #E8F6FF 100%);
+  background-image:
+    linear-gradient(#3A67AB, #E8F6FF 100%);
+}
+
+#presentation {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -1px;
+  top: 0px;
+  display: block;
+  overflow: hidden;
+  background-image:
+    -webkit-gradient(linear,  0% 0%, 0% 100%, from(#3A67AB), to(#E8F6FF));
+  background-image:
+    -webkit-linear-gradient(#3A67AB, #E8F6FF 100%);
+  background-image:
+    linear-gradient(#3A67AB, #E8F6FF 100.0%);
+}
+
+#info {
+  font-size: small;
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+  z-index: 500;
+}
+
+#topinfo {
+  font-size: small;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 500;
+  display: none;
+}
+
+.notes {display: none;}
+
+.key {
+  color: black;
+  display: inline-block;
+  padding: 3px 3px 3px 3px;
+  text-shadow: none;
+  letter-spacing: 0;
+  position: relative;
+  background: white;
+}
+
+
+.slides {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  -ms-transition: -o-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+
+  /* so it's visible in the iframe. */
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 900px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 60px;
+  margin-top: -350px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  padding-left: 20px;
+  padding-top: 10px;
+  &.intro hgroup {
+    margin-top: 200px;
+  }
+  &.teach {
+    background-color: #fff;
+  }
+  .slide.far-past {
+    display: block;
+    margin-left: -2400px;
+  }
+  &.past {
+    visibility: visible;
+    display: block;
+    margin-left: -1400px;
+  }
+  &.current {
+    visibility: visible;
+    display: block;
+    margin-left: -450px;
+  }
+  &.future {
+    visibility: visible;
+    display: block;
+    margin-left: 500px;
+  }
+  &.far-future {
+    display: block;
+    margin-left: 1500px;
+  }
+  .counter {
+    color: #999999;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: block;
+    font-size: 70%;
+  }
+}
+
+.slide.title > .counter,
+.slide.segue > .counter,
+.slide.mainTitle > .counter {
+  display: none;
+}
+
+.force-render {
+  display: block;
+  visibility: hidden;
+}
+
+
+body.three-d div.slides {
+  -webkit-transform: translateX(50px) scale(0.8) rotateY(10deg);
+  -ms-transform: translateX(50px) scale(0.8) rotateY(10deg);
+  transform: translateX(50px) scale(0.8) rotateY(10deg);
+}

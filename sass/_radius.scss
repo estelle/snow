@@ -1,0 +1,14 @@
+/* radius */
+
+.opacity div {height: 120px;}
+.radius div i{border: 2px solid transparent;}
+.radius div i:hover{border: 2px solid #E2007A;}
+.radius pre {float: left; clear: both; width: 65%; margin-right: 20px;}
+.radius div b, .boxshadow b, .transform b, .transform b:after  {border: 2px solid #E2007A; display:inline-block; height:80px; width: 80px; background-color: rgba(255,255,255,0.8);}
+.transform b {float: right;}
+.transform b:after {
+  content: "";
+  -webkit-transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);
+  -ms-transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);
+  transform: translate(-80px, 200px) rotate(-15deg) scale(2, 1.5) skewX(8deg);float: right;}
+.transform pre {display:inline-block;}

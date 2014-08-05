@@ -13,10 +13,11 @@
     <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet" media="print" href="print.css"/>
-<link rel="stylesheet" media="all" href="css/index.css"/>
+<link rel="stylesheet" media="all" href="screen.css?x=y"/>
+<link rel="stylesheet" media="all" href="effects.css"/>
+<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/>
 <style>
 </style>
-
 </head>
 <body>
   <div id="info">
@@ -25,7 +26,7 @@
   </div>
 
   <div id="presentation">
-     <div class="flakes">
+     <div id="flakes">
   	 <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
   </div>
    <div id="presentation-counter"></div>
@@ -60,51 +61,23 @@ without JavaScript<br>
 </section>
 </div>
 
-  <div class="slide">
-  <header><h1>The code:</h1></header>
-    <section class="content">
-<pre contenteditable>&lt;div id="flakes">
-  &lt;i>&lt;/i>
-  &lt;i>&lt;/i>
-  &lt;i>&lt;/i>
-  &lt;i>&lt;/i>
-  &lt;i>&lt;/i>
-  &lt;i>&lt;/i>
-  &lt;i>&lt;/i>
-  ...
-&lt;/div>
 
-&lt;div class="snowman">&lt;/div></pre>
- </section>
-</div>
 
 <div class="slide transparent">
-     <header><h1>CSS3 Features Showing Now</h1></header>
+     <div class="snowman"></div>
+     <header><h1>CSS3 Features Displaying now?</h1></header>
      <section class="content">
      <ul class="imp">
      	<li>CSS3 Selectors</li>
      	<li>linear gradients</li>
      	<li>opacity </li>
+        <li>RGBA colors</li>
      	<li>border-radius</li>
 		<li>transforms</li>
 		<li>transitions</li>
-    <li>animations</li>
+		<li>animations</li>
      </ul>
      <p class="notes">Opacity is from CSS2</p>
-     </section>
-</div>
-
-<div class="slide transparent">
-     <div class="snowman"></div>
-     <header><h1>CSS3 Features for the Snowman</h1></header>
-     <section class="content">
-     <ul class="imp">
-      <li>radial gradients</li>
-      <li>background-size</li>
-    <li>generated content</li>
-    <li>pseudo-element</li>
-        <li>RGBA colors</li>
-     </ul>
      </section>
 </div>
 
@@ -140,7 +113,14 @@ without JavaScript<br>
 
 :not(:empty)
 </pre>
+<ul class="icons" style="float: left; margin-right: 40px;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox</li>
+         <li class="opera">Opera</li>
+         <li class="ie new">IE 9</li>
 
+     </ul>
 <ul style="list-style:none">
 	<li><a href="http://dev.w3.org/csswg/selectors3/">W3C working specificiation</a></li>
 	<li><a href="http://www.standardista.com/css3/css3-selector-browser-support">Browser support chart</a></li>
@@ -184,16 +164,16 @@ li:nth-of-type(<b>3n-1</b>) {
 <div  style="float: right;">
 <ol class="selectors" cellpadding="1" cellspacing="0" border="0">
 
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3</li>
-<li>Item 4</li>
-<li>Item 5</li>
-<li>Item 6</li>
-<li>Item 7</li>
-<li>Item 8</li>
-<li>Item 9</li>
-<li>Item 10</li>
+<li>Row 1</li>
+<li>Row 2</li>
+<li>Row 3</li>
+<li>Row 4</li>
+<li>Row 5</li>
+<li>Row 6</li>
+<li>Row 7</li>
+<li>Row 8</li>
+<li>Row 9</li>
+<li>Row 10</li>
 </ul>
 <p><a href="structuralselectors.html" target="_blank">Play Time</a></p>
 </div>
@@ -201,29 +181,26 @@ li:nth-of-type(<b>3n-1</b>) {
 </div>
 
 
-
-
-<div class="slide">
-  <header><h1>Snowflake pseudo-Randomness</h1></header>
+  <div class="slide">
+	<header><h1>Snowflake pseudo-Randomness</h1></header>
     <section class="content">
+<pre contenteditable>&lt;div id="flakes">&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>&lt;i>&lt;/i>...</pre>
+<pre contenteditable>i:nth-of-type(5n)    { height:30px; width:30px;}
+i:nth-of-type(5n+1)  { height:24px; width:24px;}
+i:nth-of-type(5n+2)  { height:10px; width:10px;}...
 
-<pre contenteditable>i:nth-of-type(5n)    {height:30px; width:30px;}
-i:nth-of-type(5n+1)  {height:24px; width:24px;}
-i:nth-of-type(5n+2)  {height:10px; width:10px;}...
+i:nth-of-type(3n)    { animation-delay: 2.3s;}
+i:nth-of-type(3n+1)  { animation-delay: 1.5s;}
+i:nth-of-type(3n+2)  { animation-delay: 3.4s;}
 
-i:nth-of-type(3n)    {animation-delay: 2.3s;}
-i:nth-of-type(3n+1)  {animation-delay: 1.5s;}
-i:nth-of-type(3n+2)  {animation-delay: 3.4s;}
+i:nth-of-type(7n)    { opacity: 0.5;}
+i:nth-of-type(7n+1)  { opacity: 0.8;}
+i:nth-of-type(7n+2)  { opacity: 0.3;} ...
 
-i:nth-of-type(7n)    {opacity: 0.5;}
-i:nth-of-type(7n+1)  {opacity: 0.8;}
-i:nth-of-type(7n+2)  {opacity: 0.3;} ...
-
-i:nth-of-type(11n) {animation-timing-function: ease-in-out;}
-i:nth-of-type(11n+1) {animation-timing-function:ease-out;}
-i:nth-of-type(11n+2) {animation-timing-function:ease;} ...
-i:nth-of-type(11n+5) {animation-timing-function:
-                         cubic-bezier(0.2, 0.3, 0.8, 0.9);}
+i:nth-of-type(11n)   { animation-timing-function: ease-in-out;}
+i:nth-of-type(11n+1) { animation-timing-function:ease-out;}
+i:nth-of-type(11n+2) { animation-timing-function:ease;} ...
+i:nth-of-type(11n+5) { animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9);}
 
 </pre>
     </section>
@@ -232,13 +209,7 @@ i:nth-of-type(11n+5) {animation-timing-function:
 
 
 
-<div class="slide">
-  <header><h1></h1></header>
-    <section class="content"><div class="flakes">
-     <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-  </div>
-    </section>
-</div>
+
 
 
 
@@ -329,21 +300,21 @@ E ~ F   sibling</li>
   <div class="slide">
 	<header><h1>Generated Content</h1></header>
     <section class="content">
-      <pre>.snowman:after {
-  content: "";
-  height: 0; width: 0;
-  border: transparent solid 4px;
-  border-left: orange 30px solid;
-  position: absolute;
-  left: 50%;
-  top: 100px;
-}</pre>
     <ul>
         <li>Completely styleable</li>
+        <li>see slide 21, and "new" on browser icons</li>
         <li>Use absolute position, top: 0; bottom: 0; left: 0; right: 0; for same size</li>
         <li><a href="http://www.westciv.com/style_master/academy/css_tutorial/advanced/generated_content.html">Generated Content Tutorial</a></li>
         <li><a href="http://www.standardista.com/css3/creating-counters-with-generated-content">Counters with Generated Content</a></li>
    </ul>
+   <ul class="icons" style="float: left; margin-right: 40px;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox</li>
+         <li class="opera">Opera</li>
+         <li class="ie">IE 8</li>
+
+     </ul>
     </section>
 </div>
 
@@ -351,14 +322,6 @@ E ~ F   sibling</li>
 
 
 
-<!-- Play time-->
-<div class="slide object">
-  <header>
-    <h1>Play Time</h1>
-  </header>
-  <object data="files/generatedcontent.html"></object>
-  <a href="files/generatedcontent.html" target="play" class="objectlink">Try it out</a>
-</div>
 
 
 
@@ -481,20 +444,36 @@ background-image:
               }
             </script>
           </section>
-        </div>
+        <span class="counter"></span></div>
 
 
 
 
 
-<!-- Play time-->
-<div class="slide object">
-  <header>
-    <h1>Pattern Library</h1>
-  </header>
-  <object data="files/patternlib.html"></object>
-  <a href="files/patternlib.html" target="play" class="objectlink">Try it out</a>
-</div>
+
+
+
+
+
+
+
+      <div class="slide ">
+     <header><h1>Gradients</h1></header>
+     <section class="content">
+     <div class="greenbean grad"></div>
+     <div class="metal grad"></div>
+     <div class="classic grad"></div>
+     <div class="inverse1 grad"></div>
+     <div class="bradybunch grad"></div>
+     <div class="tiltdavid grad"></div>
+     <div class="retro67 grad"></div>
+     <div class="blurry grad"></div>
+     <div class="circlestripes grad"></div>
+        </section>
+        <span class="counter"></span></div>
+
+
+
 
       <div class="slide ">
      <header><h1>Tips on Gradient</h1></header>
@@ -504,12 +483,18 @@ background-image:
      	<li>instead of &lsquo;transparent&rsquo; use rgba(0,0,0,0) as it may fade to grey</li>
      	<li>create effects with color stops at same location</li>
         <li>create effects by adding multiple gradients, playing with position and size</li>
-        <li>learn from others: <a href="http://lea.verou.me/css3patterns/">Lea Verou's Gradients</a>, <a href="http://www.standardista.com/cssgradients">Estelle Weyl's Gradients</a>, and <a href="http://www.standardista.com/CSS3gradients/flags.html">Estelle's Flags</a></li>
+        <li>learn from others: <a href="http://leaverou.me/css3patterns/">Lea Verou's Gradients</a>, <a href="http://www.standardista.com/cssgradients">Estelle Weyl's Gradients</a>, and <a href="http://www.standardista.com/CSS3gradients/flags.html">Estelle's Flags</a></li>
         <li>Use tools: <a href="http://westciv.com/tools/gradientsnustyle/">John Allsopp's tool</a>, <a href="http://gradients.glrzad.com/">Damian Galarza's tool</a>, <a href="http://www.colorzilla.com/gradient-editor/">Colorzilla</a></li>
      </ul>
-         <p class="small">New Internet Explorer 10</p>
+     <ul class="icons" style="margin:0">
+         <li class="chrome">Chrome </li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox</li>
+         <li class="opera new">Opera</li>
+         <li class="ie new">Internet Explorer 10</li>
 
-
+     </ul>
+     <footer><p>* legacy syntax</p></footer>
      </section>
      </div>
 
@@ -520,7 +505,14 @@ background-image:
 <div class="slide ">
      <header><h1>Opacity</h1></header>
      <section class="content">
-     <div class="opacity">
+     <ul class="icons" style="clear: both; float:right; width: 120px;">
+         <li class="chrome">Chrome 1</li>
+         <li class="safari">Safari 1.2</li>
+         <li class="firefox">Firefox 0.9</li>
+         <li class="opera">Opera 9</li>
+         <li class="ie new">IE 4* / IE 9</li>
+     </ul>
+     <div class="opacity" style="width: 400px;">
 
          <div style="opacity:1;">
          <i></i><pre contenteditable>opacity: 1;</pre>
@@ -565,32 +557,39 @@ background-image:
      		<div style="background-color: rgba(58, 103, 171, 0);"></div>
     </div>
 
-     <div class="rgba" style="margin-left: 120px">
-         <div style="color: rgba(0, 0, 0, 1);">
+     <div class="rgba opacity">
+         <div style="color: rgba(0, 0, 0, 1); height:100px;">
          <pre contenteditable>color: rgba(0, 0, 0, 1);<br>background-color: rgba(58, 103, 171, 1);</pre>
          <i></i>
          </div>
 
-          <div style="color: rgba(0, 0, 0, 0.75);">
+          <div style="color: rgba(0, 0, 0, 0.75); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0.75);<br>background-color: rgba(58, 103, 171, 0.75);</pre>
          <i></i>
          </div>
 
-          <div style="color: rgba(0, 0, 0, 0.5);">
+          <div style="color: rgba(0, 0, 0, 0.5); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0.5;<br>background-color: rgba(58, 103, 171, 0.5);</pre>
          <i></i>
          </div>
 
-         <div style="color: rgba(0, 0, 0, 0.25);">
+         <div style="color: rgba(0, 0, 0, 0.25); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0.25);<br>background-color: rgba(58, 103, 171, 0.25);</pre>
          <i></i>
          </div>
 
-          <div style="color: rgba(0, 0, 0, 0);">
+          <div style="color: rgba(0, 0, 0, 0); height:100px;"">
          <pre contenteditable>color: rgba(0, 0, 0, 0)<br>background-color: rgba(58, 103, 171, 0);</pre>
          <i></i>
          </div>
      </div>
+     <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 1</li>
+         <li class="safari">Safari 1.2</li>
+         <li class="firefox">Firefox 0.9</li>
+         <li class="opera">Opera 9</li>
+         <li class="ie new">IE 9</li>
+     </ul>
 </section>
 </div>
 
@@ -654,7 +653,7 @@ background-image:
 			  createHSLA();
             </script>
           </section>
-        </div>
+        <span class="counter"></span></div>
 
 
 
@@ -706,6 +705,14 @@ hsla(216, 49%, 45%, 0.5);
     <i style="border-radius: 50%"></i><pre contenteditable>border-radius: 50%;</pre><b style="border-radius: 50%"></b>
     </div>
 </div>
+ <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome / Chrome 4</li>
+         <li class="safari">Safari 3 / Safari 5</li>
+         <li class="firefox">Firefox 1 / Firefox 4</li>
+         <li class="opera">  <br/> Opera 10.5</li>
+         <li class="ie new">  <br/> IE 9</li>
+     </ul>
+     <p class="note">% works correctly since Safari 5.1 and FF 4.0</p>
 </section>
 </div>
 
@@ -714,13 +721,13 @@ hsla(216, 49%, 45%, 0.5);
 <div class="slide">
 <header><h1>border-radius</h1></header>
 <section class="content">
-<div class="radius">
+<div class="opacity radius">
 	<div><pre contenteditable>.circle {border-radius: 50%;}</pre> <b style="border-radius: 50%;"></b></div>
 	<div><pre contenteditable>.oval { border-radius: 50%;}</pre> <b style="border-radius: 50%; width: 200px;"></b></div>
 	<div><pre contenteditable>.different { border-radius: 10px 30px;}</pre> <b style="border-radius: 10px 30px; "></b></div>
 	<div><pre contenteditable>.elliptical { border-radius: 10px / 30px;}</pre> <b style="border-radius: 10px / 30px;"></b></div>
  </div>
-<p>Do NOT prefix.</p>
+
 </section>
 </div>
 
@@ -753,7 +760,14 @@ hsla(216, 49%, 45%, 0.5);
             <li>transform: <em>scale</em>(1.5) 		<i class="scale show"></i></li>
             <li><em>transform-origin</em>: -20px -20px		<i class="rotate origin show"></i></li>
         </ul>
-         <p>IE9 -ms-, -webkit- still needed</p>
+         <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox 3.5</li>
+         <li class="opera">Opera 10.5</li>
+         <li class="ie new">IE 9</li>
+         <li class="txt">  &nbsp; -webkit- &amp; -ms- vendor prefix</li>
+     </ul>
     </section>
 </div>
 
@@ -763,7 +777,6 @@ hsla(216, 49%, 45%, 0.5);
 <div class="slide">
 <header><h1>transforms</h1></header>
 <section class="content">
-  <li>Order of transform functions matters: if you rotate first, your translate direction will be on the rotated axis!</li>
 <li>Vendor prefix -webkit- &amp; -ms- (for IE9)</li>
 <li>Take advantage of transform-origin</li>
 <li>Multiple values are SPACE separated (no commas)</li>
@@ -787,7 +800,14 @@ hsla(216, 49%, 45%, 0.5);
 <li><em>transition-delay:</em> s or ms before transition starts</li>
 <li><em>transition:</em> shorthand for 4  transition properties</li>
 </ul>
-<p>New in IE10,  &nbsp; -webkit- vendor prefix</p>
+<ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox 4</li>
+         <li class="opera">Opera 10.5</li>
+         <li class="ie new">IE 10</li>
+         <li class="txt">  &nbsp; -webkit- vendor prefix</li>
+     </ul>
 </section>
 </div>
 
