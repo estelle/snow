@@ -250,18 +250,23 @@ pre {
   .flakes i:nth-of-type(4n) {
     height: 30px;
     width: 30px;
-    -webkit-transform-origin: right -30px;
+    -webkit-transform-origin: right 30px;
     transform-origin: right -30px; }
   .flakes i:nth-of-type(4n+1) {
     height: 24px;
     width: 24px;
     -webkit-transform-origin: left -30px;
-    transform-origin: left -30px; }
+    transform-origin: left 30px; }
   .flakes i:nth-of-type(4n+2) {
     height: 10px;
     width: 10px;
     -webkit-transform-origin: -30px 0;
     transform-origin: -30px 0; }
+  .flakes i:nth-of-type(4n+3) {
+    height: 40px;
+    width: 40px;
+    -webkit-transform-origin: -50px 0;
+    transform-origin: -50px 0; }
   .flakes i:nth-of-type(4n) {
     -webkit-animation-duration: 5.3s;
     -webkit-animation-iteration-count: 12;
@@ -333,6 +338,10 @@ pre {
   .flakes i {
     position: static !important; }
 
+#presentation > .flakes {
+  position: relative;
+  top: -140px; }
+
 .slide .flakes {
   position: absolute;
   top: 0;
@@ -340,7 +349,11 @@ pre {
   left: 0;
   right: 0; }
   .slide .flakes i {
-    background-color: transparent; }
+    background-color: transparent;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-iteration-count: 4;
+    animation-iteration-count: 4; }
 
 /* default animation and transform */
 i {
@@ -571,9 +584,6 @@ li.future {
     top: 600px;
     opacity: 1; } }
 
-/* NOTE: A different animation is used for inslide demo since the demo
-	is not as tall as the screen. We are translating by 60px for example
-	animations. Otherwise, it's all as is written in the slide deck */
 @-webkit-keyframes fallinginslide {
   0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0.9, 0.9);
@@ -973,6 +983,9 @@ div.example {
 .opacity div {
   height: 120px; }
 
+.opacity.radius {
+  float: none; }
+
 .radius div i {
   border: 2px solid transparent; }
 
@@ -981,7 +994,6 @@ div.example {
 
 .radius pre {
   float: left;
-  clear: both;
   width: 65%;
   margin-right: 20px; }
 
@@ -1038,3 +1050,18 @@ div.example {
     transform: rotate(135deg);
     left: -230px;
     top: 130px; }
+
+/* transition */
+.transition {
+  color: #000000;
+  font-size: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all 0.5s ease-in 50ms;
+  -ms-transition: all 0.5s ease-in 50ms;
+  transition: all 0.5s ease-in 50ms;
+  -webkit-transition: color font-size 0.5s ease-in 50ms; }
+
+.transition:hover {
+  color: #E2007A;
+  font-size: 120%;
+  background-color: rgba(255, 255, 255, 0.8); }

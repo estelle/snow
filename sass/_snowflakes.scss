@@ -3,20 +3,27 @@
   i:nth-of-type(4n) {
     height:30px;
     width:30px;
-    -webkit-transform-origin: right -30px;
+    -webkit-transform-origin: right 30px;
     transform-origin: right -30px;
   }
    i:nth-of-type(4n+1) {
     height:24px;
     width:24px;
     -webkit-transform-origin: left -30px;
-    transform-origin: left -30px;
+    transform-origin: left 30px;
   }
    i:nth-of-type(4n+2){
     height:10px;
     width:10px;
     -webkit-transform-origin: -30px 0;
     transform-origin: -30px 0;
+  }
+
+   i:nth-of-type(4n+3){
+    height:40px;
+    width:40px;
+    -webkit-transform-origin: -50px 0;
+    transform-origin: -50px 0;
   }
 
   /* different speeds, with iteration counts to equal 3minutes approx. */
@@ -89,10 +96,19 @@
      position: static !important;
    }
 }
+#presentation > .flakes {
+  position: relative;
+  top: -140px;
+}
 .slide .flakes {
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   i {
     background-color: transparent;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+
+    -webkit-animation-iteration-count: 4;
+    animation-iteration-count: 4;
   }
 }
