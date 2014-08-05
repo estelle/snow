@@ -1,6 +1,9 @@
 /* OPACITY SLIDE (and alphatransparency) */
 
-  .opacity { float: left; overflow:hidden;}
+  .opacity {
+    float: left;
+    overflow:hidden;
+  }
   .opacity div {
     clear: both;
     padding: 0 40px 20px 0;
