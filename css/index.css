@@ -978,7 +978,7 @@ u {
 
 .opacity div {
   clear: both;
-  padding: 0 40px 120px 0; }
+  padding: 0 40px 20px 0; }
 
 .opacity pre {
   float: left;
@@ -1077,4 +1077,41 @@ div.example {
 
 .transform pre {
   display: inline-block; }
+<<<<<<< HEAD
+>>>>>>> master
+=======
+
+#transformorder {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 200px auto;
+  border: 5px dotted purple;
+  position: relative; }
+  #transformorder:before, #transformorder:after {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 5px dashed magenta;
+    content: "";
+    position: absolute; }
+  #transformorder:before {
+    -webkit-transform: rotate(135deg) translateX(200px);
+    transform: rotate(135deg) translateX(200px); }
+  #transformorder:after {
+    -webkit-transform: translateX(200px) rotate(135deg);
+    transform: translateX(200px) rotate(135deg);
+    border-color: teal; }
+  #transformorder .line1, #transformorder .line2 {
+    height: 1px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    border-bottom: 1px solid; }
+  #transformorder .line2 {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    left: -230px;
+    top: 130px; }
 >>>>>>> master

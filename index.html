@@ -757,13 +757,22 @@ hsla(216, 49%, 45%, 0.5);
     </section>
 </div>
 
+<!-- Transform order -->
+<div class="slide">
+  <header><h1>Transform Order</h1></header>
+    <section class="content">
+      <p>Order of transform functions matters: if you rotate first, your translate direction will be on the rotated axis!</p>
 
+      <div id="transformorder"><b class="line1"></b><b class="line2"></b></div>
+      <code style="position: absolute; bottom: 20px">translateX(200px)<br/>rotate(135deg)</code>
+    </section>
+</div>
 
 <!-- Transforms -->
 <div class="slide">
 <header><h1>transforms</h1></header>
 <section class="content">
-  <li>Order of transform functions matters: if you rotate first, your translate direction will be on the rotated axis!</li>
+
 <li>Vendor prefix -webkit- &amp; -ms- (for IE9)</li>
 <li>Take advantage of transform-origin</li>
 <li>Multiple values are SPACE separated (no commas)</li>
@@ -774,6 +783,10 @@ hsla(216, 49%, 45%, 0.5);
 </section>
 </section>
 </div>
+
+
+
+
 
 <!-- transitions -->
 <div class="slide">
