@@ -1,0 +1,15 @@
+/* transition */
+.transition {
+  color: #000000;
+  font-size: 100%;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: all 0.5s ease-in 50ms;
+    -ms-transition: all 0.5s ease-in 50ms;
+    transition: all 0.5s ease-in 50ms;
+    -webkit-transition: color font-size 0.5s ease-in 50ms;
+}
+.transition:hover {
+  color: #E2007A;
+    font-size: 120%;
+    background-color: rgba(255,255,255,0.8);
+}

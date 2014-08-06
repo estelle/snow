@@ -143,7 +143,8 @@ without JavaScript<br>
 
 <ul style="list-style:none">
 	<li><a href="http://dev.w3.org/csswg/selectors3/">W3C working specificiation</a></li>
-	<li><a href="http://www.standardista.com/css3/css3-selector-browser-support">Browser support chart</a></li>
+  <li><a href="http://www.standardista.com/css3/css3-selector-browser-support">Browser support chart</a></li>
+  <li><a href="http://estelle.github.io/selectors">Selectors Workshop</a></li>
 </ul>
 </section>
 </div>
@@ -347,7 +348,14 @@ E ~ F   sibling</li>
     </section>
 </div>
 
-
+<!-- Play time-->
+<div class="slide object">
+  <header>
+    <h1>Selectors &amp; counting</h1>
+  </header>
+  <object data="files/counting.html"></object>
+  <a href="files/counting.html" target="play" class="objectlink">Try it out</a>
+</div>
 
 
 
@@ -506,6 +514,7 @@ background-image:
         <li>create effects by adding multiple gradients, playing with position and size</li>
         <li>learn from others: <a href="http://lea.verou.me/css3patterns/">Lea Verou's Gradients</a>, <a href="http://www.standardista.com/cssgradients">Estelle Weyl's Gradients</a>, and <a href="http://www.standardista.com/CSS3gradients/flags.html">Estelle's Flags</a></li>
         <li>Use tools: <a href="http://westciv.com/tools/gradientsnustyle/">John Allsopp's tool</a>, <a href="http://gradients.glrzad.com/">Damian Galarza's tool</a>, <a href="http://www.colorzilla.com/gradient-editor/">Colorzilla</a></li>
+        <li><a href="http://estelle.github.io/gradients">Gradient Workshop</a></li>
      </ul>
          <p class="small">New Internet Explorer 10</p>
 
@@ -780,7 +789,7 @@ hsla(216, 49%, 45%, 0.5);
 <li>Play with <a href="http://westciv.com/tools/transforms/index.html">Westciv's Transform Tool</a></li>
 <li><a href="http://meyerweb.com/eric/tools/matrix/">Matrix</a> is another syntax</li>
 <li>More about <a href="http://www.standardista.com/css3/css3-transform-property-and-the-various-transform-functions">transforms</a></li>
-</section>
+<li>Deep dive into <a href="http://estelle.github.io/animation">Transitions, Transforms and Animation</a></li>
 </section>
 </div>
 
@@ -1237,10 +1246,25 @@ scale(1.1, 1.1);</b>
 </pre>
 </section>
 <script defer>
+ function removeAndAddAnimation (element) {
+  var elem = document.getElementById(element);
+  elem.style.webkitAnimationName = 'none';
+  elem.style.animationName = 'none';
+   setTimeout(function(){
+     var el = document.getElementById(element);
+      el.style.webkitAnimationName = 'fallinginslide';
+      el.style.animationName = 'fallinginslide';
+      console.dir(element);
+   }, 100);
+ }
+
  function changeDuration(){
+   //el.webkitAnimation
+   var el = document.getElementById('animationduration');
 	 var speed = document.getElementById('speedrange').value;
-	 document.getElementById('animationduration').style.webkitAnimationDuration = speed + 's';
-   document.getElementById('animationduration').style.animationDuration = speed + 's';
+	 el.style.webkitAnimationDuration = speed + 's';
+   el.style.animationDuration = speed + 's';
+   removeAndAddAnimation('animationduration');
 	 var seconds = document.querySelectorAll("#animdur span.changer");
 	 for(var i = 0, j = seconds.length; i < j; i++){
 		 seconds[i].innerHTML = speed;
@@ -1290,12 +1314,20 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 	 }
 	 document.getElementById('animationtimingfunc').style.webkitAnimationTimingFunction = speed;
 	 document.getElementById('animationtimingfunc').style.animationTimingFunction = speed;
+   removeAndAddAnimation('animationtimingfunc');
  }
 </script>
     </div>
 
 
-
+<!-- Play time-->
+<div class="slide object">
+  <header>
+    <h1>Animation Timing Function: step()</h1>
+  </header>
+  <object data="files/psy.html"></object>
+  <a href="files/psy.html" target="play" class="objectlink">Try it out</a>
+</div>
 
 
  <div class="slide" id="animic">
@@ -1331,7 +1363,7 @@ cubic-bezier(x1, y1, x2, y2)</pre>
     	<h1>&lsquo;animation-delay&rsquo;</h1>
     </header>
     <section class="content">
-    <pre contenteditable>.snowflake { <input type="range" value="2" min="-3" max="7" step="0.1" id="delayrange" onChange="changeDelay();"/>
+    <pre contenteditable>.snowflake { <input type="range" value="2" min="-8" max="7" step="0.5" id="delayrange" onChange="changeDelay();"/>
   &hellip;
   <u></u>transform-origin: left -20px;
   <u></u>animation-name: falling;
@@ -1348,6 +1380,7 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 	 var speed = (document.getElementById('delayrange').value * 1).toFixed(1);
 	 document.getElementById('animationdelayi').style.webkitAnimationDelay = speed + 's';
 	 document.getElementById('animationdelayi').style.animationDelay = speed + 's';
+   removeAndAddAnimation('animationdelayi');
 	 var seconds = document.querySelectorAll("#animdelay span.changer");
 	 for(var i = 0, j = seconds.length; i < j; i++){
 		 seconds[i].innerHTML = speed;
@@ -1517,11 +1550,13 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 	<div class="box">animation-fill-mode: forwards;<span class="afmforwards"></span></div>
 	<div class="box">animation-fill-mode: backwards;<span class="afmbackwards"></span></div>
     <div class="box">animation-fill-mode: both;<span class="afmboth"></span></div>
-    <pre>.box { animation: showme 5s linear 5s 1;}
+    <pre>.box { background-color: purple;
+   animation: showme 5s linear 5s 1;}
+
 @keyframes showme {
-	0% {left: 200px; background-color:blue;}
-	50% {background-color:green;}
-	100% {left: 600px; background-color: yellow;}
+   0% {left: 200px; background-color:blue;}
+   50% {background-color:green;}
+   100% {left: 600px; background-color: yellow;}
 }</pre>
 </section>
 </div>
@@ -2017,11 +2052,6 @@ function vendorPrefix(prefix, id){
 
 
   </script>
-  <!--[if lt IE 9]>
-  <script
-  src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-  <script>CFInstall.check({ mode: "overlay" });</script>
-  <![endif]-->
 
   </body>
 </html>

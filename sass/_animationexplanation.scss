@@ -38,7 +38,7 @@
   }
 
 
-  @-webkit-keyframes 'leftright' {
+  @-webkit-keyframes leftright {
 
     0%, 30%, 100% {
 
@@ -51,7 +51,7 @@
 	}
   }
 
-  @-webkit-keyframes 'keyframe4' {
+  @-webkit-keyframes keyframe4 {
 
     0%{
       -webkit-transform: translateY(0);
@@ -63,7 +63,7 @@
 
 }
 
-@-webkit-keyframes 'keyframe5' {
+@-webkit-keyframes keyframe5 {
 
     0%{
       -webkit-transform: translateY(0)
@@ -79,7 +79,7 @@
 
 }
 
-@-webkit-keyframes 'fallingAndDimming' {
+@-webkit-keyframes fallingAndDimming {
 
     0% {
       top: -40px;
@@ -241,14 +241,8 @@ i.show,
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
-/*	-webkit-animation-timing-function: steps(3,start) !important;
-	animation-timing-function: steps(3,start) !important; */
   }
 
-#paused:hover {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  }
 
 #keyframe7 {
 	-webkit-animation: 'fallingAndDimming' 3s linear infinite;
@@ -365,7 +359,17 @@ li:hover i.show.rotate {
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 3;
+
+
 }
+.slide #animic i {
+ -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  }
+.slide:hover #animic i {
+     -webkit-animation-play-state: running;
+      animation-play-state: running;
+  }
 #animationdelayi {
 	-webkit-animation-delay: 2s;
   animation-delay: 2s;
@@ -423,6 +427,8 @@ u {
 #paused {
   -webkit-animation-play-state: running;
   animation-play-state: running;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   }
 #paused:hover {
   -webkit-animation-play-state: paused;

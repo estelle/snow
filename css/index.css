@@ -498,28 +498,28 @@ li.future {
   to {
     top: 600px; } }
 
-@-webkit-keyframes 'leftright' {
+@-webkit-keyframes leftright {
   0%, 30%, 100% {
     -webkit-transform: translateX(-80px); }
 
   50%, 80% {
     -webkit-transform: translateX(40px); } }
 
-@-webkit-keyframes 'keyframe4' {
+@-webkit-keyframes keyframe4 {
   0% {
     -webkit-transform: translateY(0); }
 
   100% {
     -webkit-transform: translateY(600px); } }
 
-@-webkit-keyframes 'keyframe5' {
+@-webkit-keyframes keyframe5 {
   0% {
     -webkit-transform: translateY(0) rotate(0deg) scale(0.9, 0.9); }
 
   100% {
     -webkit-transform: translateY(600px) rotate(360deg) scale(1.1, 1.1); } }
 
-@-webkit-keyframes 'fallingAndDimming' {
+@-webkit-keyframes fallingAndDimming {
   0% {
     top: -40px;
     opacity: 1; }
@@ -612,13 +612,7 @@ i.show,
 #keyframe7 {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
-  transform-origin: center;
-  /*	-webkit-animation-timing-function: steps(3,start) !important;
-  	animation-timing-function: steps(3,start) !important; */ }
-
-#paused:hover {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused; }
+  transform-origin: center; }
 
 #keyframe7 {
   -webkit-animation: 'fallingAndDimming' 3s linear infinite;
@@ -726,6 +720,14 @@ i.origin {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 3; }
 
+.slide #animic i {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
+.slide:hover #animic i {
+  -webkit-animation-play-state: running;
+  animation-play-state: running; }
+
 #animationdelayi {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
@@ -781,7 +783,9 @@ u {
 
 #paused {
   -webkit-animation-play-state: running;
-  animation-play-state: running; }
+  animation-play-state: running;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
 
 #paused:hover {
   -webkit-animation-play-state: paused;
@@ -1065,3 +1069,53 @@ div.example {
   color: #E2007A;
   font-size: 120%;
   background-color: rgba(255, 255, 255, 0.8); }
+
+.box {
+  padding: 20px 50px;
+  position: relative; }
+
+.animationon .box span {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  -webkit-animation: showme 5s linear 5s 1;
+  animation: showme 5s linear 5s 1; }
+
+@-webkit-keyframes showme {
+  0% {
+    left: 200px;
+    background-color: blue; }
+
+  50% {
+    background-color: green; }
+
+  100% {
+    left: 600px;
+    background-color: yellow; } }
+
+@keyframes showme {
+  0% {
+    left: 200px;
+    background-color: blue; }
+
+  50% {
+    background-color: green; }
+
+  100% {
+    left: 600px;
+    background-color: yellow; } }
+
+.animationon span.afmforwards {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.animationon span.afmbackwards {
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards; }
+
+.animationon span.afmboth {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }

@@ -1,0 +1,30 @@
+
+.box {padding:20px 50px; position:relative;}
+.animationon .box span {position: absolute; left: 0; top:20px; width: 50px; height:50px; background-color:purple;
+-webkit-animation: showme 5s linear 5s 1;
+animation: showme 5s linear 5s 1;
+}
+@-webkit-keyframes showme {
+  0% {left: 200px; background-color:blue;}
+  50% {background-color:green;}
+  100% {left: 600px; background-color: yellow;}
+}
+
+
+@keyframes showme {
+  0% {left: 200px; background-color:blue;}
+  50% {background-color:green;}
+  100% {left: 600px; background-color: yellow;}
+}
+.animationon span.afmforwards {
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+}
+.animationon span.afmbackwards {
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode:backwards;
+}
+.animationon span.afmboth {
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode:both;
+}
