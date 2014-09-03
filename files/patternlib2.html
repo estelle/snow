@@ -1,0 +1,511 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block;}
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {display:none;}
+style:last-of-type {padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; white-space:pre; border-radius: 10px; border: 3px solid #aaa; background-color:#fffff; margin: 20px auto; width: 80%; font-family:"Courier New", Courier, monospace;}
+* {font-family:Verdana, Geneva, sans-serif;}
+.grad {width: 250px; height:180px;  margin: 0 20px 20px 0px;float: left; border-radius: 150px; background-repeat:repeat;}
+    .inverse1 {
+
+    background-image:
+    -webkit-radial-gradient(circle,
+      rgba(0,0,0,0) 60%,
+      #000000 61%),
+    -webkit-radial-gradient(circle,
+      rgba(0,0,220,0) 55%,
+      rgba(0,0,220,0.4) 56%),
+      -webkit-radial-gradient(circle,
+      #FF0080 0%,
+      #ECB7FC 60%,
+      #f09 100%);
+    background-image:
+      radial-gradient(circle,
+      rgba(0,0,0,0) 60%,
+      #000000 61%),
+    radial-gradient(circle,
+      rgba(0,0,220,0) 55%,
+      rgba(0,0,220,0.4) 56%),
+      radial-gradient(circle,
+      #FF0080 0%,
+      #ECB7FC 60%,
+      #f09 100%);
+
+    background-size: 15px 15px, 15px 15px,160%, 160%;
+    background-position: 0 0, 0 3px, 00;
+}
+.metal {
+
+    background-image:
+    -webkit-gradient(radial, 15 15, 0, 15 15, 14.6,
+      color-stop(0.8, rgba(0, 0, 0, 0)),
+      color-stop(0.85, rgba(0, 0, 0, 1)),
+      color-stop(1.00, rgba(0, 0, 0, 1))
+    ),
+
+    -webkit-gradient(radial, 15 15, 0, 15 15, 14.6,
+      color-stop(0.8, rgba(0, 0, 0, 0)),
+      color-stop(0.85, rgba(0, 0, 0, 1)),
+      color-stop(1.00, rgba(0, 0, 0, 1))
+    );
+    background-image:
+    -webkit-radial-gradient(circle closest-side,
+      transparent 70%,
+      #000000 100%),
+    -webkit-radial-gradient(circle closest-side,
+      transparent 70%,
+      #000000 100%);
+     background-image:
+    radial-gradient(circle closest-side,
+      transparent 70%,
+      #000000 100%),
+    radial-gradient(circle closest-side,
+      transparent 70%,
+      #000000 100%);
+
+    background-color: #AAAAAA;
+    background-size: 30px 30px, 30px 30px;
+    background-position: 0 0pt, 15px 15px;
+}
+.retro67, .circlestripes {
+
+    background-image:
+    -webkit-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%),
+    -webkit-radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%);
+background-image:
+    radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%),
+    radial-gradient(circle closest-side, transparent 96%, rgba(0, 0, 0, 0.3) 100%);
+}
+.circlestripes {
+  background-image:
+    -webkit-gradient(radial, 15 5, 0, 15 5, 5,
+      color-stop(0.96, rgba(0, 0, 0, 0)),
+      color-stop(0.96, rgba(0, 0, 0, 0.3)),
+      color-stop(1.00, rgba(0, 0, 0, 0.3))
+    ),
+
+    -webkit-gradient(radial, 15 5, 0, 15 5, 5.5,
+      color-stop(0.96, rgba(0, 0, 0, 0)),
+      color-stop(0.96, rgba(0, 0, 0, 0.3)),
+      color-stop(1.00, rgba(0, 0, 0, 0.3))
+    );
+    background-position: 0 0pt, 15px 15px;
+    background-size: 30px 10px, 30px 8px;
+}
+.retro67 {
+  background-image:
+    -webkit-gradient(radial, 15 7, 0, 15 7, 8.5,
+      color-stop(0.96, rgba(0, 0, 0, 0)),
+      color-stop(0.96, rgba(0, 0, 0, 0.3)),
+      color-stop(1.00, rgba(0, 0, 0, 0.3))
+    ),
+
+    -webkit-gradient(radial, 15 15, 0, 15 15, 14.6,
+      color-stop(0.96, rgba(0, 0, 0, 0)),
+      color-stop(0.96, rgba(0, 0, 0, 0.3)),
+      color-stop(1.00, rgba(0, 0, 0, 0.3))
+    );
+    background-position: 15px 0pt, 15px 15px;
+    background-size: 30px 15px, 30px 30px;
+    background-color: #993300;
+}
+.bradybunch {
+  background-image:
+    -webkit-radial-gradient(circle closest-side,
+      transparent 0%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.3) 76%,
+      rgba(255, 255, 255, 0.3) 85%,
+      rgba(255, 255, 255, 0.9) 86%,
+      rgba(255, 255, 255, 0.9) 94%,
+      #FFFFFF 95%,
+      #FFFFFF 103%,
+      rgba(255, 255, 255, 0.5) 104%,
+      rgba(255, 255, 255, 0.5) 112%,
+      rgba(0, 0, 0, 0.2) 113%,
+      rgba(0, 0, 0, 0.2) 121%,
+      #FFFFFF 122%,
+      #FFFFFF 130%,
+      rgba(255, 255, 255, 0.4) 131%,
+      rgba(255, 255, 255, 0.4) 140%),
+    -webkit-radial-gradient(circle closest-side,
+      transparent 0%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.3) 76%,
+      rgba(255, 255, 255, 0.3) 85%,
+      rgba(255, 255, 255, 0.9) 86%,
+      rgba(255, 255, 255, 0.9) 94%,
+      #FFFFFF 95%,
+      #FFFFFF 103%,
+      rgba(255, 255, 255, 0.5) 104%,
+      rgba(255, 255, 255, 0.5) 112%,
+      rgba(0, 0, 0, 0.2) 113%,
+      rgba(0, 0, 0, 0.2) 121%,
+      #FFFFFF 122%,
+      #FFFFFF 130%,
+      rgba(255, 255, 255, 0.4) 131%,
+      rgba(255, 255, 255, 0.4) 140%);
+
+
+  background-image:
+    radial-gradient(circle closest-side,
+      transparent 0%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.3) 76%,
+      rgba(255, 255, 255, 0.3) 85%,
+      rgba(255, 255, 255, 0.9) 86%,
+      rgba(255, 255, 255, 0.9) 94%,
+      #FFFFFF 95%,
+      #FFFFFF 103%,
+      rgba(255, 255, 255, 0.5) 104%,
+      rgba(255, 255, 255, 0.5) 112%,
+      rgba(0, 0, 0, 0.2) 113%,
+      rgba(0, 0, 0, 0.2) 121%,
+      #FFFFFF 122%,
+      #FFFFFF 130%,
+      rgba(255, 255, 255, 0.4) 131%,
+      rgba(255, 255, 255, 0.4) 140%),
+    radial-gradient(circle closest-side,
+      transparent 0%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.3) 76%,
+      rgba(255, 255, 255, 0.3) 85%,
+      rgba(255, 255, 255, 0.9) 86%,
+      rgba(255, 255, 255, 0.9) 94%,
+      #FFFFFF 95%,
+      #FFFFFF 103%,
+      rgba(255, 255, 255, 0.5) 104%,
+      rgba(255, 255, 255, 0.5) 112%,
+      rgba(0, 0, 0, 0.2) 113%,
+      rgba(0, 0, 0, 0.2) 121%,
+      #FFFFFF 122%,
+      #FFFFFF 130%,
+      rgba(255, 255, 255, 0.4) 131%,
+      rgba(255, 255, 255, 0.4) 140%);
+  background-size: 80px 80px;
+  background-color: #384F89;
+  background-position: 0 0, 40px 40px;
+}
+@charset "UTF-8";
+/* CSS Document */
+
+.tiltdavid {
+    background-color: #394C5F;
+    background-image:
+                -webkit-linear-gradient(135deg,
+                    #16293B 0%,
+                    #16293B 25%,
+                    rgba(255, 255, 255, 0.0) 25%,
+                    rgba(255, 255, 255, 0.0) 75%,
+                    #16293B 75%,
+                    #16293B 100%
+                      );
+
+
+    background-image:
+                linear-gradient(135deg,
+                    #16293B 0%,
+                    #16293B 25%,
+                    rgba(255, 255, 255, 0.0) 25%,
+                    rgba(255, 255, 255, 0.0) 75%,
+                    #16293B 75%,
+                    #16293B 100%
+                      );
+    background-size: 50px 50px;
+}
+
+.greenbean {
+  background-color: #4C5F39;
+    background-image:
+            -webkit-linear-gradient(-135deg,
+                    #293B16 0%,
+                    #293B16 20%,
+                    transparent 20%,
+                    transparent 48%,
+                    #76AA41 49%,
+                    #76AA41 51%,
+                    transparent 52%,
+                    transparent 80%,
+                    #293B16 80%,
+                    #293B16 100%
+                      ),
+                -webkit-linear-gradient(135deg,
+                    #293B16 0%,
+                    #293B16 20%,
+                    transparent 20%,
+                    transparent 48%,
+                    #76AA41 49%,
+                    #76AA41 51%,
+                    transparent 52%,
+                    transparent 80%,
+                    #293B16 80%,
+                    #293B16 100%
+                      );
+
+
+
+    background-image:
+            linear-gradient(-135deg,
+                    #293B16 0%,
+                    #293B16 20%,
+                    transparent 20%,
+                    transparent 48%,
+                    #76AA41 49%,
+                    #76AA41 51%,
+                    transparent 52%,
+                    transparent 80%,
+                    #293B16 80%,
+                    #293B16 100%
+                      ),
+             linear-gradient(135deg,
+                    #293B16 0%,
+                    #293B16 20%,
+                    transparent 20%,
+                    transparent 48%,
+                    #76AA41 49%,
+                    #76AA41 51%,
+                    transparent 52%,
+                    transparent 80%,
+                    #293B16 80%,
+                    #293B16 100%
+                      );
+    background-size: 25px 25px;
+    background-position: 0 0, 100px 0px;
+}
+
+.blurry {
+    background-color: #7F596C;
+
+    background-image:
+         -webkit-radial-gradient(
+                    #3B1629 20%,
+                    transparent 20%
+                      ),
+         -webkit-radial-gradient(
+                    #3B1629 20%,
+                    transparent 20%
+                      ),
+        -webkit-linear-gradient(135deg,
+                    transparent 48%,
+                    #9A3166 49%,
+                    #9A3166 51%,
+                    transparent 52%
+                      ),
+        -webkit-linear-gradient(-135deg,
+                    transparent 48%,
+                    #9A3166 49%,
+                    #9A3166 51%,
+                    transparent 52%
+                      );
+
+
+
+    background-image:
+         radial-gradient(
+                    #3B1629 20%,
+                    transparent 20%
+                      ),
+         radial-gradient(
+                    #3B1629 20%,
+                    transparent 20%
+                      ),
+        linear-gradient(135deg,
+                    transparent 48%,
+                    #9A3166 49%,
+                    #9A3166 51%,
+                    transparent 52%
+                      ),
+        linear-gradient(-135deg,
+                    transparent 48%,
+                    #9A3166 49%,
+                    #9A3166 51%,
+                    transparent 52%
+                      );
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px, 0 0, 0 0;
+}
+
+.classic {
+   background-color: #48006c;
+        background-image:
+         -webkit-linear-gradient(-135deg,
+            transparent 20%,
+            rgba(0,0,0,0.1) 20%,
+            rgba(0,0,0,0.1) 30%,
+            transparent 30%,
+            transparent 70%,
+            rgba(0,0,0,0.1) 70%,
+            rgba(0,0,0,0.1) 80%,
+            transparent 80%),
+        -webkit-linear-gradient(135deg,
+            transparent 20%,
+            rgba(0,0,0,0.4) 20%,
+            rgba(0,0,0,0.4) 30%,
+            rgba(0,0,0,0.1) 30%,
+            rgba(0,0,0,0.1) 40%,
+            transparent 40%,
+            transparent 70%,
+            rgba(0,0,0,0.4) 70%,
+            rgba(0,0,0,0.4) 80%,
+            rgba(0,0,0,0.1) 80%,
+            rgba(0,0,0,0.1) 90%,
+            transparent 90%)
+        ;
+
+
+        background-image:
+         linear-gradient(-135deg,
+            transparent 20%,
+            rgba(0,0,0,0.1) 20%,
+            rgba(0,0,0,0.1) 30%,
+            transparent 30%,
+            transparent 70%,
+            rgba(0,0,0,0.1) 70%,
+            rgba(0,0,0,0.1) 80%,
+            transparent 80%),
+        linear-gradient(135deg,
+            transparent 20%,
+            rgba(0,0,0,0.4) 20%,
+            rgba(0,0,0,0.4) 30%,
+            rgba(0,0,0,0.1) 30%,
+            rgba(0,0,0,0.1) 40%,
+            transparent 40%,
+            transparent 70%,
+            rgba(0,0,0,0.4) 70%,
+            rgba(0,0,0,0.4) 80%,
+            rgba(0,0,0,0.1) 80%,
+            rgba(0,0,0,0.1) 90%,
+            transparent 90%)
+        ;
+    background-size: 6px 6px;
+}
+
+.starofdavid {
+   background-image:
+
+         -webkit-linear-gradient(30deg,
+            transparent 95%,
+            blue 95%),
+        -webkit-linear-gradient(-30deg,
+            blue 5%,
+            transparent 5%),
+         -webkit-linear-gradient(30deg,
+            transparent 95%,
+            blue 95%),
+        -webkit-linear-gradient(-30deg,
+            blue 5%,
+            transparent 5%),
+         -webkit-linear-gradient(30deg,
+            transparent 95%,
+            blue 95%),
+        -webkit-linear-gradient(-30deg,
+            blue 5%,
+            transparent 5%),
+        -webkit-linear-gradient(-30deg,
+            transparent 95%,
+            blue 95%),
+        -webkit-linear-gradient(30deg,
+            blue 5%,
+            transparent 5%),
+        -webkit-linear-gradient(-30deg,
+            transparent 95%,
+            blue 95%),
+        -webkit-linear-gradient(30deg,
+            blue 5%,
+            transparent 5%),
+         -webkit-linear-gradient(-30deg,
+            transparent 95%,
+            blue 95%),
+        -webkit-linear-gradient(30deg,
+            blue 5%,
+            transparent 5%)
+
+        ;
+    background-image:
+         linear-gradient(30deg,
+            transparent 95%,
+            blue 95%),
+        linear-gradient(-30deg,
+            blue 5%,
+            transparent 5%),
+         linear-gradient(30deg,
+            transparent 95%,
+            blue 95%),
+        linear-gradient(-30deg,
+            blue 5%,
+            transparent 5%),
+         linear-gradient(30deg,
+            transparent 95%,
+            blue 95%),
+        linear-gradient(-30deg,
+            blue 5%,
+            transparent 5%),
+        linear-gradient(-30deg,
+            transparent 95%,
+            blue 95%),
+        linear-gradient(30deg,
+            blue 5%,
+            transparent 5%),
+        linear-gradient(-30deg,
+            transparent 95%,
+            blue 95%),
+        linear-gradient(30deg,
+            blue 5%,
+            transparent 5%),
+         linear-gradient(-30deg,
+            transparent 95%,
+            blue 95%),
+        linear-gradient(30deg,
+            blue 5%,
+            transparent 5%)
+
+        ;
+
+  background-color: rgba(255,255,255,0.5);
+    background-size: 100px 100px;
+    background-position:
+        0 3px, 0 3px,
+        15px -22px,
+        15px -22px,
+        -15px -22px,
+        -15px -22px,
+        15px 4px,
+        15px 4px,
+        -15px 4px,
+        -15px 4px,
+        0 -22px,
+        0 -22px;
+}
+
+</style>
+
+<style contenteditable>.tiltdavid {
+background-color: #394C5F;
+background-image:
+ -webkit-linear-gradient(135deg, #16293B 0%, #16293B 25%, rgba(255, 255, 255, 0.0) 25%, rgba(255, 255, 255, 0.0) 75%, #16293B 75%, #16293B 100% );
+background-image: linear-gradient(135deg,
+  #16293B 0%,
+  #16293B 25%,
+  rgba(255, 255, 255, 0.0) 25%,
+  rgba(255, 255, 255, 0.0) 75%,
+  #16293B 75%, #16293B 100% );
+background-size: 50px 50px;
+}</style>
+<title>Change my CSS</title>
+</head>
+<body>
+     <div class="greenbean grad"></div>
+     <div class="metal grad"></div>
+     <div class="classic grad"></div>
+     <div class="inverse1 grad"></div>
+     <div class="bradybunch grad"></div>
+     <div class="tiltdavid grad"></div>
+     <div class="retro67 grad"></div>
+     <div class="blurry grad"></div>
+     <div class="circlestripes grad"></div>
+</body>
+</html>
+
