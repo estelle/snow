@@ -33,7 +33,7 @@
 
 <div class="slide transparent intro">
      <div class="snowman"></div>
-     <header><a href="http://estelle.github.com/snow/">http://estelle.github.com/snow/</a>
+     <header><a href="http://estelle.github.com/snow/">http://estelle.github.com/snow/lesson.html</a>
      </header>
     </div>
 
@@ -45,6 +45,7 @@
 Making it snow<br>
 without JavaScript<br>
 (or clouds)</h1>
+<a href="http://estelle.github.com/snow/lesson.html">http://estelle.github.com/snow/lesson.html</a>
      </header>
     </div>
 
@@ -1652,6 +1653,77 @@ el.addEventListener( <b>'webkitAnimationEnd'</b>,
 </section>
 </div>
 
+
+<div class="slide" id="css-shadow">
+          <style>
+            #shadow-example {
+              font-size: 75px;
+              margin: 10px 10px 30px 10px;
+              padding: 20px;
+              text-align: center;
+            }
+          </style>
+          <header><h1>Shadows</h1></header>
+          <section>
+<pre class="two-column"><b>text-shadow</b>:
+  rgba(64, 64, 64, 0.5)
+  <span id="shadows-text-x-value">0</span>px <input id="shadows-text-x" type="range" min="-9" max="9" value="0" onchange="changeShadow(event)">
+  <span id="shadows-text-y-value">0</span>px <input id="shadows-text-y" type="range" min="-9" max="9" value="0" onchange="changeShadow(event)">
+  <span id="shadows-text-size-value">0</span>px; <input id="shadows-text-size" type="range" min="0" max="9" value="0" onchange="changeShadow(event)">
+<br><b>box-shadow</b>:
+  rgba(0, 0, 128, 0.25)
+  <span id="shadows-box-x-value">0</span>px <input id="shadows-box-x" type="range" min="-9" max="9" value="0" onchange="changeShadow(event)">
+  <span id="shadows-box-y-value">0</span>px <input id="shadows-box-y" type="range" min="-9" max="9" value="0" onchange="changeShadow(event)">
+  <span id="shadows-box-size-value">0</span>px <input id="shadows-box-size" type="range" min="0" max="9" value="0" onchange="changeShadow(event)">
+  <span id="shadows-box-spread-value">0</span>px; <input id="shadows-box-spread" type="range" min="0" max="9" value="0" onchange="changeShadow(event)">
+  <input id="shadows-box-inset" type="checkbox" value="inset" onchange="changeShadow(event)"> Inset?
+            </pre>
+<pre id="shadowoutput"></pre>
+            <div id="shadow-example" class="example">
+              Such a shady div.
+            </div>
+            <a target="_blank" class="objectlink" href="http://caniuse.com/#search=shadow">caniuse.com: shadows</a>
+          </section>
+
+          <script defer="">
+            function changeShadow() {
+              var el = document.getElementById('shadow-example');
+
+              var textXVal = document.getElementById('shadows-text-x').value;
+              var textYVal = document.getElementById('shadows-text-y').value;
+              var textSizeVal = document.getElementById('shadows-text-size').value;
+              var inset = document.getElementById('shadows-box-inset').checked ? 'inset' : '';
+
+              document.getElementById('shadows-text-x-value').textContent = textXVal;
+              document.getElementById('shadows-text-y-value').textContent = textYVal;
+              document.getElementById('shadows-text-size-value').textContent = textSizeVal;
+
+              var boxXVal = document.getElementById('shadows-box-x').value;
+              var boxYVal = document.getElementById('shadows-box-y').value;
+              var boxSizeVal = document.getElementById('shadows-box-size').value;
+              var boxSizeSpread = document.getElementById('shadows-box-spread').value;
+              console.log(boxSizeSpread);
+
+              document.getElementById('shadows-box-x-value').textContent = boxXVal;
+              document.getElementById('shadows-box-y-value').textContent = boxYVal;
+              document.getElementById('shadows-box-size-value').textContent = boxSizeVal;
+              document.getElementById('shadows-box-spread-value').textContent = boxSizeSpread;
+
+              el.style.textShadow = 'rgba(64, 64, 64, 0.5) ' + textXVal + 'px ' + textYVal + 'px ' + textSizeVal + 'px';
+              el.style.webkitBoxShadow = inset + 'rgba(0, 0, 128, 0.25) ' + boxXVal + 'px ' + boxYVal + 'px ' + boxSizeVal + 'px';
+              console.log(el.style.boxShadow = inset + ' rgba(0, 0, 128, 0.25) ' + boxXVal + 'px ' + boxYVal + 'px ' + boxSizeVal + 'px ' + (boxSizeSpread || 0) + 'px');
+
+              document.getElementById('shadowoutput').innerHTML = "box-shadow: " + el.style.boxShadow + ';<br>text-shadow: ' + el.style.textShadow + ';';
+            }
+          </script></div>
+
+<div class="slide">
+  <header><h1>Exercise</h1></header>
+    <section class="content">
+      <a href="https://dl.dropboxusercontent.com/u/10998095/css3-workshop/exercise_logo.html">https://dl.dropboxusercontent.com/u/10998095/css3-workshop/exercise_logo.html</a>
+
+    </section>
+</div>
 
 
 <div class="slide normal">
